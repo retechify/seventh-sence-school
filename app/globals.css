@@ -1,0 +1,253 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Soft pastel storybook theme */
+  --background: oklch(0.98 0.01 90);
+  --foreground: oklch(0.35 0.05 300);
+  
+  /* Cream base */
+  --card: oklch(0.97 0.015 85);
+  --card-foreground: oklch(0.35 0.05 300);
+  
+  --popover: oklch(0.98 0.01 90);
+  --popover-foreground: oklch(0.35 0.05 300);
+  
+  /* Purple primary */
+  --primary: oklch(0.55 0.18 300);
+  --primary-foreground: oklch(0.98 0.01 90);
+  
+  /* Soft peach secondary */
+  --secondary: oklch(0.92 0.06 50);
+  --secondary-foreground: oklch(0.4 0.08 50);
+  
+  /* Lavender muted */
+  --muted: oklch(0.94 0.04 300);
+  --muted-foreground: oklch(0.5 0.05 300);
+  
+  /* Mint accent */
+  --accent: oklch(0.9 0.08 160);
+  --accent-foreground: oklch(0.35 0.1 160);
+  
+  --destructive: oklch(0.65 0.2 25);
+  --destructive-foreground: oklch(0.98 0.01 90);
+  
+  --border: oklch(0.9 0.03 300);
+  --input: oklch(0.95 0.02 300);
+  --ring: oklch(0.65 0.15 300);
+  
+  /* Pastel chart colors */
+  --chart-1: oklch(0.85 0.12 50);   /* Peach */
+  --chart-2: oklch(0.85 0.1 300);   /* Lavender */
+  --chart-3: oklch(0.85 0.12 160);  /* Mint */
+  --chart-4: oklch(0.85 0.1 230);   /* Baby blue */
+  --chart-5: oklch(0.9 0.15 95);    /* Soft yellow */
+  
+  --radius: 1.5rem;
+  
+  /* Custom pastel colors */
+  --peach: oklch(0.92 0.08 50);
+  --lavender: oklch(0.9 0.08 300);
+  --mint: oklch(0.9 0.1 160);
+  --baby-blue: oklch(0.9 0.08 230);
+  --soft-yellow: oklch(0.95 0.12 95);
+  --cream: oklch(0.97 0.015 85);
+  --purple: oklch(0.55 0.18 300);
+  --purple-light: oklch(0.85 0.1 300);
+  
+  --sidebar: oklch(0.97 0.015 85);
+  --sidebar-foreground: oklch(0.35 0.05 300);
+  --sidebar-primary: oklch(0.55 0.18 300);
+  --sidebar-primary-foreground: oklch(0.98 0.01 90);
+  --sidebar-accent: oklch(0.9 0.08 160);
+  --sidebar-accent-foreground: oklch(0.35 0.1 160);
+  --sidebar-border: oklch(0.9 0.03 300);
+  --sidebar-ring: oklch(0.65 0.15 300);
+}
+
+@theme inline {
+  --font-sans: 'Nunito', 'Nunito Fallback', system-ui, sans-serif;
+  --font-serif: 'Pacifico', 'Pacifico Fallback', cursive;
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback', monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 8px);
+  --radius-md: calc(var(--radius) - 4px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 8px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  
+  /* Custom pastel colors */
+  --color-peach: var(--peach);
+  --color-lavender: var(--lavender);
+  --color-mint: var(--mint);
+  --color-baby-blue: var(--baby-blue);
+  --color-soft-yellow: var(--soft-yellow);
+  --color-cream: var(--cream);
+  --color-purple: var(--purple);
+  --color-purple-light: var(--purple-light);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Wavy section clip paths */
+.wavy-top {
+  clip-path: polygon(
+    0% 5%,
+    5% 3%,
+    10% 5%,
+    15% 2%,
+    20% 4%,
+    25% 1%,
+    30% 3%,
+    35% 5%,
+    40% 2%,
+    45% 4%,
+    50% 1%,
+    55% 3%,
+    60% 5%,
+    65% 2%,
+    70% 4%,
+    75% 1%,
+    80% 3%,
+    85% 5%,
+    90% 2%,
+    95% 4%,
+    100% 2%,
+    100% 100%,
+    0% 100%
+  );
+}
+
+.wavy-bottom {
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 95%,
+    95% 97%,
+    90% 95%,
+    85% 98%,
+    80% 96%,
+    75% 99%,
+    70% 97%,
+    65% 95%,
+    60% 98%,
+    55% 96%,
+    50% 99%,
+    45% 97%,
+    40% 95%,
+    35% 98%,
+    30% 96%,
+    25% 99%,
+    20% 97%,
+    15% 95%,
+    10% 98%,
+    5% 96%,
+    0% 98%
+  );
+}
+
+/* Blob shapes */
+.blob-shape {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(3deg);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(-2deg);
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(0.8);
+  }
+}
+
+.animate-sparkle {
+  animation: sparkle 2s ease-in-out infinite;
+}
+
+/* Grain texture overlay */
+.grain-texture {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  pointer-events: none;
+}
+
+/* Gradient buttons */
+.btn-gradient-yellow {
+  background: linear-gradient(135deg, oklch(0.92 0.15 95), oklch(0.88 0.12 70));
+}
+
+.btn-gradient-purple {
+  background: linear-gradient(135deg, oklch(0.65 0.18 300), oklch(0.55 0.2 280));
+}
+
+.btn-gradient-peach {
+  background: linear-gradient(135deg, oklch(0.92 0.1 50), oklch(0.88 0.12 35));
+}
