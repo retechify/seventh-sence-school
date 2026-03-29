@@ -69,7 +69,7 @@ export function Footer() {
                 <div className="w-8 h-8 rounded-full bg-mint/50 flex items-center justify-center">
                   <MapPin className="w-4 h-4 text-primary" />
                 </div>
-                <span>R129, Block R, R – Block, Coimbatore, Kovaipudur, Tamil Nadu 641042</span>
+                <span>129, R – Block, Kovaipudur, Coimbatore, Tamil Nadu-641042</span>
               </li>
             </ul>
           </div>

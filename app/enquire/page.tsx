@@ -304,7 +304,7 @@ export default function EnquirePage() {
                           </div>
                           <div>
                             <h3 className="font-semibold text-foreground mb-1">Visit Us</h3>
-                            <p className="text-muted-foreground text-sm">R129, Block R, R – Block, Coimbatore, TAMIL NADU 641042</p>
+                            <p className="text-muted-foreground text-sm">129, R – Block, Kovaipudur, Coimbatore, Tamil Nadu-641042</p>
                           </div>
                         </div>
                       </div>

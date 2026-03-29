@@ -22,7 +22,7 @@ export function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="hover:opacity-90 transition-opacity">
+          <Link href="/" className="hover:opacity-90 transition-opacity" aria-label="Seventh Sense School of Arts - Home">
             <RainbowLogo />
           </Link>
 

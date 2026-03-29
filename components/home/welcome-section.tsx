@@ -1,17 +1,20 @@
+"use client"
+
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { StickerIcon, HandDrawnDivider } from "@/components/floating-doodles"
+import { motion } from "framer-motion"
 
 const stats = [
-  { number: "500+", label: "Happy Children" },
-  { number: "15+", label: "Years Experience" },
-  { number: "50+", label: "Expert Teachers" },
-  { number: "100%", label: "Parent Satisfaction" },
+  { number: "500+", label: "Happy Children", hue: 50 },
+  { number: "15+", label: "Years Experience", hue: 160 },
+  { number: "50+", label: "Expert Teachers", hue: 300 },
+  { number: "100%", label: "Parent Satisfaction", hue: 95 },
 ]
 
 export function WelcomeSection() {
   return (
-    <section className="relative py-20 bg-cream overflow-hidden">
+    <section className="relative py-24 bg-cream overflow-hidden">
       {/* Background doodles */}
       <div className="absolute top-12 left-12 w-10 h-10 opacity-40 animate-float">
         <StickerIcon type="heart" className="w-full h-full" />
@@ -25,17 +28,17 @@ export function WelcomeSection() {
       <div className="absolute bottom-24 right-16 w-6 h-6 opacity-40 animate-float">
         <StickerIcon type="star" className="w-full h-full" />
       </div>
-      <div className="absolute top-1/2 left-6 w-8 h-8 opacity-30 animate-sparkle">
-        <StickerIcon type="moon" className="w-full h-full" />
-      </div>
-      <div className="absolute top-1/3 right-8 w-10 h-10 opacity-40 animate-float-slow">
-        <StickerIcon type="balloon" className="w-full h-full" />
-      </div>
       
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Image side */}
-          <div className="relative">
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="relative"
+          >
             {/* Sticker icons around image */}
             <div className="absolute -top-4 -left-4 w-10 h-10 z-10 animate-float">
               <StickerIcon type="sun" className="w-full h-full drop-shadow-md" />
@@ -43,105 +46,92 @@ export function WelcomeSection() {
             <div className="absolute -top-2 right-10 w-8 h-8 z-10 animate-sparkle">
               <StickerIcon type="star" className="w-full h-full drop-shadow-md" />
             </div>
-            <div className="absolute bottom-10 -left-6 w-8 h-8 z-10 animate-float-slow">
-              <StickerIcon type="heart" className="w-full h-full drop-shadow-md" />
-            </div>
-            <div className="absolute -bottom-4 right-8 w-10 h-10 z-10 animate-sparkle">
-              <StickerIcon type="sparkle" className="w-full h-full drop-shadow-md" />
-            </div>
             
-            <div className="relative rounded-[2rem] overflow-hidden bg-white p-4 shadow-xl">
-              <div className="rounded-2xl overflow-hidden aspect-[4/3] bg-gradient-to-br from-mint/40 via-baby-blue/30 to-lavender/40 flex items-center justify-center">
-                {/* Classroom illustration */}
-                <div className="relative w-full h-full p-8">
-                  <div className="flex items-center justify-center gap-6">
-                    {/* Teacher */}
-                    <div className="w-28 h-28 md:w-36 md:h-36 rounded-full bg-gradient-to-br from-lavender to-purple-light flex items-center justify-center shadow-xl">
-                      <svg viewBox="0 0 60 60" className="w-20 h-20 md:w-24 md:h-24">
-                        <circle cx="30" cy="30" r="24" fill="oklch(0.95 0.05 70)" />
-                        <circle cx="24" cy="26" r="3" fill="oklch(0.3 0.05 300)" />
-                        <circle cx="36" cy="26" r="3" fill="oklch(0.3 0.05 300)" />
-                        <path d="M22 36 Q30 44 38 36" stroke="oklch(0.3 0.05 300)" strokeWidth="2.5" fill="none" strokeLinecap="round" />
-                        <circle cx="17" cy="32" r="4" fill="oklch(0.9 0.1 50)" opacity="0.5" />
-                        <circle cx="43" cy="32" r="4" fill="oklch(0.9 0.1 50)" opacity="0.5" />
-                      </svg>
-                    </div>
-                    
-                    {/* Children */}
-                    <div className="grid grid-cols-2 gap-3">
-                      {["peach", "mint", "soft-yellow", "baby-blue"].map((color, i) => (
-                        <div
-                          key={i}
-                          className="w-14 h-14 md:w-18 md:h-18 rounded-full shadow-lg flex items-center justify-center animate-float"
-                          style={{ 
-                            animationDelay: `${i * 0.4}s`,
-                            background: `linear-gradient(135deg, oklch(0.9 0.1 ${[50, 160, 95, 230][i]}), oklch(0.85 0.08 ${[50, 160, 95, 230][i]}))`
-                          }}
-                        >
-                          <svg viewBox="0 0 40 40" className="w-10 h-10 md:w-12 md:h-12">
-                            <circle cx="20" cy="20" r="14" fill="oklch(0.95 0.05 70)" />
-                            <circle cx="16" cy="18" r="2" fill="oklch(0.3 0.05 300)" />
-                            <circle cx="24" cy="18" r="2" fill="oklch(0.3 0.05 300)" />
-                            <path d="M15 24 Q20 28 25 24" stroke="oklch(0.3 0.05 300)" strokeWidth="1.5" fill="none" strokeLinecap="round" />
-                          </svg>
-                        </div>
-                      ))}
-                    </div>
+            <div className="relative rounded-[3rem] overflow-hidden bg-white p-4 shadow-2xl">
+              <div className="rounded-[2rem] overflow-hidden aspect-[4/3] relative flex items-center justify-center">
+                <img 
+                  src="/galary/welcome_sub.png" 
+                  alt="Reading time at Seventh Sense" 
+                  className="w-full h-full object-cover"
+                />
+                
+                {/* Floating figures layer */}
+                <div className="absolute inset-0 pointer-events-none p-8 flex items-center justify-center">
+                  <div className="flex items-center gap-6">
+                    <motion.div 
+                      animate={{ scale: [1, 1.1, 1] }}
+                      transition={{ duration: 4, repeat: Infinity }}
+                      className="w-24 h-24 md:w-32 md:h-32 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center shadow-lg border-2 border-white/50"
+                    >
+                      <StickerIcon type="heart" className="w-12 h-12 text-white" />
+                    </motion.div>
                   </div>
                 </div>
               </div>
             </div>
             
             {/* Shadow decoration */}
-            <div className="absolute -z-10 -bottom-3 -right-3 w-full h-full rounded-[2rem] bg-peach/40" style={{ transform: 'rotate(3deg)' }} />
-          </div>
+            <div className="absolute -z-10 -bottom-4 -right-4 w-full h-full rounded-[3rem] bg-peach/30" style={{ transform: 'rotate(2deg)' }} />
+          </motion.div>
           
           {/* Content side */}
-          <div className="space-y-6">
-            <div className="inline-flex items-center gap-2 bg-mint/40 rounded-full px-4 py-2">
+          <motion.div 
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="space-y-8"
+          >
+            <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm rounded-full px-4 py-2 shadow-sm">
               <StickerIcon type="heart" className="w-5 h-5" />
-              <span className="text-sm font-medium text-primary">About Us</span>
+              <span className="text-sm font-medium text-primary">About Our World</span>
             </div>
             
-            <h2 className="font-serif text-3xl md:text-4xl text-primary text-balance">
-              Welcome to Seventh sense school of arts
+            <h2 className="font-serif text-4xl md:text-5xl text-primary leading-tight">
+              A Warm Welcome to Seventh Sense
             </h2>
             
-            <p className="text-muted-foreground leading-relaxed text-pretty">
-              At Seventh sense school of arts, we create a magical world where children can explore, learn, and grow 
-              in a warm, nurturing environment. Our passionate team of educators is dedicated to 
-              bringing out the best in every child through innovative, play-based learning approaches.
-            </p>
+            <div className="space-y-4">
+              <p className="text-muted-foreground text-lg leading-relaxed text-pretty">
+                At Seventh sense school of arts, we create a magical world where children can explore, learn, and grow 
+                in a warm, nurturing environment. Our passionate team of educators is dedicated to 
+                bringing out the best in every child through innovative, play-based learning approaches.
+              </p>
+              
+              <p className="text-muted-foreground text-lg leading-relaxed text-pretty">
+                We believe that early childhood is a time of wonder and discovery. That&apos;s why we design 
+                experiences that spark curiosity and build confidence.
+              </p>
+            </div>
             
-            <p className="text-muted-foreground leading-relaxed text-pretty">
-              We believe that early childhood is a time of wonder and discovery. That&apos;s why we design 
-              experiences that spark curiosity, build confidence, and create lasting memories.
-            </p>
-            
-            <HandDrawnDivider className="py-4" />
+            <HandDrawnDivider className="py-4 opacity-50" />
             
             {/* Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {stats.map((stat, index) => (
-                <div 
+              {stats.map((stat, i) => (
+                <motion.div 
                   key={stat.label} 
-                  className="text-center p-4 rounded-2xl"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.1 }}
+                  className="text-center p-6 rounded-[2rem] shadow-sm hover:shadow-md transition-shadow"
                   style={{
-                    background: `linear-gradient(135deg, oklch(0.95 0.08 ${[50, 160, 300, 95][index]}), oklch(0.98 0.03 ${[50, 160, 300, 95][index]}))`
+                    background: `linear-gradient(135deg, oklch(0.96 0.05 ${stat.hue}), oklch(0.98 0.02 ${stat.hue}))`
                   }}
                 >
-                  <div className="font-serif text-2xl md:text-3xl text-primary">{stat.number}</div>
-                  <div className="text-sm text-muted-foreground">{stat.label}</div>
-                </div>
+                  <div className="font-serif text-3xl text-primary mb-1">{stat.number}</div>
+                  <div className="text-xs font-medium text-muted-foreground uppercase tracking-wider">{stat.label}</div>
+                </motion.div>
               ))}
             </div>
             
-            <Link href="/about">
-              <Button className="btn-gradient-peach text-foreground rounded-full px-8 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105 mt-4">
+            <Link href="/about" className="inline-block mt-4">
+              <Button className="btn-gradient-peach text-foreground rounded-full px-10 py-7 text-lg font-bold shadow-xl hover:shadow-2xl transition-all hover:scale-105">
                 Learn Our Story
               </Button>
             </Link>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

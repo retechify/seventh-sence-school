@@ -1,7 +1,10 @@
+"use client"
+
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { BookOpen, Puzzle, MessageCircle } from "lucide-react"
 import { StickerIcon, ServiceIllustration } from "@/components/floating-doodles"
+import { motion } from "framer-motion"
 
 const services = [
   {
@@ -11,7 +14,7 @@ const services = [
     title: "Early Learning Programs",
     description: "Age-appropriate curriculum designed to spark curiosity and build foundational skills through engaging activities.",
     color: "peach",
-    gradient: "from-peach to-soft-yellow/50",
+    gradient: "from-[#FFF1E0] to-[#FFF9E0]",
     hue: 50,
   },
   {
@@ -21,7 +24,7 @@ const services = [
     title: "Activity-Based Learning",
     description: "Hands-on experiences that encourage exploration, problem-solving, and creative thinking in a fun environment.",
     color: "mint",
-    gradient: "from-mint to-baby-blue/50",
+    gradient: "from-[#E0F9F0] to-[#E0F0F9]",
     hue: 160,
   },
   {
@@ -31,14 +34,14 @@ const services = [
     title: "Communication Development",
     description: "Building strong language and social skills through storytelling, group activities, and expressive arts.",
     color: "lavender",
-    gradient: "from-lavender to-purple-light/50",
+    gradient: "from-[#F0F0FF] to-[#FAF0FF]",
     hue: 300,
   },
 ]
 
 export function ServicesSection() {
   return (
-    <section className="relative py-20 bg-background overflow-hidden">
+    <section className="relative py-24 bg-background overflow-hidden">
       {/* Wavy top */}
       <div className="absolute top-0 left-0 right-0 rotate-180">
         <svg viewBox="0 0 1440 80" className="w-full h-auto" preserveAspectRatio="none">
@@ -56,113 +59,97 @@ export function ServicesSection() {
       <div className="absolute top-20 right-16 w-8 h-8 opacity-40 animate-sparkle">
         <StickerIcon type="sparkle" className="w-full h-full" />
       </div>
-      <div className="absolute bottom-40 left-20 w-6 h-6 opacity-40 animate-float">
-        <StickerIcon type="heart" className="w-full h-full" />
-      </div>
-      <div className="absolute bottom-32 right-12 w-8 h-8 opacity-40 animate-sparkle">
-        <StickerIcon type="star" className="w-full h-full" />
-      </div>
-      <div className="absolute top-1/2 right-8 w-10 h-10 opacity-30 animate-float-slow">
-        <StickerIcon type="moon" className="w-full h-full" />
-      </div>
-      <div className="absolute top-60 left-1/4 w-6 h-6 opacity-35 animate-float">
-        <StickerIcon type="balloon" className="w-full h-full" />
-      </div>
-      <div className="absolute bottom-48 right-1/3 w-5 h-5 opacity-40 animate-sparkle">
-        <StickerIcon type="sparkle" className="w-full h-full" />
-      </div>
       
-      <div className="container mx-auto px-4 pt-8">
+      <div className="container mx-auto px-4 pt-12">
         {/* Section header */}
-        <div className="text-center max-w-2xl mx-auto mb-20">
-          <div className="inline-flex items-center gap-2 bg-soft-yellow/50 rounded-full px-4 py-2 mb-6">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="text-center max-w-2xl mx-auto mb-20"
+        >
+          <div className="inline-flex items-center gap-2 bg-lavender/30 rounded-full px-4 py-2 mb-6">
             <StickerIcon type="sparkle" className="w-5 h-5" />
-            <span className="text-sm font-medium text-primary">What We Offer</span>
+            <span className="text-sm font-medium text-primary uppercase tracking-widest">Discover Our Magic</span>
           </div>
           
-          <h2 className="font-serif text-3xl md:text-4xl text-primary mb-4 text-balance">
-            Our Services
+          <h2 className="font-serif text-4xl md:text-5xl text-primary mb-6 leading-tight">
+            Nurturing Every Dimension
           </h2>
           
-          <p className="text-muted-foreground leading-relaxed text-pretty">
+          <p className="text-muted-foreground text-lg leading-relaxed text-pretty">
             We provide a holistic approach to early childhood education, focusing on each child&apos;s 
             unique needs and helping them grow in every dimension.
           </p>
-        </div>
+        </motion.div>
         
         {/* Services grid */}
-        <div className="grid md:grid-cols-3 gap-10">
-          {services.map((service) => (
-            <div
+        <div className="grid md:grid-cols-3 gap-8">
+          {services.map((service, i) => (
+            <motion.div
               key={service.title}
-              className="relative group"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: i * 0.2 }}
+              className="relative group h-full"
             >
-              {/* Large floating illustration above card */}
-              <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-24 h-24 z-20 animate-bounce-gentle drop-shadow-xl">
-                <ServiceIllustration type={service.illustration} className="w-full h-full" />
-                {/* Sparkles around illustration */}
-                <div className="absolute -top-2 -right-2 w-5 h-5 animate-sparkle">
-                  <StickerIcon type="sparkle" className="w-full h-full" />
+              {/* Card Container */}
+              <div 
+                className="relative h-full rounded-[4rem] p-10 pt-24 shadow-xl border border-white/50 transition-all duration-500 overflow-visible flex flex-col items-center text-center group-hover:shadow-2xl hover:-translate-y-2 transition-transform duration-500"
+                style={{
+                  background: `linear-gradient(135deg, oklch(0.92 0.08 ${service.hue}), oklch(0.96 0.04 ${service.hue}))`
+                }}
+              >
+                {/* Corner Decorative Doodle (Matches image) */}
+                <div className="absolute top-8 right-8 w-12 h-12 opacity-50">
+                  <StickerIcon type={service.stickerType} className="w-full h-full rotate-6 group-hover:rotate-0 transition-transform duration-500" />
                 </div>
-                <div className="absolute -bottom-1 -left-3 w-4 h-4 animate-sparkle" style={{ animationDelay: "0.3s" }}>
-                  <StickerIcon type="sparkle" className="w-full h-full" />
-                </div>
-              </div>
-              
-              {/* Card */}
-              <div className={`relative bg-gradient-to-br ${service.gradient} rounded-[2rem] p-8 pt-14 h-full transition-all duration-300 hover:scale-105 hover:shadow-xl border-2 border-white/50`}>
-                {/* Top decorative sticker */}
-                <div className="absolute top-4 right-4 w-8 h-8 opacity-70">
-                  <StickerIcon type={service.stickerType} className="w-full h-full drop-shadow-md" />
+
+                {/* Main Illustration (Top Center, partially overlapping) */}
+                <div className="absolute -top-12 left-1/2 -translate-x-1/2 w-32 h-32 z-20 animate-bounce-gentle drop-shadow-lg transition-transform duration-500 group-hover:scale-110">
+                  <ServiceIllustration type={service.illustration} className="w-full h-full" />
                 </div>
                 
                 {/* Content */}
-                <h3 className="font-serif text-xl text-primary mb-3 text-center">{service.title}</h3>
-                <p className="text-muted-foreground leading-relaxed mb-6 text-center">{service.description}</p>
-                
-                {/* Button */}
-                <div className="text-center">
-                  <Link href="/services">
-                    <Button variant="outline" className="rounded-full border-2 border-primary/30 bg-white/50 hover:bg-white transition-all">
+                <div className="relative z-10 flex flex-col h-full w-full">
+                  <h3 
+                    className="text-3xl md:text-3xl text-primary mb-6 group-hover:scale-105 transition-transform duration-500"
+                    style={{ fontFamily: 'var(--font-pacifico), cursive' }}
+                  >
+                    {service.title}
+                  </h3>
+                  
+                  <p className="text-muted-foreground leading-relaxed mb-10 flex-grow text-lg px-2">
+                    {service.description}
+                  </p>
+                  
+                  <Link href="/services" className="w-full">
+                    <Button variant="outline" className="w-full rounded-2xl border border-primary/20 bg-white hover:bg-primary/5 hover:border-primary/40 text-muted-foreground hover:text-primary transition-all duration-300 py-6 text-lg font-semibold shadow-sm">
                       Learn More
                     </Button>
                   </Link>
                 </div>
-                
-                {/* Bottom corner decorations */}
-                <div className="absolute bottom-4 left-4 w-5 h-5 opacity-50 animate-float">
-                  <StickerIcon type="heart" className="w-full h-full" />
-                </div>
-                <div className="absolute bottom-6 right-6 w-4 h-4 opacity-40 animate-sparkle">
-                  <StickerIcon type="star" className="w-full h-full" />
-                </div>
               </div>
-              
-              {/* Paper cut shadow effect */}
-              <div 
-                className="absolute -z-10 -bottom-2 -right-2 w-full h-full rounded-[2rem] bg-white/50 border border-white/30"
-                style={{ transform: 'rotate(2deg)' }}
-              />
-            </div>
+            </motion.div>
           ))}
         </div>
         
-        {/* Doodles between cards */}
-        <div className="hidden md:block absolute left-1/3 top-1/2 w-6 h-6 opacity-40 animate-float">
-          <StickerIcon type="heart" className="w-full h-full" />
-        </div>
-        <div className="hidden md:block absolute right-1/3 top-1/2 w-5 h-5 opacity-50 animate-sparkle">
-          <StickerIcon type="star" className="w-full h-full" />
-        </div>
-        
         {/* CTA */}
-        <div className="text-center mt-16">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.6 }}
+          className="text-center mt-20"
+        >
           <Link href="/services">
-            <Button className="btn-gradient-purple text-white rounded-full px-8 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105">
+            <Button className="btn-gradient-purple text-white rounded-full px-12 py-8 text-xl font-bold shadow-xl hover:shadow-2xl transition-all hover:scale-105 active:scale-95">
               Explore All Programs
             </Button>
           </Link>
-        </div>
+        </motion.div>
       </div>
     </section>
   )

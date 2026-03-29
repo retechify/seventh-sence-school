@@ -4,6 +4,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { StickerIcon } from "@/components/floating-doodles"
 import { Camera, BookOpen, Play, Palette, Users, Sparkle } from "lucide-react"
+import { motion } from "framer-motion"
 
 const homeGalleryItems = [
   { id: 1, category: "learning", color: "peach", icon: BookOpen, title: "Fun Learning", sticker: "star" as const, hue: 50, size: "large" },
@@ -49,7 +50,13 @@ export function GallerySection() {
         </div>
 
         {/* Bento-style Gallery Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-[200px]">
+        <motion.div 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-[200px]"
+        >
           {homeGalleryItems.map((item, index) => {
             const gridClasses = {
               large: "col-span-2 row-span-2",
@@ -58,9 +65,14 @@ export function GallerySection() {
             }[item.size]
 
             return (
-              <div
+              <motion.div
                 key={item.id}
-                className={`group relative rounded-[2rem] overflow-hidden shadow-lg transition-all duration-500 hover:scale-[1.02] hover:shadow-xl ${gridClasses}`}
+                initial={{ opacity: 0, scale: 0.8, y: 20 }}
+                whileInView={{ opacity: 1, scale: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                whileHover={{ y: -5, scale: 1.02 }}
+                className={`group relative rounded-[2rem] overflow-hidden shadow-lg transition-all duration-300 ${gridClasses}`}
                 style={{
                   background: `linear-gradient(135deg, oklch(0.94 0.08 ${item.hue}), oklch(0.97 0.04 ${item.hue}))`
                 }}
@@ -72,7 +84,7 @@ export function GallerySection() {
 
                 {/* Content placeholder */}
                 <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
-                  <div className="w-16 h-16 rounded-2xl bg-white/60 flex items-center justify-center mb-4 shadow-sm group-hover:scale-110 transition-transform duration-500">
+                  <div className="w-16 h-16 rounded-2xl bg-white/60 flex items-center justify-center mb-4 shadow-sm group-hover:scale-110 group-hover:bg-white transition-all duration-500">
                     <item.icon className="w-8 h-8 text-primary" />
                   </div>
                   <h3 className="font-serif text-xl text-primary mb-1">{item.title}</h3>
@@ -90,10 +102,10 @@ export function GallerySection() {
                     <StickerIcon type="heart" className="w-full h-full" />
                   </div>
                 </div>
-              </div>
+              </motion.div>
             )
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   )

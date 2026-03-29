@@ -1,6 +1,9 @@
+"use client"
+
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { StickerIcon, SectionDoodles } from "@/components/floating-doodles"
+import { motion } from "framer-motion"
 
 export function HeroSection() {
   return (
@@ -31,19 +34,34 @@ export function HeroSection() {
       <div className="container mx-auto px-4 relative">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left content */}
-          <div className="space-y-8 text-center lg:text-left">
+          <motion.div 
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="space-y-8 text-center lg:text-left"
+          >
             {/* Rainbow above heading */}
             <div className="flex justify-center lg:justify-start">
-              <div className="w-24 h-12 animate-float">
+              <motion.div 
+                initial={{ rotate: -10, scale: 0.8 }}
+                animate={{ rotate: 0, scale: 1 }}
+                transition={{ delay: 0.5, duration: 0.6 }}
+                className="w-24 h-12 animate-float"
+              >
                 <StickerIcon type="rainbow" className="w-full h-full" />
-              </div>
+              </motion.div>
             </div>
             
             {/* Decorative sparkle */}
-            <div className="inline-flex items-center gap-2 bg-soft-yellow/50 rounded-full px-4 py-2 text-sm font-medium text-foreground/80">
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2, duration: 0.5 }}
+              className="inline-flex items-center gap-2 bg-soft-yellow/50 rounded-full px-4 py-2 text-sm font-medium text-foreground/80"
+            >
               <StickerIcon type="sparkle" className="w-5 h-5" />
               Welcome to a magical journey
-            </div>
+            </motion.div>
             
             {/* Main heading */}
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-primary leading-tight text-balance">
@@ -56,7 +74,12 @@ export function HeroSection() {
             </p>
             
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4, duration: 0.5 }}
+              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+            >
               <Link href="/contact">
                 <Button className="btn-gradient-yellow text-foreground rounded-full px-8 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105">
                   Get Started
@@ -67,31 +90,44 @@ export function HeroSection() {
                   Learn More
                 </Button>
               </Link>
-            </div>
+            </motion.div>
             
             {/* Trust indicators */}
-            <div className="flex items-center gap-6 justify-center lg:justify-start pt-4">
+            <motion.div 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.6, duration: 0.5 }}
+              className="flex items-center gap-6 justify-center lg:justify-start pt-4"
+            >
               <div className="flex items-center gap-2">
                 <div className="flex -space-x-2">
                   {[1, 2, 3, 4].map((i) => (
-                    <div
+                    <motion.div
                       key={i}
+                      initial={{ scale: 0, x: -10 }}
+                      animate={{ scale: 1, x: 0 }}
+                      transition={{ delay: 0.6 + (i * 0.1), type: "spring" }}
                       className="w-10 h-10 rounded-full border-2 border-white shadow-md flex items-center justify-center text-white font-bold text-sm"
                       style={{
                         background: `linear-gradient(135deg, oklch(0.8 0.15 ${[50, 160, 300, 95][i-1]}), oklch(0.7 0.18 ${[50, 160, 300, 95][i-1]}))`
                       }}
                     >
                       {["S", "D", "P", "A"][i-1]}
-                    </div>
+                    </motion.div>
                   ))}
                 </div>
                 <span className="text-sm text-muted-foreground font-medium">500+ Happy Families</span>
               </div>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
           
           {/* Right content - Hero image */}
-          <div className="relative">
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.9, rotate: 2 }}
+            animate={{ opacity: 1, scale: 1, rotate: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            className="relative"
+          >
             {/* Floating doodles around image */}
             <div className="absolute -top-6 -left-6 w-12 h-12 animate-float z-20">
               <StickerIcon type="star" className="w-full h-full" />
@@ -114,54 +150,25 @@ export function HeroSection() {
             
             {/* Main image container */}
             <div className="relative blob-shape overflow-hidden bg-white/50 p-4">
-              <div className="blob-shape overflow-hidden aspect-square bg-gradient-to-br from-peach/30 to-mint/30 flex items-center justify-center">
-                {/* Illustration */}
-                <div className="relative w-full h-full flex items-center justify-center p-8">
-                  {/* Central figure */}
-                  <div className="relative">
-                    {/* Teacher figure */}
-                    <div className="w-40 h-40 md:w-56 md:h-56 rounded-full bg-gradient-to-br from-lavender to-purple-light flex items-center justify-center shadow-2xl">
-                      <div className="w-32 h-32 md:w-44 md:h-44 rounded-full bg-white/30 flex items-center justify-center">
-                        <svg viewBox="0 0 100 100" className="w-24 h-24 md:w-32 md:h-32">
-                          {/* Smiley face */}
-                          <circle cx="50" cy="50" r="40" fill="oklch(0.95 0.05 70)" />
-                          <circle cx="38" cy="42" r="5" fill="oklch(0.3 0.05 300)" />
-                          <circle cx="62" cy="42" r="5" fill="oklch(0.3 0.05 300)" />
-                          <path d="M35 58 Q50 72 65 58" stroke="oklch(0.3 0.05 300)" strokeWidth="4" fill="none" strokeLinecap="round" />
-                          <circle cx="28" cy="52" r="6" fill="oklch(0.9 0.1 50)" opacity="0.6" />
-                          <circle cx="72" cy="52" r="6" fill="oklch(0.9 0.1 50)" opacity="0.6" />
-                        </svg>
-                      </div>
-                    </div>
-                    
-                    {/* Floating child figures */}
-                    <div className="absolute -top-6 -right-6 w-16 h-16 md:w-20 md:h-20 rounded-full bg-gradient-to-br from-peach to-soft-yellow flex items-center justify-center shadow-xl animate-float">
-                      <svg viewBox="0 0 50 50" className="w-10 h-10 md:w-12 md:h-12">
-                        <circle cx="25" cy="25" r="18" fill="oklch(0.95 0.05 70)" />
-                        <circle cx="20" cy="22" r="2.5" fill="oklch(0.3 0.05 300)" />
-                        <circle cx="30" cy="22" r="2.5" fill="oklch(0.3 0.05 300)" />
-                        <path d="M20 30 Q25 35 30 30" stroke="oklch(0.3 0.05 300)" strokeWidth="2" fill="none" strokeLinecap="round" />
-                      </svg>
-                    </div>
-                    
-                    <div className="absolute -bottom-4 -left-6 w-14 h-14 md:w-18 md:h-18 rounded-full bg-gradient-to-br from-mint to-baby-blue flex items-center justify-center shadow-xl animate-float-slow">
-                      <svg viewBox="0 0 50 50" className="w-9 h-9 md:w-11 md:h-11">
-                        <circle cx="25" cy="25" r="18" fill="oklch(0.95 0.05 70)" />
-                        <circle cx="20" cy="22" r="2.5" fill="oklch(0.3 0.05 300)" />
-                        <circle cx="30" cy="22" r="2.5" fill="oklch(0.3 0.05 300)" />
-                        <path d="M20 30 Q25 35 30 30" stroke="oklch(0.3 0.05 300)" strokeWidth="2" fill="none" strokeLinecap="round" />
-                      </svg>
-                    </div>
-                    
-                    <div className="absolute top-1/2 -right-10 w-12 h-12 md:w-16 md:h-16 rounded-full bg-gradient-to-br from-soft-yellow to-peach flex items-center justify-center shadow-xl animate-sparkle">
-                      <svg viewBox="0 0 50 50" className="w-8 h-8 md:w-10 md:h-10">
-                        <circle cx="25" cy="25" r="18" fill="oklch(0.95 0.05 70)" />
-                        <circle cx="20" cy="22" r="2.5" fill="oklch(0.3 0.05 300)" />
-                        <circle cx="30" cy="22" r="2.5" fill="oklch(0.3 0.05 300)" />
-                        <path d="M20 30 Q25 35 30 30" stroke="oklch(0.3 0.05 300)" strokeWidth="2" fill="none" strokeLinecap="round" />
-                      </svg>
-                    </div>
-                  </div>
+              <div className="blob-shape overflow-hidden aspect-square flex items-center justify-center relative">
+                <img 
+                  src="/galary/hero_main.png" 
+                  alt="Children learning at Seventh Sense" 
+                  className="w-full h-full object-cover"
+                />
+                
+                {/* Overlay gradient for depth */}
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent pointer-events-none" />
+                
+                {/* Floating child figures - keeping these for playful touch */}
+                <div className="absolute inset-0 pointer-events-none">
+                  <motion.div 
+                    animate={{ y: [0, -10, 0] }}
+                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                    className="absolute -top-2 -right-2 w-16 h-16 md:w-20 md:h-20 rounded-full bg-gradient-to-br from-peach to-soft-yellow flex items-center justify-center shadow-xl border-4 border-white"
+                  >
+                    <StickerIcon type="heart" className="w-8 h-8 text-primary" />
+                  </motion.div>
                 </div>
               </div>
             </div>
@@ -172,7 +179,7 @@ export function HeroSection() {
                 <div key={i} className="w-2 h-2 rounded-full bg-primary/30" />
               ))}
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
       
