@@ -7,12 +7,12 @@ import { Camera, BookOpen, Play, Palette, Users, Sparkle } from "lucide-react"
 import { motion } from "framer-motion"
 
 const homeGalleryItems = [
-  { id: 1, category: "learning", color: "peach", icon: BookOpen, title: "Fun Learning", sticker: "star" as const, hue: 50, size: "large" },
-  { id: 2, category: "play", color: "mint", icon: Play, title: "Outdoor Play", sticker: "sun" as const, hue: 160, size: "small" },
-  { id: 3, category: "art", color: "lavender", icon: Palette, title: "Creative Arts", sticker: "rainbow" as const, hue: 300, size: "small" },
-  { id: 4, category: "group", color: "soft-yellow", icon: Users, title: "Circle Time", sticker: "heart" as const, hue: 95, size: "tall" },
-  { id: 5, category: "learning", color: "baby-blue", icon: BookOpen, title: "Story Telling", sticker: "cloud" as const, hue: 230, size: "small" },
-  { id: 6, category: "play", color: "peach", icon: Play, title: "Music & Dance", sticker: "balloon" as const, hue: 50, size: "small" },
+  { id: 1, category: "learning", color: "peach", icon: BookOpen, title: "Fun Learning", sticker: "star" as const, hue: 50, size: "large", image: "/galary/galary section/image 1.jpg" },
+  { id: 2, category: "play", color: "mint", icon: Play, title: "Outdoor Play", sticker: "sun" as const, hue: 160, size: "small", image: "/galary/galary section/image 2.jpg" },
+  { id: 3, category: "art", color: "lavender", icon: Palette, title: "Creative Arts", sticker: "rainbow" as const, hue: 300, size: "small", image: "/galary/galary section/image 3.jpg" },
+  { id: 4, category: "group", color: "soft-yellow", icon: Users, title: "Circle Time", sticker: "heart" as const, hue: 95, size: "tall", image: "/galary/galary section/image 4.jpg" },
+  { id: 5, category: "learning", color: "baby-blue", icon: BookOpen, title: "Story Telling", sticker: "cloud" as const, hue: 230, size: "small", image: "/galary/galary section/image 5.jpg" },
+  { id: 6, category: "play", color: "peach", icon: Play, title: "Music & Dance", sticker: "balloon" as const, hue: 50, size: "small", image: "/galary/galary section/image 6.jpg" },
 ]
 
 export function GallerySection() {
@@ -77,30 +77,29 @@ export function GallerySection() {
                   background: `linear-gradient(135deg, oklch(0.94 0.08 ${item.hue}), oklch(0.97 0.04 ${item.hue}))`
                 }}
               >
+                {/* Image */}
+                <div className="absolute inset-0">
+                  <img src={item.image} alt={item.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                  <div className="absolute inset-0 bg-black/10 transition-colors duration-300 group-hover:bg-black/30" />
+                </div>
+
                 {/* Sticker overlay */}
                 <div className="absolute -top-1 -right-1 w-12 h-12 z-10 p-2 transform rotate-12 group-hover:rotate-0 transition-transform">
                   <StickerIcon type={item.sticker} className="w-full h-full drop-shadow-md" />
                 </div>
 
-                {/* Content placeholder */}
-                <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
-                  <div className="w-16 h-16 rounded-2xl bg-white/60 flex items-center justify-center mb-4 shadow-sm group-hover:scale-110 group-hover:bg-white transition-all duration-500">
-                    <item.icon className="w-8 h-8 text-primary" />
+                {/* Content Overlay */}
+                <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="w-12 h-12 rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center mb-3 shadow-sm">
+                    <item.icon className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="font-serif text-xl text-primary mb-1">{item.title}</h3>
-                  <span className="text-sm font-medium text-muted-foreground capitalize">{item.category}</span>
+                  <h3 className="font-serif text-xl mb-1">{item.title}</h3>
+                  <span className="text-xs font-medium uppercase tracking-wider opacity-80">{item.category}</span>
                 </div>
 
                 {/* Decorative sparkles */}
                 <div className="absolute bottom-4 right-4 w-6 h-6 opacity-0 group-hover:opacity-40 transition-opacity">
-                  <Sparkle className="w-full h-full text-primary" />
-                </div>
-                
-                {/* Hover overlay with heart */}
-                <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 transition-colors flex items-center justify-center pointer-events-none">
-                  <div className="w-12 h-12 opacity-0 group-hover:opacity-100 transition-opacity transform scale-50 group-hover:scale-100">
-                    <StickerIcon type="heart" className="w-full h-full" />
-                  </div>
+                  <Sparkle className="w-full h-full text-white" />
                 </div>
               </motion.div>
             )

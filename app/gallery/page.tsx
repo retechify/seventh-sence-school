@@ -10,18 +10,13 @@ import { useState } from "react"
 
 // Gallery items with placeholder colors representing different activities
 const galleryItems = [
-  { id: 1, category: "learning", color: "peach", icon: BookOpen, title: "Reading Time", sticker: "star" as const },
-  { id: 2, category: "play", color: "mint", icon: Play, title: "Outdoor Play", sticker: "sun" as const },
-  { id: 3, category: "art", color: "lavender", icon: Palette, title: "Art Class", sticker: "rainbow" as const },
-  { id: 4, category: "group", color: "soft-yellow", icon: Users, title: "Group Activity", sticker: "heart" as const },
-  { id: 5, category: "learning", color: "baby-blue", icon: BookOpen, title: "Story Time", sticker: "cloud" as const },
-  { id: 6, category: "art", color: "peach", icon: Palette, title: "Crafts", sticker: "sparkle" as const },
-  { id: 7, category: "play", color: "mint", icon: Play, title: "Games", sticker: "balloon" as const },
-  { id: 8, category: "group", color: "lavender", icon: Users, title: "Circle Time", sticker: "star" as const },
-  { id: 9, category: "art", color: "soft-yellow", icon: Palette, title: "Painting", sticker: "rainbow" as const },
-  { id: 10, category: "learning", color: "baby-blue", icon: BookOpen, title: "Numbers", sticker: "sparkle" as const },
-  { id: 11, category: "play", color: "peach", icon: Play, title: "Music & Dance", sticker: "heart" as const },
-  { id: 12, category: "group", color: "mint", icon: Users, title: "Show & Tell", sticker: "sun" as const },
+  { id: 1, category: "learning", color: "peach", icon: BookOpen, title: "Reading Time", sticker: "star" as const, image: "/galary/galary section/image 1.jpg" },
+  { id: 2, category: "play", color: "mint", icon: Play, title: "Outdoor Play", sticker: "sun" as const, image: "/galary/galary section/image 2.jpg" },
+  { id: 3, category: "art", color: "lavender", icon: Palette, title: "Art Class", sticker: "rainbow" as const, image: "/galary/galary section/image 3.jpg" },
+  { id: 4, category: "group", color: "soft-yellow", icon: Users, title: "Group Activity", sticker: "heart" as const, image: "/galary/galary section/image 4.jpg" },
+  { id: 5, category: "learning", color: "baby-blue", icon: BookOpen, title: "Story Time", sticker: "cloud" as const, image: "/galary/galary section/image 5.jpg" },
+  { id: 6, category: "art", color: "peach", icon: Palette, title: "Crafts", sticker: "sparkle" as const, image: "/galary/galary section/image 6.jpg" },
+  { id: 7, category: "play", color: "mint", icon: Play, title: "Games", sticker: "balloon" as const, image: "/galary/galary section/image 7.jpg" },
 ]
 
 const categories = [
@@ -167,26 +162,29 @@ export default function GalleryPage() {
                         className={`relative rounded-[1.5rem] overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] ${
                           isLarge ? 'aspect-[3/4]' : 'aspect-square'
                         }`}
-                        style={{ background: `linear-gradient(135deg, ${color.bg}, oklch(0.95 0.05 ${color.hue}))` }}
                       >
-                        {/* Content placeholder */}
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <div className="text-center">
-                            <div className="w-16 h-16 mx-auto rounded-full bg-white/60 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-                              <item.icon className="w-8 h-8 text-primary" />
-                            </div>
-                            <span className="text-sm font-medium text-foreground/70">{item.title}</span>
+                        {/* Image */}
+                        <div className="absolute inset-0">
+                          <img src={item.image} alt={item.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                          <div className="absolute inset-0 bg-black/10 transition-colors duration-300 group-hover:bg-black/30" />
+                        </div>
+                        
+                        {/* Content overlay */}
+                        <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          <div className="w-12 h-12 rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center mb-3 shadow-sm">
+                            <item.icon className="w-6 h-6 text-white" />
+                          </div>
+                          <h3 className="font-serif text-xl mb-1">{item.title}</h3>
+                        </div>
+
+                        {/* Hover heart decoration */}
+                        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                          <div className="w-10 h-10 opacity-0 group-hover:opacity-100 transition-opacity transform scale-50 group-hover:scale-100">
+                            <StickerIcon type="heart" className="w-full h-full shadow-lg" />
                           </div>
                         </div>
                         
-                        {/* Overlay on hover with heart */}
-                        <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors flex items-center justify-center">
-                          <div className="w-10 h-10 opacity-0 group-hover:opacity-100 transition-opacity">
-                            <StickerIcon type="heart" className="w-full h-full" />
-                          </div>
-                        </div>
-                        
-                        {/* Small stars decoration */}
+                        {/* Small stars decoration (constant) */}
                         <div className="absolute top-3 left-3 w-5 h-5 opacity-50">
                           <StickerIcon type="sparkle" className="w-full h-full" />
                         </div>
