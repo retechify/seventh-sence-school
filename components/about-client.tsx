@@ -119,7 +119,7 @@ export default function AboutClient() {
                 >
                   <div className="aspect-[16/9] rounded-2xl overflow-hidden">
                     <img 
-                      src="/galary/about.png" 
+                      src="/gallery/about.png" 
                       alt="About Seventh Sense School of Arts" 
                       className="w-full h-full object-cover"
                     />

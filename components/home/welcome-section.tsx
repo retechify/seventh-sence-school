@@ -61,7 +61,7 @@ export function WelcomeSection() {
             >
               <div className="rounded-[2rem] overflow-hidden aspect-[4/3] relative flex items-center justify-center">
                 <img 
-                  src="/galary/about.png" 
+                  src="/gallery/about.png" 
                   alt="About Seventh Sense" 
                   className="w-full h-full object-cover"
                 />

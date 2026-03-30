@@ -7,12 +7,12 @@ import { Camera, BookOpen, Play, Palette, Users, Sparkle } from "lucide-react"
 import { motion } from "framer-motion"
 
 const homeGalleryItems = [
-  { id: 1, category: "learning", color: "peach", icon: BookOpen, title: "Fun Learning", sticker: "star" as const, hue: 50, size: "large", image: "/galary/galary section/image 1.jpg" },
-  { id: 2, category: "play", color: "mint", icon: Play, title: "Outdoor Play", sticker: "sun" as const, hue: 160, size: "small", image: "/galary/galary section/image 2.jpg" },
-  { id: 3, category: "art", color: "lavender", icon: Palette, title: "Creative Arts", sticker: "rainbow" as const, hue: 300, size: "small", image: "/galary/galary section/image 3.jpg" },
-  { id: 4, category: "group", color: "soft-yellow", icon: Users, title: "Circle Time", sticker: "heart" as const, hue: 95, size: "tall", image: "/galary/galary section/image 4.jpg" },
-  { id: 5, category: "learning", color: "baby-blue", icon: BookOpen, title: "Story Telling", sticker: "cloud" as const, hue: 230, size: "small", image: "/galary/galary section/image 5.jpg" },
-  { id: 6, category: "play", color: "peach", icon: Play, title: "Music & Dance", sticker: "balloon" as const, hue: 50, size: "small", image: "/galary/galary section/image 6.jpg" },
+  { id: 1, category: "learning", color: "peach", icon: BookOpen, title: "Fun Learning", sticker: "star" as const, hue: 50, size: "large", image: "/gallery/gallery-section/image-1.jpg" },
+  { id: 2, category: "play", color: "mint", icon: Play, title: "Outdoor Play", sticker: "sun" as const, hue: 160, size: "small", image: "/gallery/gallery-section/image-2.jpg" },
+  { id: 3, category: "art", color: "lavender", icon: Palette, title: "Creative Arts", sticker: "rainbow" as const, hue: 300, size: "small", image: "/gallery/gallery-section/image-3.jpg" },
+  { id: 4, category: "group", color: "soft-yellow", icon: Users, title: "Circle Time", sticker: "heart" as const, hue: 95, size: "tall", image: "/gallery/gallery-section/image-4.jpg" },
+  { id: 5, category: "learning", color: "baby-blue", icon: BookOpen, title: "Story Telling", sticker: "cloud" as const, hue: 230, size: "small", image: "/gallery/gallery-section/image-5.jpg" },
+  { id: 6, category: "play", color: "peach", icon: Play, title: "Music & Dance", sticker: "balloon" as const, hue: 50, size: "small", image: "/gallery/gallery-section/image-6.jpg" },
 ]
 
 export function GallerySection() {
