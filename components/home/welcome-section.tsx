@@ -47,28 +47,28 @@ export function WelcomeSection() {
               <StickerIcon type="star" className="w-full h-full drop-shadow-md" />
             </div>
             
-            <div className="relative rounded-[3rem] overflow-hidden bg-white p-4 shadow-2xl">
+            <motion.div 
+              animate={{ 
+                y: [0, -10, 0],
+                rotate: [-1, 1, -1]
+              }}
+              transition={{ 
+                duration: 6,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+              className="relative rounded-[3rem] overflow-hidden bg-white p-4 shadow-2xl"
+            >
               <div className="rounded-[2rem] overflow-hidden aspect-[4/3] relative flex items-center justify-center">
                 <img 
-                  src="/galary/welcome_sub.png" 
-                  alt="Reading time at Seventh Sense" 
+                  src="/galary/about.png" 
+                  alt="About Seventh Sense" 
                   className="w-full h-full object-cover"
                 />
                 
-                {/* Floating figures layer */}
-                <div className="absolute inset-0 pointer-events-none p-8 flex items-center justify-center">
-                  <div className="flex items-center gap-6">
-                    <motion.div 
-                      animate={{ scale: [1, 1.1, 1] }}
-                      transition={{ duration: 4, repeat: Infinity }}
-                      className="w-24 h-24 md:w-32 md:h-32 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center shadow-lg border-2 border-white/50"
-                    >
-                      <StickerIcon type="heart" className="w-12 h-12 text-white" />
-                    </motion.div>
-                  </div>
-                </div>
+
               </div>
-            </div>
+            </motion.div>
             
             {/* Shadow decoration */}
             <div className="absolute -z-10 -bottom-4 -right-4 w-full h-full rounded-[3rem] bg-peach/30" style={{ transform: 'rotate(2deg)' }} />
