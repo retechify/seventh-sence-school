@@ -2,11 +2,14 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { FloatingDoodles } from "@/components/floating-doodles"
 import { HeroSection } from "@/components/home/hero-section"
-import { WelcomeSection } from "@/components/home/welcome-section"
-import { ServicesSection } from "@/components/home/services-section"
-import { ReviewsSection } from "@/components/home/reviews-section"
-import { EnquirySection } from "@/components/home/enquiry-section"
+import { TrustSection } from "@/components/home/trust-section"
+import { AboutSection } from "@/components/home/about-section"
+import { ProgramsSection } from "@/components/home/programs-section"
+import { PhilosophySection } from "@/components/home/philosophy-section"
+import { FounderSection } from "@/components/home/founder-section"
 import { GallerySection } from "@/components/home/gallery-section"
+import { TestimonialsSection } from "@/components/home/testimonials-section"
+import { CtaSection } from "@/components/home/cta-section"
 
 export default function HomePage() {
   return (
@@ -22,11 +25,14 @@ export default function HomePage() {
         <Header />
         <main>
           <HeroSection />
-          <WelcomeSection />
-          <ServicesSection />
+          <TrustSection />
+          <AboutSection />
+          <ProgramsSection />
+          <PhilosophySection />
+          <FounderSection />
           <GallerySection />
-          <ReviewsSection />
-          <EnquirySection />
+          <TestimonialsSection />
+          <CtaSection />
         </main>
         <Footer />
       </div>

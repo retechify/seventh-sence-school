@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button"
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "/services", label: "Services" },
+  { href: "/programs", label: "Programs" },
   { href: "/gallery", label: "Gallery" },
   { href: "/contact", label: "Contact" },
 ]
@@ -28,7 +28,7 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            {navLinks.slice(0, -1).map((link) => (
+            {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
@@ -38,9 +38,9 @@ export function Header() {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary rounded-full transition-all group-hover:w-full" />
               </Link>
             ))}
-            <Link href="/contact">
-              <Button className="btn-gradient-purple text-white rounded-full px-6 py-2 font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105">
-                Contact
+            <Link href="/enquire">
+              <Button className="btn-gradient-yellow text-foreground rounded-full px-6 py-2 font-bold shadow-lg hover:shadow-xl transition-all hover:scale-105 border-2 border-transparent">
+                Book a Visit
               </Button>
             </Link>
           </nav>
@@ -69,6 +69,13 @@ export function Header() {
                   {link.label}
                 </Link>
               ))}
+              <Link
+                href="/enquire"
+                className="font-bold text-amber-700 bg-soft-yellow/40 hover:bg-soft-yellow/60 transition-colors py-2 px-4 rounded-xl text-center mt-2 border border-soft-yellow"
+                onClick={() => setIsOpen(false)}
+              >
+                Book a Visit
+              </Link>
             </div>
           </nav>
         )}

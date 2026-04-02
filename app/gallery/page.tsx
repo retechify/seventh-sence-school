@@ -7,6 +7,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Camera, Play, Palette, BookOpen, Users } from "lucide-react"
 import { useState } from "react"
+import { motion, AnimatePresence } from "framer-motion"
 
 // Gallery items with placeholder colors representing different activities
 const galleryItems = [
@@ -45,96 +46,72 @@ export default function GalleryPage() {
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
       {/* Background grain texture */}
-      <div className="fixed inset-0 grain-texture z-0" />
+      <div className="fixed inset-0 grain-texture z-0 opacity-50" />
       
       {/* Floating doodles */}
       <FloatingDoodles count={25} />
       
       {/* Main content */}
-      <div className="relative z-10">
+      <div className="relative z-10 flex flex-col min-h-screen">
         <Header />
         
-        <main>
+        <main className="flex-1">
           {/* Hero Section */}
-          <section className="relative py-16 md:py-24 overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-peach/30 via-cream to-lavender/20" />
+          <section className="relative pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-peach/20 via-cream to-lavender/30" />
             
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-white/40 rounded-full blur-[100px] -z-10" />
+
             {/* Extra doodles */}
-            <div className="absolute top-16 left-10 w-12 h-12 opacity-50 animate-float">
-              <StickerIcon type="sun" className="w-full h-full" />
+            <div className="absolute top-24 left-10 w-16 h-16 opacity-50 animate-float">
+              <StickerIcon type="sun" className="w-full h-full drop-shadow-sm" />
             </div>
-            <div className="absolute top-24 right-16 w-14 h-14 opacity-40 animate-float-slow">
-              <StickerIcon type="rainbow" className="w-full h-full" />
+            <div className="absolute top-32 right-16 w-14 h-14 opacity-40 animate-float-slow">
+              <StickerIcon type="rainbow" className="w-full h-full drop-shadow-sm" />
             </div>
-            <div className="absolute top-1/2 left-8 w-8 h-8 opacity-40 animate-sparkle">
-              <StickerIcon type="sparkle" className="w-full h-full" />
-            </div>
-            <div className="absolute bottom-32 right-10 w-10 h-10 opacity-50 animate-float">
-              <StickerIcon type="heart" className="w-full h-full" />
-            </div>
-            <div className="absolute bottom-20 left-1/4 w-12 h-12 opacity-30 animate-float-slow">
-              <StickerIcon type="cloud" className="w-full h-full" />
+            <div className="absolute bottom-20 left-1/4 w-12 h-12 opacity-60 animate-sparkle">
+              <StickerIcon type="sparkle" className="w-full h-full drop-shadow-sm" />
             </div>
             
             <div className="container mx-auto px-4 relative">
               <div className="text-center max-w-3xl mx-auto">
-                <div className="inline-flex items-center gap-2 bg-mint/40 rounded-full px-4 py-2 mb-6">
-                  <Camera className="w-4 h-4 text-primary" />
-                  <span className="text-sm font-medium text-primary">Memories</span>
+                <div className="inline-flex items-center gap-2 bg-white/60 rounded-full px-5 py-2.5 mb-8 shadow-sm border border-lavender/30">
+                  <Camera className="w-5 h-5 text-primary" />
+                  <span className="text-sm font-semibold tracking-wide text-primary uppercase">Moments</span>
                 </div>
                 
-                <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-primary mb-6 text-balance">
-                  Gallery
+                <h1 className="font-serif text-5xl lg:text-7xl text-primary mb-6 text-balance leading-tight">
+                  Our Magical Gallery
                 </h1>
                 
-                <p className="text-lg text-muted-foreground leading-relaxed text-pretty">
-                  Every Smile Tells a Story. Explore precious moments of learning, play, and discovery 
-                  at Seventh sense school of arts.
+                <p className="text-xl text-muted-foreground leading-relaxed text-pretty">
+                  Every smile tells a story. Explore precious moments of learning, play, and discovery 
+                  at Seventh Sense.
                 </p>
               </div>
             </div>
             
             {/* Wavy bottom */}
-            <div className="absolute bottom-0 left-0 right-0">
-              <svg viewBox="0 0 1440 80" className="w-full h-auto" preserveAspectRatio="none">
-                <path
-                  d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z"
-                  fill="oklch(0.97 0.015 85)"
-                />
-              </svg>
+            <div className="absolute bottom-0 left-0 right-0 translate-y-1/2">
+               <svg viewBox="0 0 1440 120" className="w-full h-auto" preserveAspectRatio="none">
+                  <path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,75 1440,60 L1440,120 L0,120 Z" fill="oklch(1 0 0)" />
+               </svg>
             </div>
           </section>
           
           {/* Gallery Section */}
-          <section className="py-20 bg-cream relative overflow-hidden">
-            {/* Background doodles */}
-            <div className="absolute top-20 left-8 w-10 h-10 opacity-30 animate-float">
-              <StickerIcon type="star" className="w-full h-full" />
-            </div>
-            <div className="absolute top-40 right-16 w-8 h-8 opacity-40 animate-sparkle">
-              <StickerIcon type="sparkle" className="w-full h-full" />
-            </div>
-            <div className="absolute bottom-32 left-12 w-12 h-12 opacity-30 animate-float-slow">
-              <StickerIcon type="cloud" className="w-full h-full" />
-            </div>
-            <div className="absolute bottom-20 right-10 w-6 h-6 opacity-50 animate-float">
-              <StickerIcon type="heart" className="w-full h-full" />
-            </div>
-            <div className="absolute top-1/3 left-6 w-8 h-8 opacity-40 animate-sparkle">
-              <StickerIcon type="moon" className="w-full h-full" />
-            </div>
-            
+          <section className="py-24 bg-white relative overflow-hidden min-h-[60vh]">
             <div className="container mx-auto px-4">
               {/* Category Filter */}
-              <div className="flex flex-wrap justify-center gap-3 mb-12">
+              <div className="flex flex-wrap justify-center gap-4 mb-16 relative z-20">
                 {categories.map((category) => (
                   <button
                     key={category.id}
                     onClick={() => setActiveCategory(category.id)}
-                    className={`px-6 py-3 rounded-full font-medium transition-all ${
+                    className={`px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 ${
                       activeCategory === category.id
-                        ? "btn-gradient-purple text-white shadow-lg"
-                        : "bg-white text-foreground/70 hover:bg-lavender/30 shadow-md"
+                        ? "bg-primary text-white shadow-xl scale-105"
+                        : "bg-cream text-foreground/80 hover:bg-lavender/30 hover:scale-105"
                     }`}
                   >
                     {category.label}
@@ -143,105 +120,102 @@ export default function GalleryPage() {
               </div>
               
               {/* Masonry Grid */}
-              <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-6">
-                {filteredItems.map((item, index) => {
-                  const color = colorMap[item.color]
-                  const isLarge = index % 5 === 0
-                  
-                  return (
-                    <div
-                      key={item.id}
-                      className="break-inside-avoid group relative"
-                    >
-                      {/* Sticker overlay */}
-                      <div className="absolute -top-3 -right-2 w-8 h-8 z-10 animate-float" style={{ animationDelay: `${index * 0.2}s` }}>
-                        <StickerIcon type={item.sticker} className="w-full h-full drop-shadow-md" />
-                      </div>
-                      
-                      <div 
-                        className={`relative rounded-[1.5rem] overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] ${
-                          isLarge ? 'aspect-[3/4]' : 'aspect-square'
-                        }`}
-                      >
-                        {/* Image */}
-                        <div className="absolute inset-0">
-                          <img src={item.image} alt={item.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                          <div className="absolute inset-0 bg-black/10 transition-colors duration-300 group-hover:bg-black/30" />
-                        </div>
-                        
-                        {/* Content overlay */}
-                        <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                          <div className="w-12 h-12 rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center mb-3 shadow-sm">
-                            <item.icon className="w-6 h-6 text-white" />
-                          </div>
-                          <h3 className="font-serif text-xl mb-1">{item.title}</h3>
-                        </div>
+              <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-8 space-y-8 pb-12">
+                <AnimatePresence mode="popLayout">
+                   {filteredItems.map((item, index) => {
+                     const isLarge = index % 5 === 0
+                     
+                     return (
+                       <motion.div
+                         layout
+                         initial={{ opacity: 0, scale: 0.9, y: 20 }}
+                         animate={{ opacity: 1, scale: 1, y: 0 }}
+                         exit={{ opacity: 0, scale: 0.9, y: 20 }}
+                         transition={{ duration: 0.3, delay: index * 0.05 }}
+                         key={item.id}
+                         className="break-inside-avoid relative group"
+                       >
+                         {/* Sticker overlay */}
+                         <div className="absolute -top-4 -right-4 w-12 h-12 z-20 animate-float" style={{ animationDelay: `${index * 0.2}s` }}>
+                           <StickerIcon type={item.sticker} className="w-full h-full drop-shadow-xl" />
+                         </div>
+                         
+                         <div 
+                           className={`relative rounded-[2rem] overflow-hidden border-[6px] border-white shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 cursor-pointer ${
+                             isLarge ? 'aspect-[3/4]' : 'aspect-square'
+                           }`}
+                           style={{
+                              background: `linear-gradient(135deg, oklch(0.95 0.08 ${colorMap[item.color].hue}), oklch(0.98 0.03 ${colorMap[item.color].hue}))`
+                           }}
+                         >
+                           {/* Image */}
+                           <div className="absolute inset-0">
+                             <img src={item.image} alt={item.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                             {/* Gradient Overlay for Text */}
+                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                           </div>
+                           
+                           {/* Content bottom overlay */}
+                           <div className="absolute bottom-0 left-0 right-0 p-6 text-left transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300 z-10">
+                              <h3 className="font-serif text-2xl text-white mb-2">{item.title}</h3>
+                              <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md rounded-full px-3 py-1">
+                                 <item.icon className="w-4 h-4 text-white" />
+                                 <span className="text-white text-sm font-medium capitalize">{item.category}</span>
+                              </div>
+                           </div>
 
-                        {/* Hover heart decoration */}
-                        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                          <div className="w-10 h-10 opacity-0 group-hover:opacity-100 transition-opacity transform scale-50 group-hover:scale-100">
-                            <StickerIcon type="heart" className="w-full h-full shadow-lg" />
-                          </div>
-                        </div>
-                        
-                        {/* Small stars decoration (constant) */}
-                        <div className="absolute top-3 left-3 w-5 h-5 opacity-50">
-                          <StickerIcon type="sparkle" className="w-full h-full" />
-                        </div>
-                      </div>
-                    </div>
-                  )
-                })}
+                         </div>
+                       </motion.div>
+                     )
+                   })}
+                </AnimatePresence>
+                
+                {filteredItems.length === 0 && (
+                   <div className="col-span-full py-20 text-center">
+                      <p className="text-2xl text-muted-foreground font-serif">No memories found for this category yet.</p>
+                   </div>
+                )}
               </div>
+            </div>
+            
+            {/* Wavy bottom */}
+            <div className="absolute bottom-0 left-0 right-0 translate-y-1/2">
+               <svg viewBox="0 0 1440 120" className="w-full h-auto" preserveAspectRatio="none">
+                  <path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,75 1440,60 L1440,120 L0,120 Z" fill="oklch(0.97 0.015 85)" />
+               </svg>
             </div>
           </section>
           
-          {/* Highlight Banner */}
-          <section className="py-20 bg-gradient-to-br from-soft-yellow/40 via-cream to-mint/30 relative overflow-hidden">
-            {/* Doodles */}
-            <div className="absolute top-10 left-10 w-14 h-14 opacity-30 animate-float-slow">
-              <StickerIcon type="cloud" className="w-full h-full" />
-            </div>
-            <div className="absolute top-16 right-16 w-10 h-10 opacity-50 animate-sparkle">
-              <StickerIcon type="sparkle" className="w-full h-full" />
-            </div>
-            <div className="absolute bottom-10 right-10 w-12 h-12 opacity-40 animate-float">
-              <StickerIcon type="rainbow" className="w-full h-full" />
-            </div>
-            <div className="absolute bottom-16 left-16 w-8 h-8 opacity-50 animate-sparkle">
-              <StickerIcon type="star" className="w-full h-full" />
-            </div>
-            <div className="absolute top-1/2 left-8 w-6 h-6 opacity-40 animate-float-slow">
-              <StickerIcon type="heart" className="w-full h-full" />
-            </div>
-            
-            <div className="container mx-auto px-4">
-              <div className="max-w-3xl mx-auto text-center space-y-6">
-                <div className="inline-flex items-center gap-2 bg-white/60 rounded-full px-4 py-2">
-                  <StickerIcon type="sparkle" className="w-5 h-5" />
-                  <span className="text-sm font-medium text-primary">Capture the Magic</span>
-                </div>
+          {/* Universal CTA Section */}
+          <section className="py-32 bg-background relative overflow-hidden">
+            <div className="container mx-auto px-4 relative z-10">
+              <div className="bg-gradient-to-br from-lavender/30 via-cream to-mint/20 rounded-[3rem] p-12 md:p-20 shadow-2xl max-w-5xl mx-auto text-center relative overflow-hidden">
+                <div className="absolute -top-24 -right-24 w-64 h-64 bg-soft-yellow/30 rounded-full blur-3xl mix-blend-multiply" />
                 
-                <h2 className="font-serif text-3xl md:text-4xl text-primary text-balance">
-                  A Picture-Perfect Journey in Learning & Fun
-                </h2>
-                
-                <HandDrawnDivider />
-                
-                <p className="text-muted-foreground leading-relaxed text-pretty">
-                  Every photograph captures a moment of discovery, joy, and growth. 
-                  These are the memories that last a lifetime.
-                </p>
-                
-                <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                  <Link href="/enquire">
-                    <Button className="btn-gradient-yellow text-foreground rounded-full px-8 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105">
-                      Schedule a Visit
-                    </Button>
-                  </Link>
-                  <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-2 border-primary/30 hover:bg-lavender/30 transition-all">
-                    View All Photos
-                  </Button>
+                <div className="relative z-10 max-w-2xl mx-auto space-y-8">
+                  <div className="inline-flex items-center gap-2 bg-white/60 rounded-full px-4 py-2 border border-lavender/30">
+                    <StickerIcon type="sparkle" className="w-4 h-4" />
+                    <span className="text-sm font-medium text-primary uppercase tracking-wider">Join Us</span>
+                  </div>
+                  
+                  <h2 className="font-serif text-4xl md:text-5xl text-primary text-balance">
+                    Capture the Magic in Person
+                  </h2>
+                  <p className="text-xl text-muted-foreground leading-relaxed text-pretty">
+                    Every photograph captures a moment of discovery. See it for yourself and let your child be part of the magic.
+                  </p>
+                  <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-6">
+                    <Link href="/enquire">
+                      <Button className="btn-gradient-yellow text-foreground rounded-full px-10 py-8 text-xl font-bold shadow-xl hover:scale-105 transition-all">
+                        Book a Visit
+                      </Button>
+                    </Link>
+                    <Link href="/contact">
+                      <Button variant="outline" className="rounded-full px-10 py-8 text-xl font-bold shadow-sm hover:bg-white/50 border-2 border-primary/20 transition-all">
+                        Talk to Us
+                      </Button>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>

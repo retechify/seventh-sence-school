@@ -33,17 +33,17 @@ export function GallerySection() {
               <Camera className="w-4 h-4 text-primary" />
               <span className="text-sm font-medium text-primary">Our Gallery</span>
             </div>
-            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-primary mb-4">
+            <h2 className="font-semibold text-3xl md:text-4xl lg:text-5xl text-primary mb-4 leading-tight text-balance">
               Capture the Magic of Every Moment
             </h2>
-            <p className="text-muted-foreground text-lg">
+            <p className="text-muted-foreground text-lg leading-relaxed text-pretty">
               Take a peek into the wonderful world of learning, play, and discovery 
-              at Seventh sense school of arts.
+              at Seventh Sense School of Arts.
             </p>
           </div>
           
           <Link href="/gallery">
-            <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-2 border-primary/30 hover:bg-lavender/30 transition-all">
+            <Button className="btn-gradient-yellow text-foreground rounded-full px-8 py-6 text-lg font-medium shadow-xl hover:shadow-2xl transition-all hover:scale-[1.02]">
               View All Photos
             </Button>
           </Link>
@@ -72,7 +72,7 @@ export function GallerySection() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 whileHover={{ y: -5, scale: 1.02 }}
-                className={`group relative rounded-[2rem] overflow-hidden shadow-lg transition-all duration-300 ${gridClasses}`}
+                className={`group relative rounded-[2.5rem] overflow-hidden shadow-lg transition-all duration-300 ${gridClasses}`}
                 style={{
                   background: `linear-gradient(135deg, oklch(0.94 0.08 ${item.hue}), oklch(0.97 0.04 ${item.hue}))`
                 }}
@@ -93,7 +93,7 @@ export function GallerySection() {
                   <div className="w-12 h-12 rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center mb-3 shadow-sm">
                     <item.icon className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="font-serif text-xl mb-1">{item.title}</h3>
+                  <h3 className="font-semibold text-xl mb-1">{item.title}</h3>
                   <span className="text-xs font-medium uppercase tracking-wider opacity-80">{item.category}</span>
                 </div>
 
