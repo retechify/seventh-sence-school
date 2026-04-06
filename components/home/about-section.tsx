@@ -74,7 +74,7 @@ export function AboutSection() {
             transition={{ delay: 0.1 }}
             className="font-semibold text-3xl md:text-4xl text-primary mb-6"
           >
-            A Foundation for <span className="text-secondary" style={{ fontFamily: 'var(--font-pacifico), cursive', fontWeight: 'normal' }}>Lifelong Joy</span>
+            A Foundation for <span className="text-secondary font-serif font-normal">Lifelong Joy</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

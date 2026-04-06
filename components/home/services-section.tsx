@@ -74,7 +74,7 @@ export function ServicesSection() {
             <span className="text-sm font-medium text-primary uppercase tracking-widest">Discover Our Magic</span>
           </div>
           
-          <h2 className="font-serif text-4xl md:text-5xl text-primary mb-6 leading-tight">
+          <h2 className="font-semibold text-3xl md:text-4xl text-primary mb-6 leading-tight">
             Nurturing Every Dimension
           </h2>
           
@@ -115,8 +115,7 @@ export function ServicesSection() {
                 {/* Content */}
                 <div className="relative z-10 flex flex-col h-full w-full">
                   <h3 
-                    className="text-3xl md:text-3xl text-primary mb-6 group-hover:scale-105 transition-transform duration-500"
-                    style={{ fontFamily: 'var(--font-pacifico), cursive' }}
+                    className="text-2xl font-semibold text-primary mb-6 group-hover:scale-105 transition-transform duration-500"
                   >
                     {service.title}
                   </h3>
@@ -126,7 +125,7 @@ export function ServicesSection() {
                   </p>
                   
                   <Link href="/services" className="w-full">
-                    <Button variant="outline" className="w-full rounded-2xl border border-primary/20 bg-white hover:bg-primary/5 hover:border-primary/40 text-muted-foreground hover:text-primary transition-all duration-300 py-6 text-lg font-semibold shadow-sm">
+                    <Button variant="outline" className="w-full rounded-2xl border border-primary/20 bg-white hover:bg-primary/5 hover:border-primary/40 text-muted-foreground hover:text-primary transition-all duration-300 py-6 text-lg font-medium shadow-sm">
                       Learn More
                     </Button>
                   </Link>
@@ -145,7 +144,7 @@ export function ServicesSection() {
           className="text-center mt-20"
         >
           <Link href="/services">
-            <Button className="btn-gradient-purple text-white rounded-full px-12 py-8 text-xl font-bold shadow-xl hover:shadow-2xl transition-all hover:scale-105 active:scale-95">
+            <Button className="btn-gradient-purple text-white rounded-full px-12 py-8 text-xl font-medium shadow-xl hover:shadow-2xl transition-all hover:scale-105 active:scale-95">
               Explore All Programs
             </Button>
           </Link>

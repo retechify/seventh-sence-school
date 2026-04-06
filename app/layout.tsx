@@ -5,6 +5,7 @@ import './globals.css'
 
 const nunito = Nunito({ 
   subsets: ["latin"],
+  weight: ['400', '500', '600', '700'],
   variable: '--font-nunito',
   display: 'swap',
 })
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
     description: 'Where Every Child Finds Their Unique Spark',
   },
   icons: {
-    icon: '/favicon.ico',
+    icon: '/icon.svg',
   },
 }
 
@@ -52,7 +53,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${nunito.variable} ${pacifico.variable} font-sans antialiased`}>
+      <body className={`${nunito.className} ${nunito.variable} ${pacifico.variable} antialiased`}>
         <a 
           href="#main-content" 
           className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-white focus:text-primary focus:rounded-full focus:shadow-xl focus:outline-none focus:ring-2 focus:ring-primary transition-all"

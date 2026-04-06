@@ -25,7 +25,7 @@ export function FounderSection() {
                 {/* Fallback pattern if image is missing */}
                 <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, black 1px, transparent 0)', backgroundSize: '24px 24px' }}></div>
                 <img 
-                  src="/galary/founder.png" 
+                  src="/gallery/about.png" 
                   alt="Founder" 
                   className="object-cover w-full h-full relative z-10 fallback-bg"
                   onError={(e) => {
@@ -43,7 +43,7 @@ export function FounderSection() {
                 className="absolute -bottom-6 -right-6 md:-right-10 bg-white rounded-full p-2 shadow-2xl"
               >
                 <div className="bg-gradient-to-br from-soft-yellow to-peach rounded-full w-32 h-32 flex flex-col items-center justify-center p-2 text-center border-4 border-dotted border-white/50 relative overflow-hidden">
-                  <div className="absolute inset-0 opacity-20 bg-[url('/noise.png')] mix-blend-overlay"></div>
+                  <div className="absolute inset-0 opacity-20 grain-texture mix-blend-overlay"></div>
                   <span className="text-3xl font-semibold text-amber-800">18+</span>
                   <span className="text-xs font-medium uppercase text-amber-700 tracking-wider">Years of<br/>Experience</span>
                 </div>
@@ -87,7 +87,7 @@ export function FounderSection() {
                   <StickerIcon type="heart" className="w-6 h-6 text-emerald-600" />
                 </div>
                 <div>
-                  <h4 className="font-normal text-primary text-2xl" style={{ fontFamily: 'var(--font-pacifico), cursive' }}>Dr. P. Vijayalakshmi</h4>
+                  <h4 className="font-serif font-normal text-primary text-2xl">Dr. P. Vijayalakshmi</h4>
                   <p className="text-sm text-muted-foreground uppercase tracking-wider font-medium">Founder & Academic Director</p>
                 </div>
               </div>

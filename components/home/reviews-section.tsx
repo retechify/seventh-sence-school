@@ -53,7 +53,7 @@ export function ReviewsSection() {
             <span className="text-sm font-medium text-primary">Happy Families</span>
           </div>
           
-          <h2 className="font-serif text-3xl md:text-4xl text-primary mb-4 text-balance">
+          <h2 className="font-semibold text-3xl md:text-4xl text-primary mb-4 text-balance text-center mx-auto">
             What Parents Say
           </h2>
           
@@ -80,7 +80,7 @@ export function ReviewsSection() {
                 {/* Avatar */}
                 <div className="flex items-center gap-4 mb-6">
                   <div 
-                    className={`w-14 h-14 rounded-full flex items-center justify-center text-xl font-bold text-white shadow-md`}
+                    className={`w-14 h-14 rounded-full flex items-center justify-center text-xl font-medium text-white shadow-md`}
                     style={{
                       background: `linear-gradient(135deg, oklch(0.8 0.15 ${[50, 160, 300][index]}), oklch(0.7 0.18 ${[50, 160, 300][index]}))`
                     }}

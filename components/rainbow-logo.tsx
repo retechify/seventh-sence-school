@@ -48,7 +48,7 @@ export function RainbowLogo({ className = "" }: { className?: string }) {
         </svg>
       </div>
       {/* Logo Text */}
-      <span className="font-serif text-2xl text-primary">
+      <span className="font-sans text-2xl text-primary">
         Seventh sense school of arts
       </span>
     </div>

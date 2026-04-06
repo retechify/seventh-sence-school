@@ -11,13 +11,18 @@ import { motion, AnimatePresence } from "framer-motion"
 
 // Gallery items with placeholder colors representing different activities
 const galleryItems = [
-  { id: 1, category: "learning", color: "peach", icon: BookOpen, title: "Reading Time", sticker: "star" as const, image: "/gallery/gallery-section/image-1.jpg" },
-  { id: 2, category: "play", color: "mint", icon: Play, title: "Outdoor Play", sticker: "sun" as const, image: "/gallery/gallery-section/image-2.jpg" },
-  { id: 3, category: "art", color: "lavender", icon: Palette, title: "Art Class", sticker: "rainbow" as const, image: "/gallery/gallery-section/image-3.jpg" },
-  { id: 4, category: "group", color: "soft-yellow", icon: Users, title: "Group Activity", sticker: "heart" as const, image: "/gallery/gallery-section/image-4.jpg" },
-  { id: 5, category: "learning", color: "baby-blue", icon: BookOpen, title: "Story Time", sticker: "cloud" as const, image: "/gallery/gallery-section/image-5.jpg" },
-  { id: 6, category: "art", color: "peach", icon: Palette, title: "Crafts", sticker: "sparkle" as const, image: "/gallery/gallery-section/image-6.jpg" },
-  { id: 7, category: "play", color: "mint", icon: Play, title: "Games", sticker: "balloon" as const, image: "/gallery/gallery-section/image-7.jpg" },
+  { id: 1, category: "learning", color: "peach", icon: BookOpen, title: "Reading Time", sticker: "star" as const, image: "/gallery/gallery-section/im1.png" },
+  { id: 2, category: "play", color: "mint", icon: Play, title: "Outdoor Play", sticker: "sun" as const, image: "/gallery/gallery-section/im2.jpeg" },
+  { id: 3, category: "art", color: "lavender", icon: Palette, title: "Art Class", sticker: "rainbow" as const, image: "/gallery/gallery-section/im3.png" },
+  { id: 4, category: "group", color: "soft-yellow", icon: Users, title: "Group Activity", sticker: "heart" as const, image: "/gallery/gallery-section/im4.png" },
+  { id: 5, category: "learning", color: "baby-blue", icon: BookOpen, title: "Story Time", sticker: "cloud" as const, image: "/gallery/gallery-section/im5.png" },
+  { id: 6, category: "art", color: "peach", icon: Palette, title: "Crafts", sticker: "sparkle" as const, image: "/gallery/gallery-section/im6.jpg" },
+  { id: 7, category: "play", color: "mint", icon: Play, title: "Games", sticker: "balloon" as const, image: "/gallery/gallery-section/im7.jpg" },
+  { id: 8, category: "group", color: "lavender", icon: Users, title: "Group Play", sticker: "star" as const, image: "/gallery/gallery-section/im8.jpg" },
+  { id: 9, category: "learning", color: "soft-yellow", icon: BookOpen, title: "Circle Time", sticker: "sun" as const, image: "/gallery/gallery-section/im9.jpg" },
+  { id: 10, category: "play", color: "baby-blue", icon: Play, title: "Outdoor Fun", sticker: "rainbow" as const, image: "/gallery/gallery-section/im10.png" },
+  { id: 11, category: "art", color: "mint", icon: Palette, title: "Painting", sticker: "heart" as const, image: "/gallery/gallery-section/im11.png" },
+  { id: 12, category: "group", color: "peach", icon: Users, title: "Team Building", sticker: "cloud" as const, image: "/gallery/gallery-section/im12.png" },
 ]
 
 const categories = [

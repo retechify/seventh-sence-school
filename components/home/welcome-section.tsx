@@ -87,7 +87,7 @@ export function WelcomeSection() {
               <span className="text-sm font-medium text-primary">About Our World</span>
             </div>
             
-            <h2 className="font-serif text-4xl md:text-5xl text-primary leading-tight">
+            <h2 className="font-semibold text-3xl md:text-4xl text-primary leading-tight">
               A Warm Welcome to Seventh Sense
             </h2>
             
@@ -120,14 +120,14 @@ export function WelcomeSection() {
                     background: `linear-gradient(135deg, oklch(0.96 0.05 ${stat.hue}), oklch(0.98 0.02 ${stat.hue}))`
                   }}
                 >
-                  <div className="font-serif text-3xl text-primary mb-1">{stat.number}</div>
+                  <div className="font-semibold text-3xl text-primary mb-1">{stat.number}</div>
                   <div className="text-xs font-medium text-muted-foreground uppercase tracking-wider">{stat.label}</div>
                 </motion.div>
               ))}
             </div>
             
             <Link href="/about" className="inline-block mt-4">
-              <Button className="btn-gradient-peach text-foreground rounded-full px-10 py-7 text-lg font-bold shadow-xl hover:shadow-2xl transition-all hover:scale-105">
+                  <Button className="btn-gradient-peach text-foreground rounded-full px-10 py-7 text-lg font-medium shadow-xl hover:shadow-2xl transition-all hover:scale-105">
                 Learn Our Story
               </Button>
             </Link>

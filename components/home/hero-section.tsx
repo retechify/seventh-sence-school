@@ -110,7 +110,7 @@ export function HeroSection() {
                       initial={{ scale: 0, x: -10 }}
                       animate={{ scale: 1, x: 0 }}
                       transition={{ delay: 0.6 + (i * 0.1), type: "spring" }}
-                      className="w-10 h-10 rounded-full border-2 border-white shadow-md flex items-center justify-center text-white font-bold text-sm"
+                      className="w-10 h-10 rounded-full border-2 border-white shadow-md flex items-center justify-center text-white font-semibold text-sm"
                       style={{
                         background: `linear-gradient(135deg, oklch(0.8 0.15 ${[50, 160, 300, 95][i-1]}), oklch(0.7 0.18 ${[50, 160, 300, 95][i-1]}))`
                       }}
@@ -155,7 +155,7 @@ export function HeroSection() {
             <div className="relative blob-shape overflow-hidden bg-white/50 p-4">
               <div className="blob-shape overflow-hidden aspect-square flex items-center justify-center relative">
                 <img 
-                  src="/galary/hero_main.png" 
+                  src="/gallery/hero_main.png" 
                   alt="Children learning at Seventh Sense" 
                   className="w-full h-full object-cover"
                 />

@@ -20,7 +20,7 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-serif text-xl text-primary mb-4">Quick Links</h4>
+            <h4 className="font-semibold text-lg text-primary mb-4">Quick Links</h4>
             <ul className="space-y-2">
               {["Home", "About", "Programs", "Gallery", "Contact"].map((link) => (
                 <li key={link}>
@@ -37,7 +37,7 @@ export function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="font-serif text-xl text-primary mb-4">Our Programs</h4>
+            <h4 className="font-semibold text-lg text-primary mb-4">Our Programs</h4>
             <ul className="space-y-2">
               {["Early Learning", "Activity-Based Learning", "Creative Arts", "Communication Development"].map(
                 (service) => (
@@ -51,7 +51,7 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-serif text-xl text-primary mb-4">Get in Touch</h4>
+            <h4 className="font-semibold text-lg text-primary mb-4">Get in Touch</h4>
             <ul className="space-y-3">
               <li className="flex items-center gap-3 text-muted-foreground">
                 <div className="w-8 h-8 rounded-full bg-lavender/50 flex items-center justify-center">
