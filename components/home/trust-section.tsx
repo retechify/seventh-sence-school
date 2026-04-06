@@ -8,7 +8,7 @@ const trustItems = [
   {
     id: 1,
     title: "18+ Years",
-    subtitle: "Experience in Education",
+    subtitle: "Experience in Early Education",
     icon: Sparkles,
     color: "bg-peach",
     textColor: "text-peach-700",
@@ -18,7 +18,7 @@ const trustItems = [
   {
     id: 2,
     title: "Safe & Caring",
-    subtitle: "Secure Environment",
+    subtitle: "Environment",
     icon: Shield,
     color: "bg-mint",
     textColor: "text-mint-700",
@@ -27,8 +27,8 @@ const trustItems = [
   },
   {
     id: 3,
-    title: "Trusted by All",
-    subtitle: "Countless Happy Parents",
+    title: "100+ Happy Families",
+    subtitle: "Trusted by Parents",
     icon: Users,
     color: "bg-lavender",
     textColor: "text-lavender-700",

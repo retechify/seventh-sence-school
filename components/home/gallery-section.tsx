@@ -34,11 +34,10 @@ export function GallerySection() {
               <span className="text-sm font-medium text-primary">Our Gallery</span>
             </div>
             <h2 className="font-semibold text-3xl md:text-4xl lg:text-5xl text-primary mb-4 leading-tight text-balance">
-              Capture the Magic of Every Moment
+              Real Moments. Real Growth.
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed text-pretty">
-              Take a peek into the wonderful world of learning, play, and discovery 
-              at Seventh Sense School of Arts.
+              Every smile tells a story. Explore the joy of learning at Seventh Sense.
             </p>
           </div>
           

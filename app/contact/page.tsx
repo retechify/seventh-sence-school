@@ -28,11 +28,11 @@ export default function ContactPage() {
                     <StickerIcon type="cloud" className="w-4 h-4" />
                     <span className="text-sm font-medium text-primary">Get in Touch</span>
                  </div>
-                 <h1 className="font-serif text-5xl md:text-6xl text-primary mb-6 text-balance leading-tight">
-                    We&apos;d Love to Hear From You
+                 <h1 className="font-semibold text-5xl md:text-6xl text-primary mb-6 text-balance leading-tight">
+                    Let’s Connect!
                  </h1>
                  <p className="text-xl text-muted-foreground leading-relaxed text-pretty">
-                    Whether you have questions, feedback, or just want to say hello, our door is always open.
+                    We’d love to hear from you. Drop by for a cup of tea and a friendly chat about your child’s future.
                  </p>
               </div>
             </div>
@@ -53,7 +53,7 @@ export default function ContactPage() {
                          <Phone className="w-8 h-8 text-primary" />
                       </div>
                       <div className="mt-auto">
-                        <h3 className="font-serif text-2xl text-primary mb-2">Give Us a Call</h3>
+                        <h3 className="font-semibold text-2xl text-primary mb-2">Give Us a Call</h3>
                         <p className="text-muted-foreground mb-6 text-sm">We&apos;re here Monday through Friday, 8am to 6pm.</p>
                         <a href="tel:+918610170313" className="text-xl font-medium hover:text-peach transition-colors block border-t border-peach/20 pt-4">+91 8610170313</a>
                       </div>
@@ -65,7 +65,7 @@ export default function ContactPage() {
                       <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center mb-6 shadow-sm">
                          <Mail className="w-7 h-7 text-primary" />
                       </div>
-                      <h3 className="font-serif text-xl text-primary mb-2">Email Us</h3>
+                      <h3 className="font-semibold text-xl text-primary mb-2">Email Us</h3>
                       <a href="mailto:info@seventhsenseschool.com" className="text-primary hover:text-mint transition-colors text-sm font-medium">info@seventhsenseschool.com</a>
                    </div>
 
@@ -75,7 +75,7 @@ export default function ContactPage() {
                       <div className="w-14 h-14 rounded-2xl bg-[#25D366]/20 flex items-center justify-center mb-6 shadow-sm">
                          <MessageCircle className="w-7 h-7 text-[#25D366]" />
                       </div>
-                      <h3 className="font-serif text-xl pr-4 text-primary mb-2">Chat on WhatsApp</h3>
+                      <h3 className="font-semibold text-xl pr-4 text-primary mb-2">Chat on WhatsApp</h3>
                       <a href="https://wa.me/918610170313" target="_blank" rel="noopener noreferrer" className="text-[#25D366] hover:text-[#25D366]/70 transition-colors flex items-center gap-2 mt-4 text-sm font-bold uppercase tracking-wider">
                          Start Chat <ArrowRight className="w-4 h-4" />
                       </a>
@@ -89,7 +89,7 @@ export default function ContactPage() {
                          <MapPin className="w-8 h-8 text-primary" />
                       </div>
                       <div className="flex-1 text-center md:text-left">
-                         <h3 className="font-serif text-2xl text-primary mb-2">Visit the School</h3>
+                         <h3 className="font-semibold text-2xl text-primary mb-2">Visit the School</h3>
                          <p className="text-muted-foreground text-sm">129, R – Block, Kovaipudur, Coimbatore, Tamil Nadu-641042</p>
                       </div>
                    </div>
@@ -105,7 +105,7 @@ export default function ContactPage() {
                       {/* Inner blob */}
                       <div className="absolute -bottom-32 -left-32 w-64 h-64 bg-mint/20 rounded-full blur-3xl mix-blend-multiply opacity-50" />
                       
-                      <h2 className="font-serif text-3xl text-primary mb-8 leading-tight">
+                      <h2 className="font-semibold text-3xl text-primary mb-8 leading-tight">
                          Send us a Message
                       </h2>
                       

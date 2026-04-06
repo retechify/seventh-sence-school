@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer"
 import { FloatingDoodles } from "@/components/floating-doodles"
 import { HeroSection } from "@/components/home/hero-section"
 import { TrustSection } from "@/components/home/trust-section"
+import { ProblemSolutionSection } from "@/components/home/problem-solution-section"
 import { AboutSection } from "@/components/home/about-section"
 import { ProgramsSection } from "@/components/home/programs-section"
 import { PhilosophySection } from "@/components/home/philosophy-section"
@@ -25,6 +26,7 @@ export default function HomePage() {
         <Header />
         <main>
           <HeroSection />
+          <ProblemSolutionSection />
           <TrustSection />
           <AboutSection />
           <ProgramsSection />

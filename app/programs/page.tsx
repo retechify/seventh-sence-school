@@ -14,8 +14,8 @@ const programs = [
   {
     icon: BookOpen,
     stickerType: "rainbow" as const,
-    title: "Phonics & Early Literacy",
-    description: "Accelerate language acquisition using proven phonics-based learning, equipping your child with confident reading skills. Our comprehensive curriculum is designed to build strong foundations in literacy.",
+    title: "Phonics-Based Language Learning",
+    description: "Helping children build strong reading and communication skills from an early age.",
     features: ["Phonics & Reading Readiness", "Language Acquisition", "Storytelling & Listening", "Literacy Foundations"],
     color: "lavender",
     hue: 300,
@@ -23,29 +23,29 @@ const programs = [
   {
     icon: Puzzle,
     stickerType: "sun" as const,
-    title: "Montessori-Inspired Life Skills",
-    description: "Utilizing authentic Montessori tools to develop profound independence, problem-solving abilities, and everyday resilience in a fun, supportive environment.",
+    title: "Montessori Sensory Development",
+    description: "Encouraging hands-on exploration that strengthens focus, independence, and problem-solving.",
     features: ["Practical Life Skills", "Sensory Play Stations", "Independent Problem-Solving", "Everyday Resilience"],
     color: "peach",
     hue: 50,
   },
   {
-    icon: BookOpen,
-    stickerType: "star" as const,
-    title: "Foundational Academics",
-    description: "A gentle yet rigorous introduction to core numeracy and literacy via structured, play-driven discovery. We believe every child learns best by doing.",
-    features: ["Numbers & Counting", "Science Exploration", "Structured Discovery", "Environmental Awareness"],
-    color: "baby-blue",
-    hue: 200,
-  },
-  {
     icon: MessageCircle,
     stickerType: "cloud" as const,
     title: "Activity-Based Exploration",
-    description: "Immersive sensory play and hands-on physical movement that build critical motor skills and collaborative bonds. Strong communication skills are built through group activities.",
+    description: "Learning through play, creativity, and real-world experiences that make education enjoyable.",
     features: ["Hands-On Movement", "Collaborative Play", "Motor Skills Development", "Social Interaction"],
     color: "mint",
     hue: 160,
+  },
+  {
+    icon: Star,
+    stickerType: "star" as const,
+    title: "Life Skills & Confidence Training",
+    description: "Building independence, emotional strength, and self-confidence for everyday life.",
+    features: ["Emotional Intelligence", "Character Building", "Self-Expression", "Confidence Boosters"],
+    color: "baby-blue",
+    hue: 200,
   },
 ]
 
@@ -98,13 +98,12 @@ export default function ProgramsPage() {
                     <span className="text-sm font-medium text-primary">What We Offer</span>
                   </div>
                   
-                  <h1 className="font-serif text-4xl md:text-5xl lg:text-7xl text-primary text-balance leading-tight">
+                  <h1 className="font-semibold text-4xl md:text-5xl lg:text-7xl text-primary text-balance leading-tight">
                     Our <br className="hidden lg:block"/>Programs
                   </h1>
                   
                   <p className="text-lg text-muted-foreground leading-relaxed text-pretty">
-                    Learning through play, expression, and discovery. We provide a holistic approach to early 
-                    childhood education that nurtures every aspect of your child&apos;s development in an inspiring environment.
+                    Our programs are designed to support every stage of your child’s growth — emotionally, socially, and academically.
                   </p>
 
                   {/* Decorative Elements */}
@@ -152,7 +151,7 @@ export default function ProgramsPage() {
                         
                         {/* Content */}
                         <div className="relative z-10 flex-1">
-                          <h3 className="font-serif text-3xl text-primary mb-4">{program.title}</h3>
+                          <h3 className="font-semibold text-3xl text-primary mb-4">{program.title}</h3>
                           <p className="text-foreground/80 leading-relaxed mb-8 text-lg">{program.description}</p>
                           
                           {/* Features */}
@@ -205,7 +204,7 @@ export default function ProgramsPage() {
 
             <div className="container mx-auto px-4">
               <div className="text-center max-w-3xl mx-auto mb-16">
-                <h2 className="font-serif text-4xl md:text-5xl text-primary mb-6 text-balance">
+                <h2 className="font-semibold text-4xl md:text-5xl text-primary mb-6 text-balance">
                   More Ways to Learn & Grow
                 </h2>
                 <HandDrawnDivider className="py-4 max-w-md mx-auto" />
@@ -232,7 +231,7 @@ export default function ProgramsPage() {
                       >
                         <program.icon className="w-10 h-10 text-primary" />
                       </div>
-                      <h3 className="font-serif text-2xl text-primary mb-4 relative z-10">{program.title}</h3>
+                      <h3 className="font-semibold text-2xl text-primary mb-4 relative z-10">{program.title}</h3>
                       <p className="text-muted-foreground relative z-10 leading-relaxed">{program.description}</p>
                     </div>
                   </div>
@@ -258,7 +257,7 @@ export default function ProgramsPage() {
                 <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-lavender/30 rounded-full blur-3xl mix-blend-multiply" />
 
                 <div className="relative z-10 max-w-2xl mx-auto space-y-8">
-                  <h2 className="font-serif text-4xl md:text-5xl text-primary text-balance">
+                  <h2 className="font-semibold text-4xl md:text-5xl text-primary text-balance">
                     Ready to Begin the Journey?
                   </h2>
                   <p className="text-xl text-muted-foreground leading-relaxed text-pretty">
@@ -268,7 +267,7 @@ export default function ProgramsPage() {
                   <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-6">
                     <Link href="/enquire">
                       <Button className="btn-gradient-yellow text-foreground rounded-full px-10 py-8 text-xl font-bold shadow-xl hover:shadow-2xl transition-all hover:scale-105">
-                        Book a Visit
+                        Book a Free School Visit
                       </Button>
                     </Link>
                     <Link href="/contact">

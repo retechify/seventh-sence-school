@@ -40,7 +40,7 @@ export function Header() {
             ))}
             <Link href="/enquire">
               <Button className="btn-gradient-yellow text-foreground rounded-full px-6 py-2 font-medium shadow-lg hover:shadow-xl transition-all hover:scale-105 border-2 border-transparent">
-                Book a Visit
+                Book a Free School Visit
               </Button>
             </Link>
           </nav>
@@ -74,7 +74,7 @@ export function Header() {
                 className="font-medium text-amber-700 bg-soft-yellow/40 hover:bg-soft-yellow/60 transition-colors py-2 px-4 rounded-xl text-center mt-2 border border-soft-yellow"
                 onClick={() => setIsOpen(false)}
               >
-                Book a Visit
+                Book a Free School Visit
               </Link>
             </div>
           </nav>

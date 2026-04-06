@@ -87,7 +87,7 @@ export function FounderSection() {
                   <StickerIcon type="heart" className="w-6 h-6 text-emerald-600" />
                 </div>
                 <div>
-                  <h4 className="font-serif font-normal text-primary text-2xl">Dr. P. Vijayalakshmi</h4>
+                  <h4 className="font-semibold text-primary text-2xl">Dr. P. Vijayalakshmi</h4>
                   <p className="text-sm text-muted-foreground uppercase tracking-wider font-medium">Founder & Academic Director</p>
                 </div>
               </div>

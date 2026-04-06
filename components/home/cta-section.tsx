@@ -38,7 +38,7 @@ export function CtaSection() {
                 </div>
                 
                 <h2 className="font-semibold text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight text-balance">
-                  Book a Free School Visit
+                  Give your child the best start in life
                 </h2>
                 
                 <p className="text-lg text-white/90 leading-relaxed mb-8 font-medium">
@@ -46,10 +46,10 @@ export function CtaSection() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                  <a href="https://wa.me/919994111303" target="_blank" rel="noreferrer">
-                    <Button className="w-full sm:w-auto bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-full px-6 py-6 text-lg font-medium shadow-lg hover:-translate-y-1 transition-all flex items-center gap-2">
+                  <a href="https://wa.me/918610170313" target="_blank" rel="noreferrer">
+                    <Button className="w-full sm:w-auto bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-full px-6 py-6 text-lg font-bold shadow-lg hover:-translate-y-1 transition-all flex items-center gap-2">
                        <MessageCircle className="w-5 h-5" />
-                       WhatsApp Us
+                       Chat on WhatsApp
                     </Button>
                   </a>
                   <a href="tel:+919994111303">
@@ -109,7 +109,7 @@ export function CtaSection() {
                     <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
                   <p className="text-center text-sm text-gray-500 font-medium mt-3">
-                    We'll normally get back to you within 24 hours.
+                    Your information is 100% safe. No spam.
                   </p>
                 </form>
               </motion.div>

@@ -8,7 +8,7 @@ const reviews = [
   {
     name: "Lakshmi Narayanan",
     role: "Mother of Aditya, 4 years",
-    review: "Seventh Sense has been a blessing. Aditya looks forward to school every single day. The teachers truly care about each child's individual growth.",
+    review: "Aditya looks forward to school every single day. The teachers truly care, and we've seen him blossom into a happy, confident boy.",
     rating: 5,
     avatar: "L",
     color: "peach",
@@ -16,7 +16,7 @@ const reviews = [
   {
     name: "Rajesh Kumar",
     role: "Father of Kavya, 3 years",
-    review: "The creative approach to learning here is remarkable. Kavya has developed so much confidence and her communication skills have improved tremendously.",
+    review: "Kavya has developed so much confidence and her communication skills have improved tremendously. She is excited to learn every day.",
     rating: 5,
     avatar: "R",
     color: "mint",
@@ -24,7 +24,7 @@ const reviews = [
   {
     name: "Divya Murugesan",
     role: "Mother of Arjun, 5 years",
-    review: "The warmth and love at Seventh Sense is palpable. Arjun has blossomed into a curious, creative, and kind little person. We couldn't be happier!",
+    review: "We’ve seen such a positive change in our child. He is more confident, expressive, and excited to learn. We couldn't be happier!",
     rating: 5,
     avatar: "D",
     color: "lavender",
@@ -32,7 +32,7 @@ const reviews = [
   {
     name: "Priya Senthil",
     role: "Mother of Ananya, 4 years",
-    review: "The best preschool in the area! The playful environment and dedicated staff make learning an absolute joy for my daughter.",
+    review: "The playful environment makes learning an absolute joy. Ananya is becoming so independent and expressive!",
     rating: 5,
     avatar: "P",
     color: "soft-yellow",

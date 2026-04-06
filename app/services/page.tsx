@@ -14,8 +14,8 @@ const services = [
   {
     icon: BookOpen,
     stickerType: "rainbow" as const,
-    title: "Phonics & Early Literacy",
-    description: "Accelerate language acquisition using proven phonics-based learning, equipping your child with confident reading skills. Our comprehensive curriculum is designed to build strong foundations in literacy.",
+    title: "Phonics-Based Language Learning",
+    description: "Helping children build strong reading and communication skills from an early age.",
     features: ["Phonics & Reading Readiness", "Language Acquisition", "Storytelling & Listening", "Literacy Foundations"],
     color: "lavender",
     hue: 300,
@@ -23,29 +23,29 @@ const services = [
   {
     icon: Puzzle,
     stickerType: "sun" as const,
-    title: "Montessori-Inspired Life Skills",
-    description: "Utilizing authentic Montessori tools to develop profound independence, problem-solving abilities, and everyday resilience in a fun, supportive environment.",
+    title: "Montessori Sensory Development",
+    description: "Encouraging hands-on exploration that strengthens focus, independence, and problem-solving.",
     features: ["Practical Life Skills", "Sensory Play Stations", "Independent Problem-Solving", "Everyday Resilience"],
     color: "peach",
     hue: 50,
   },
   {
-    icon: BookOpen,
-    stickerType: "star" as const,
-    title: "Foundational Academics",
-    description: "A gentle yet rigorous introduction to core numeracy and literacy via structured, play-driven discovery. We believe every child learns best by doing.",
-    features: ["Numbers & Counting", "Science Exploration", "Structured Discovery", "Environmental Awareness"],
-    color: "baby-blue",
-    hue: 200,
-  },
-  {
     icon: MessageCircle,
     stickerType: "cloud" as const,
     title: "Activity-Based Exploration",
-    description: "Immersive sensory play and hands-on physical movement that build critical motor skills and collaborative bonds. Strong communication skills are built through group activities.",
+    description: "Learning through play, creativity, and real-world experiences that make education enjoyable.",
     features: ["Hands-On Movement", "Collaborative Play", "Motor Skills Development", "Social Interaction"],
     color: "mint",
     hue: 160,
+  },
+  {
+    icon: Star,
+    stickerType: "star" as const,
+    title: "Life Skills & Confidence Training",
+    description: "Building independence, emotional strength, and self-confidence for everyday life.",
+    features: ["Emotional Intelligence", "Character Building", "Self-Expression", "Confidence Boosters"],
+    color: "baby-blue",
+    hue: 200,
   },
 ]
 
@@ -108,13 +108,12 @@ export default function ServicesPage() {
                   <span className="text-sm font-medium text-primary">What We Offer</span>
                 </div>
                 
-                <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-primary mb-6 text-balance">
+                <h1 className="font-semibold text-4xl md:text-5xl lg:text-6xl text-primary mb-6 text-balance">
                   Our Services
                 </h1>
                 
                 <p className="text-lg text-muted-foreground leading-relaxed text-pretty">
-                  Learning through play, expression, and discovery. We provide a holistic approach to early 
-                  childhood education that nurtures every aspect of your child&apos;s development.
+                  Our programs are designed to support every stage of your child’s growth — emotionally, socially, and academically.
                 </p>
               </div>
             </div>
@@ -176,7 +175,7 @@ export default function ServicesPage() {
                       </div>
                       
                       {/* Content */}
-                      <h3 className="font-serif text-2xl text-primary mb-4">{service.title}</h3>
+                      <h3 className="font-semibold text-2xl text-primary mb-4">{service.title}</h3>
                       <p className="text-muted-foreground leading-relaxed mb-6">{service.description}</p>
                       
                       {/* Features */}
@@ -222,7 +221,7 @@ export default function ServicesPage() {
             
             <div className="container mx-auto px-4">
               <div className="text-center max-w-2xl mx-auto mb-12">
-                <h2 className="font-serif text-3xl md:text-4xl text-primary mb-4 text-balance">
+                <h2 className="font-semibold text-3xl md:text-4xl text-primary mb-4 text-balance">
                   More Ways to Learn & Grow
                 </h2>
                 <HandDrawnDivider className="py-4" />
@@ -248,7 +247,7 @@ export default function ServicesPage() {
                       >
                         <program.icon className="w-7 h-7 text-primary" />
                       </div>
-                      <h3 className="font-serif text-xl text-primary mb-2">{program.title}</h3>
+                      <h3 className="font-semibold text-xl text-primary mb-2">{program.title}</h3>
                       <p className="text-muted-foreground">{program.description}</p>
                       
                       {/* Small decoration */}
@@ -280,7 +279,7 @@ export default function ServicesPage() {
             
             <div className="container mx-auto px-4">
               <div className="max-w-2xl mx-auto text-center space-y-6">
-                <h2 className="font-serif text-3xl md:text-4xl text-primary text-balance">
+                <h2 className="font-semibold text-3xl md:text-4xl text-primary text-balance">
                   Ready to Begin the Journey?
                 </h2>
                 
@@ -291,7 +290,7 @@ export default function ServicesPage() {
                 
                 <Link href="/enquire">
                   <Button className="btn-gradient-purple text-white rounded-full px-8 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105">
-                    Enquire Now
+                    Book a Free School Visit
                   </Button>
                 </Link>
               </div>

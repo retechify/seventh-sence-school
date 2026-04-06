@@ -7,8 +7,8 @@ import { motion } from "framer-motion"
 
 const programs = [
   {
-    title: "Phonics & Early Literacy",
-    description: "Accelerate language acquisition using proven phonics-based learning, equipping your child with confident reading skills.",
+    title: "Phonics-Based Language Learning",
+    description: "Helping children build strong reading and communication skills from an early age.",
     ageGroup: "3-5 Years",
     illustration: "book" as const,
     stickerType: "rainbow" as const,
@@ -16,31 +16,31 @@ const programs = [
     color: "lavender",
   },
   {
-    title: "Montessori-Inspired Life Skills",
-    description: "Utilizing authentic Montessori tools to develop profound independence, problem-solving abilities, and everyday resilience.",
-    ageGroup: "4-6 Years",
+    title: "Montessori Sensory Development",
+    description: "Encouraging hands-on exploration that strengthens focus, independence, and problem-solving.",
+    ageGroup: "2-4 Years",
     illustration: "puzzle" as const,
     stickerType: "sun" as const,
     hue: 50, // peach/yellow
     color: "peach",
   },
   {
-    title: "Foundational Academics",
-    description: "A gentle yet rigorous introduction to core numeracy and literacy via structured, play-driven discovery.",
-    ageGroup: "5-7 Years",
-    illustration: "book" as const,
-    stickerType: "star" as const,
-    hue: 200, // baby blue
-    color: "baby-blue",
-  },
-  {
     title: "Activity-Based Exploration",
-    description: "Immersive sensory play and hands-on physical movement that build critical motor skills and collaborative bonds.",
-    ageGroup: "3-7 Years",
+    description: "Learning through play, creativity, and real-world experiences that make education enjoyable.",
+    ageGroup: "3-6 Years",
     illustration: "chat" as const,
     stickerType: "cloud" as const,
     hue: 160, // mint
     color: "mint",
+  },
+  {
+    title: "Life Skills & Confidence Training",
+    description: "Building independence, emotional strength, and self-confidence for everyday life.",
+    ageGroup: "4-7 Years",
+    illustration: "star" as const,
+    stickerType: "star" as const,
+    hue: 200, // baby blue
+    color: "baby-blue",
   },
 ]
 

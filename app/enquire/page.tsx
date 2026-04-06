@@ -66,7 +66,7 @@ export default function EnquirePage() {
                      <div className="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-8">
                         <CheckCircle2 className="w-12 h-12 text-green-500" />
                      </div>
-                     <h2 className="font-serif text-4xl md:text-5xl text-primary mb-6">You&apos;re All Set!</h2>
+                     <h2 className="font-semibold text-4xl md:text-5xl text-primary mb-6">You&apos;re All Set!</h2>
                      <p className="text-xl text-muted-foreground leading-relaxed mb-10 max-w-lg mx-auto">
                         Thank you for taking the first step. Our team will reach out to you within 24 hours to schedule your lovely visit.
                      </p>
@@ -83,11 +83,11 @@ export default function EnquirePage() {
                         <div className="absolute -top-4 right-8 w-16 h-16 animate-sparkle opacity-80">
                            <StickerIcon type="sparkle" className="w-full h-full drop-shadow-sm" />
                         </div>
-                        <h1 className="font-serif text-4xl md:text-5xl text-primary mb-4 leading-tight">
-                           Book a Visit
+                        <h1 className="font-semibold text-4xl md:text-5xl text-primary mb-4 leading-tight">
+                           Book a Free School Visit
                         </h1>
                         <p className="text-lg text-muted-foreground max-w-lg">
-                           Take the first step towards a magical learning journey for your little one.
+                           Give us a few details about your little one, and we'll get back to you with a warm welcome and all the information you need.
                         </p>
                      </div>
 

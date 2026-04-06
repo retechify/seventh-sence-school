@@ -85,13 +85,12 @@ export default function GalleryPage() {
                   <span className="text-sm font-semibold tracking-wide text-primary uppercase">Moments</span>
                 </div>
                 
-                <h1 className="font-serif text-5xl lg:text-7xl text-primary mb-6 text-balance leading-tight">
-                  Our Magical Gallery
+                <h1 className="font-semibold text-5xl lg:text-7xl text-primary mb-6 text-balance leading-tight">
+                  Our Happy Moments
                 </h1>
                 
                 <p className="text-xl text-muted-foreground leading-relaxed text-pretty">
-                  Every smile tells a story. Explore precious moments of learning, play, and discovery 
-                  at Seventh Sense.
+                  Real smiles. Real growth. Take a peek into the joyful learning happening every day at Seventh Sense.
                 </p>
               </div>
             </div>
@@ -162,7 +161,7 @@ export default function GalleryPage() {
                            
                            {/* Content bottom overlay */}
                            <div className="absolute bottom-0 left-0 right-0 p-6 text-left transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300 z-10">
-                              <h3 className="font-serif text-2xl text-white mb-2">{item.title}</h3>
+                              <h3 className="font-semibold text-2xl text-white mb-2">{item.title}</h3>
                               <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md rounded-full px-3 py-1">
                                  <item.icon className="w-4 h-4 text-white" />
                                  <span className="text-white text-sm font-medium capitalize">{item.category}</span>
@@ -177,7 +176,7 @@ export default function GalleryPage() {
                 
                 {filteredItems.length === 0 && (
                    <div className="col-span-full py-20 text-center">
-                      <p className="text-2xl text-muted-foreground font-serif">No memories found for this category yet.</p>
+                      <p className="text-2xl text-muted-foreground font-semibold">No memories found for this category yet.</p>
                    </div>
                 )}
               </div>
@@ -203,7 +202,7 @@ export default function GalleryPage() {
                     <span className="text-sm font-medium text-primary uppercase tracking-wider">Join Us</span>
                   </div>
                   
-                  <h2 className="font-serif text-4xl md:text-5xl text-primary text-balance">
+                  <h2 className="font-semibold text-4xl md:text-5xl text-primary text-balance">
                     Capture the Magic in Person
                   </h2>
                   <p className="text-xl text-muted-foreground leading-relaxed text-pretty">
@@ -212,7 +211,7 @@ export default function GalleryPage() {
                   <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-6">
                     <Link href="/enquire">
                       <Button className="btn-gradient-yellow text-foreground rounded-full px-10 py-8 text-xl font-bold shadow-xl hover:scale-105 transition-all">
-                        Book a Visit
+                        Book a Free School Visit
                       </Button>
                     </Link>
                     <Link href="/contact">
