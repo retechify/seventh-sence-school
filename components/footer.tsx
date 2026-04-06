@@ -16,21 +16,7 @@ export function Footer() {
             <p className="text-muted-foreground leading-relaxed">
               Where every child finds their unique spark. A magical place for learning, growing, and discovering.
             </p>
-            <div className="flex items-center gap-4 pt-2">
-              <a 
-                href="https://www.instagram.com/seventhsense_cbe/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-peach/20 flex items-center justify-center hover:bg-peach/40 transition-all hover:scale-110 group"
-                aria-label="Follow us on Instagram"
-              >
-                <svg viewBox="0 0 24 24" className="w-5 h-5 text-primary group-hover:text-primary/80 transition-colors" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                </svg>
-              </a>
-            </div>
+
           </div>
 
           {/* Quick Links */}
@@ -84,7 +70,29 @@ export function Footer() {
                 <div className="w-8 h-8 rounded-full bg-mint/50 flex items-center justify-center">
                   <MapPin className="w-4 h-4 text-primary" />
                 </div>
-                <span>129, R – Block, Kovaipudur, Coimbatore, Tamil Nadu-641042</span>
+                <span>R130, Block R, Kovaipudur, Coimbatore, Tamil Nadu - 641042</span>
+              </li>
+              <li className="flex items-center gap-3 text-muted-foreground">
+                <a 
+                  href="https://www.instagram.com/seventhsense_cbe/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 rounded-full bg-peach/50 flex items-center justify-center hover:bg-peach/80 transition-colors"
+                >
+                  <svg viewBox="0 0 24 24" className="w-4 h-4 text-primary" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </a>
+                <a 
+                  href="https://www.instagram.com/seventhsense_cbe/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors"
+                >
+                  Instagram
+                </a>
               </li>
             </ul>
           </div>

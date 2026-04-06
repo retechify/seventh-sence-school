@@ -2,10 +2,13 @@
 
 import { Button } from "@/components/ui/button"
 import { StickerIcon } from "@/components/floating-doodles"
-import { Phone, MessageCircle, Send } from "lucide-react"
-import { motion } from "framer-motion"
+import { MessageCircle, Send, CheckCircle2 } from "lucide-react"
+import { motion, AnimatePresence } from "framer-motion"
+import { useForm, ValidationError } from '@formspree/react';
 
 export function CtaSection() {
+  const [state, handleSubmit] = useForm('mwvwarew');
+
   return (
     <section className="py-24 relative overflow-hidden bg-primary text-white" id="book-visit">
       {/* Background shapes & texture */}
@@ -78,49 +81,86 @@ export function CtaSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="bg-white rounded-[2rem] p-8 shadow-xl"
+                className="bg-white rounded-[2rem] p-8 shadow-xl min-h-[400px] flex flex-col justify-center"
               >
-                <h3 className="text-2xl font-semibold text-primary mb-6 text-center">Quick Inquiry</h3>
-                
-                <form className="space-y-4" onSubmit={(e) => { e.preventDefault(); alert("Form submission handled!"); }}>
-                  <div>
-                    <label htmlFor="name" className="sr-only">Name</label>
-                    <input 
-                      type="text" 
-                      id="name" 
-                      placeholder="Your Name" 
-                      className="w-full px-5 py-4 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all text-gray-800 placeholder:text-gray-400"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="phone" className="sr-only">Phone Number</label>
-                    <input 
-                      type="tel" 
-                      id="phone" 
-                      placeholder="Phone Number" 
-                      className="w-full px-5 py-4 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all text-gray-800 placeholder:text-gray-400"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="sr-only">Email Address</label>
-                    <input 
-                      type="email" 
-                      id="email" 
-                      placeholder="Email Address (Optional)" 
-                      className="w-full px-5 py-4 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all text-gray-800 placeholder:text-gray-400"
-                    />
-                  </div>
-                  
-                  <Button type="submit" className="w-full btn-gradient-yellow text-foreground rounded-xl py-6 text-lg font-medium shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 group">
-                    Send Inquiry
-                    <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </Button>
-                  <p className="text-center text-sm text-gray-500 font-medium mt-3">
-                    Your information is 100% safe. No spam.
-                  </p>
-                </form>
+                <AnimatePresence mode="wait">
+                  {state.succeeded ? (
+                    <motion.div
+                      key="success"
+                      initial={{ opacity: 0, scale: 0.9 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      className="text-center py-10"
+                    >
+                      <div className="w-20 h-20 bg-green-50 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <CheckCircle2 className="w-10 h-10 text-green-500" />
+                      </div>
+                      <h3 className="text-2xl font-bold text-primary mb-3">Inquiry Sent!</h3>
+                      <p className="text-gray-600 mb-8">
+                        Thank you for reaching out. Our team will get back to you shortly.
+                      </p>
+                      <Button 
+                        onClick={() => window.location.reload()}
+                        className="bg-primary hover:bg-primary/90 text-white rounded-xl px-10 py-6 font-bold transition-all"
+                      >
+                        Send Another
+                      </Button>
+                    </motion.div>
+                  ) : (
+                    <motion.div key="form">
+                      <h3 className="text-2xl font-semibold text-primary mb-6 text-center">Quick Inquiry</h3>
+                      
+                      <form className="space-y-4" onSubmit={handleSubmit}>
+                        <div className="space-y-1">
+                          <label htmlFor="name" className="sr-only">Name</label>
+                          <input 
+                            type="text" 
+                            id="name" 
+                            name="name"
+                            placeholder="Your Name" 
+                            className="w-full px-5 py-4 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all text-gray-800 placeholder:text-gray-400"
+                            required
+                          />
+                          <ValidationError prefix="Name" field="name" errors={state.errors} className="text-red-500 text-xs ml-1" />
+                        </div>
+                        <div className="space-y-1">
+                          <label htmlFor="phone" className="sr-only">Phone Number</label>
+                          <input 
+                            type="tel" 
+                            id="phone" 
+                            name="phone"
+                            placeholder="Phone Number" 
+                            className="w-full px-5 py-4 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all text-gray-800 placeholder:text-gray-400"
+                            required
+                          />
+                          <ValidationError prefix="Phone" field="phone" errors={state.errors} className="text-red-500 text-xs ml-1" />
+                        </div>
+                        <div className="space-y-1">
+                          <label htmlFor="email" className="sr-only">Email Address</label>
+                          <input 
+                            type="email" 
+                            id="email" 
+                            name="email"
+                            placeholder="Email Address (Optional)" 
+                            className="w-full px-5 py-4 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all text-gray-800 placeholder:text-gray-400"
+                          />
+                          <ValidationError prefix="Email" field="email" errors={state.errors} className="text-red-500 text-xs ml-1" />
+                        </div>
+                        
+                        <Button 
+                          type="submit" 
+                          disabled={state.submitting}
+                          className="w-full btn-gradient-yellow text-foreground rounded-xl py-6 text-lg font-bold shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 group disabled:opacity-50"
+                        >
+                          {state.submitting ? "Sending..." : "Send Inquiry"}
+                          <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                        </Button>
+                        <p className="text-center text-sm text-gray-500 font-medium mt-3">
+                          Your information is safe. No spam.
+                        </p>
+                      </form>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </motion.div>
             </div>
           </div>

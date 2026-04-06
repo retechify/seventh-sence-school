@@ -129,7 +129,7 @@ export function HeroSection() {
                     </motion.div>
                   ))}
                 </div>
-                <span className="text-sm text-muted-foreground font-medium">500+ Happy Families</span>
+                <span className="text-sm text-muted-foreground font-medium">50+ Happy Families</span>
               </div>
             </motion.div>
           </motion.div>

@@ -4,7 +4,9 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { StickerIcon } from "@/components/floating-doodles"
 import { Camera, BookOpen, Play, Palette, Users, Sparkle } from "lucide-react"
-import { motion } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
+import { useState } from "react"
+import { ImageLightbox } from "@/components/image-lightbox"
 
 const homeGalleryItems = [
   { id: 1, category: "learning", color: "peach", icon: BookOpen, title: "Fun Learning", sticker: "star" as const, hue: 50, size: "large", image: "/gallery/gallery-section/im1.png" },
@@ -16,6 +18,10 @@ const homeGalleryItems = [
 ]
 
 export function GallerySection() {
+  const [selectedIdx, setSelectedIdx] = useState<number | null>(null)
+  
+  const allImages = homeGalleryItems.map(item => item.image)
+
   return (
     <section className="py-24 bg-background relative overflow-hidden">
       {/* Background doodles */}
@@ -71,7 +77,8 @@ export function GallerySection() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 whileHover={{ y: -5, scale: 1.02 }}
-                className={`group relative rounded-[2.5rem] overflow-hidden shadow-lg transition-all duration-300 ${gridClasses}`}
+                onClick={() => setSelectedIdx(index)}
+                className={`group relative rounded-[2.5rem] overflow-hidden shadow-lg transition-all duration-300 cursor-pointer ${gridClasses}`}
                 style={{
                   background: `linear-gradient(135deg, oklch(0.94 0.08 ${item.hue}), oklch(0.97 0.04 ${item.hue}))`
                 }}
@@ -105,6 +112,12 @@ export function GallerySection() {
           })}
         </motion.div>
       </div>
+
+      <ImageLightbox 
+        images={allImages}
+        currentIdx={selectedIdx}
+        onClose={() => setSelectedIdx(null)}
+      />
     </section>
   )
 }
