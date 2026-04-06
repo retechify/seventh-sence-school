@@ -102,8 +102,9 @@ export function Footer() {
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-muted-foreground text-sm">
           <p className="flex items-center gap-1">
-            Made with <Heart className="w-4 h-4 text-[oklch(0.7_0.2_25)] fill-current" /> for little dreamers
+            Made with <Heart className="w-4 h-4 text-[#E91E63] fill-current" /> for little dreamers
           </p>
+
           <p>&copy; {new Date().getFullYear()} Seventh sense school of arts. All rights reserved.</p>
         </div>
       </div>

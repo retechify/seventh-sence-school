@@ -1,0 +1,296 @@
+Implement a COMPLETE global upgrade across the entire website to transform it into a high-conversion, premium preschool website while preserving the current pastel theme, gradients, and playful visual identity.
+
+This is a FULL IMPLEMENTATION. Apply changes across ALL pages and components.
+
+---
+
+1. TYPOGRAPHY SYSTEM (STRICT)
+
+Apply consistent typography across entire project:
+
+* Default font: Nunito (font-sans)
+* Decorative font: Pacifico (font-serif)
+
+RULES:
+
+* Hero headline → font-serif ONLY
+* Section headings → font-semibold (Nunito)
+* Body text → font-normal (Nunito)
+* Buttons → font-medium (Nunito)
+
+REMOVE:
+
+* Any inline font-family styles
+* Any inconsistent font usage
+
+ENSURE:
+
+* Clean hierarchy
+* Readable spacing
+* No overuse of Pacifico
+
+---
+
+2. GLOBAL CTA SYSTEM (HIGH PRIORITY)
+
+Replace ALL CTAs across all pages:
+
+OLD:
+
+* “Book a Visit”
+
+NEW:
+
+* “Book a Free School Visit”
+* “Schedule a Campus Tour”
+
+ADD:
+
+* WhatsApp CTA button where possible
+
+PLACE CTAs:
+
+* Hero section
+* After Programs section
+* Before Footer (final CTA)
+
+---
+
+3. HERO SECTION UPGRADE
+
+Enhance hero for conversion:
+
+ADD:
+
+* “Admissions Open for 2026–27”
+* “Limited Seats Available”
+
+KEEP:
+
+* Existing layout and design
+
+IMPROVE:
+
+* Narrow text width
+* Stronger CTA button visibility
+
+---
+
+4. TRUST SECTION (MANDATORY)
+
+Ensure homepage includes a strong trust section:
+
+Include:
+
+* “18+ Years Experience”
+* “Trusted by 100+ Families”
+* “Safe & Caring Environment”
+* “Holistic Child Development”
+
+Use:
+
+* Clean card layout
+* Soft icons
+* Consistent spacing
+
+---
+
+5. PROGRAMS SECTION (DIFFERENTIATION)
+
+Rewrite and update ALL program cards:
+
+Use real methods:
+
+* Phonics-Based Language Learning
+* Montessori Sensory Development
+* Activity-Based Exploration
+* Life Skills & Confidence Training
+
+Ensure:
+
+* Each card is unique
+* Clear benefit for parents
+* Consistent card design
+
+---
+
+6. STORY / PROBLEM-SOLUTION SECTION
+
+ADD a new section after Hero:
+
+Title:
+“Is Your Child Getting the Right Start?”
+
+Content:
+
+* Problems with traditional learning
+* Importance of early childhood development
+* Position school as solution
+
+Keep design minimal and aligned with theme
+
+---
+
+7. FOUNDER SECTION (AUTHORITY UPGRADE)
+
+Enhance founder section:
+
+ADD:
+
+* “Ph.D in History & English”
+* “18+ Years Experience”
+* Strong emotional + authority messaging
+
+Ensure:
+
+* Clear hierarchy
+* Balanced layout
+
+---
+
+8. TESTIMONIALS SECTION (CONVERSION BOOST)
+
+Improve testimonials:
+
+* Highlight key emotional sentences
+* Add visible 5-star rating icons
+* Show parent name clearly
+
+Ensure:
+
+* Clean readability
+* Not text-heavy
+
+---
+
+9. GALLERY SECTION (EMOTIONAL LAYER)
+
+Enhance gallery:
+
+ADD:
+
+* Heading: “Real Moments. Real Growth.”
+* Subtext: “Every smile tells a story”
+
+Add:
+
+* Hover interaction on images
+* Slight zoom effect
+
+---
+
+10. FINAL CTA SECTION (STRONG CLOSE)
+
+Upgrade final CTA:
+
+TEXT:
+“Give your child the best start in life”
+
+Buttons:
+
+* “Book a Free School Visit”
+* “Chat on WhatsApp”
+
+ADD:
+
+* Trust line:
+  “Your information is 100% safe. No spam.”
+
+---
+
+11. COMPONENT CONSISTENCY
+
+Standardize ALL components:
+
+Cards:
+
+* Same padding (24–32px)
+* Same radius
+* Same shadow
+
+Buttons:
+
+* Same size
+* Same style
+* Same hover effect
+
+Images:
+
+* Same rounded corners
+* Consistent shadows
+
+---
+
+12. SPACING SYSTEM
+
+Apply globally:
+
+* Section padding: 80–120px
+* Internal spacing: 16–24px
+* Max content width: balanced
+
+Ensure:
+
+* No cramped sections
+* No excessive empty space
+
+---
+
+13. MICRO INTERACTIONS
+
+Add subtle interactions:
+
+* Card hover: slight scale
+* Button hover: brightness/scale
+* Smooth scroll transitions
+
+Keep animations minimal and soft
+
+---
+
+14. FORM IMPROVEMENT
+
+Improve contact + booking forms:
+
+* Increase input spacing
+* Highlight submit button
+* Add trust message:
+  “We respect your privacy. No spam.”
+
+---
+
+15. MOBILE OPTIMIZATION
+
+Ensure:
+
+* Proper stacking of all sections
+* Buttons are easily clickable
+* Text is readable without zoom
+
+---
+
+16. FINAL CONSISTENCY CHECK
+
+Verify across ALL pages:
+
+* Same typography system
+* Same CTA wording
+* Same spacing system
+* Same component styles
+* Same tone and messaging
+
+---
+
+GOAL:
+
+Transform the website into a cohesive, premium, emotionally engaging, and high-converting preschool platform that builds trust instantly and drives parent inquiries.
+
+Maintain current design style, but elevate everything to a professional, scalable system.
+
+DO NOT:
+
+* Break layout
+* Change color theme
+* Remove existing structure
+
+ONLY improve and standardize.

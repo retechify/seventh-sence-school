@@ -93,10 +93,11 @@ export function WelcomeSection() {
             
             <div className="space-y-4">
               <p className="text-muted-foreground text-lg leading-relaxed text-pretty">
-                At Seventh sense school of arts, we create a magical world where children can explore, learn, and grow 
+                At Seventh Sense School of Arts, we create a magical world where children can explore, learn, and grow 
                 in a warm, nurturing environment. Our passionate team of educators is dedicated to 
                 bringing out the best in every child through innovative, play-based learning approaches.
               </p>
+
               
               <p className="text-muted-foreground text-lg leading-relaxed text-pretty">
                 We believe that early childhood is a time of wonder and discovery. That&apos;s why we design 

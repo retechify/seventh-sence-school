@@ -49,15 +49,16 @@ export const metadata: Metadata = {
     images: ['/gallery/gallery-section/im1.png'],
   },
   icons: {
-    icon: '/icon.svg',
+    icon: '/gallery/logo/logo.png',
   },
 }
 
 export const viewport: Viewport = {
-  themeColor: '#f5e6d3',
+  themeColor: '#E91E63',
   width: 'device-width',
   initialScale: 1,
 }
+
 
 import { WhatsAppFloating } from '@/components/whatsapp-floating'
 
