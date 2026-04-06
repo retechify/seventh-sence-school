@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
-import { MessageCircle, Phone, Mail, MapPin, ArrowRight } from "lucide-react"
+import { MessageCircle, Phone, Mail, MapPin, ArrowRight, Instagram } from "lucide-react"
 
 export default function ContactPage() {
   return (
@@ -69,17 +69,29 @@ export default function ContactPage() {
                       <a href="mailto:info@seventhsenseschool.com" className="text-primary hover:text-mint transition-colors text-sm font-medium">info@seventhsenseschool.com</a>
                    </div>
 
-                   {/* WhatsApp Card */}
-                   <div className="bg-[#25D366]/10 backdrop-blur-xl rounded-[2.5rem] p-8 border border-white shadow-xl group hover:-translate-y-2 transition-transform duration-300 relative overflow-hidden line-clamp-none">
-                      <div className="absolute top-0 left-0 w-24 h-24 bg-white/40 rounded-br-full -z-10" />
-                      <div className="w-14 h-14 rounded-2xl bg-[#25D366]/20 flex items-center justify-center mb-6 shadow-sm">
-                         <MessageCircle className="w-7 h-7 text-[#25D366]" />
-                      </div>
-                      <h3 className="font-semibold text-xl pr-4 text-primary mb-2">Chat on WhatsApp</h3>
-                      <a href="https://wa.me/918610170313" target="_blank" rel="noopener noreferrer" className="text-[#25D366] hover:text-[#25D366]/70 transition-colors flex items-center gap-2 mt-4 text-sm font-bold uppercase tracking-wider">
-                         Start Chat <ArrowRight className="w-4 h-4" />
-                      </a>
-                   </div>
+                    {/* WhatsApp Card */}
+                    <div className="bg-[#25D366]/10 backdrop-blur-xl rounded-[2.5rem] p-8 border border-white shadow-xl group hover:-translate-y-2 transition-transform duration-300 relative overflow-hidden line-clamp-none">
+                       <div className="absolute top-0 left-0 w-24 h-24 bg-white/40 rounded-br-full -z-10" />
+                       <div className="w-14 h-14 rounded-2xl bg-[#25D366]/20 flex items-center justify-center mb-6 shadow-sm">
+                          <MessageCircle className="w-7 h-7 text-[#25D366]" />
+                       </div>
+                       <h3 className="font-semibold text-xl pr-4 text-primary mb-2 text-balance">Chat on WhatsApp</h3>
+                       <a href="https://wa.me/918610170313" target="_blank" rel="noopener noreferrer" className="text-[#25D366] hover:text-[#25D366]/70 transition-colors flex items-center gap-2 mt-4 text-sm font-bold uppercase tracking-wider">
+                          Start Chat <ArrowRight className="w-4 h-4" />
+                       </a>
+                    </div>
+
+                    {/* Instagram Card */}
+                    <div className="bg-peach/10 backdrop-blur-xl rounded-[2.5rem] p-8 border border-white shadow-xl group hover:-translate-y-2 transition-transform duration-300 relative overflow-hidden">
+                       <div className="absolute top-0 right-0 w-24 h-24 bg-white/40 rounded-bl-full -z-10" />
+                       <div className="w-14 h-14 rounded-2xl bg-peach/30 flex items-center justify-center mb-6 shadow-sm">
+                          <Instagram className="w-7 h-7 text-primary" />
+                       </div>
+                       <h3 className="font-semibold text-xl text-primary mb-2">Follow Us</h3>
+                       <a href="https://www.instagram.com/seventhsense_cbe/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-peach transition-colors flex items-center gap-2 mt-4 text-sm font-bold uppercase tracking-wider">
+                          Instagram <ArrowRight className="w-4 h-4" />
+                       </a>
+                    </div>
                    
                    {/* Address Card (Spans full width on small, below others on sm) */}
                    <div className="sm:col-span-2 bg-lavender/10 backdrop-blur-xl rounded-[2.5rem] p-8 border border-white shadow-xl group hover:-translate-y-2 transition-transform duration-300 relative overflow-hidden flex flex-col md:flex-row items-center gap-6">

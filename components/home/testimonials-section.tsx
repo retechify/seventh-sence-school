@@ -8,7 +8,7 @@ const reviews = [
   {
     name: "Lakshmi Narayanan",
     role: "Mother of Aditya, 4 years",
-    review: "Aditya looks forward to school every single day. The teachers truly care, and we've seen him blossom into a happy, confident boy.",
+    review: "Aditya looks forward to school every single day. <strong>The teachers truly care, and we've seen him blossom into a happy, confident boy.</strong>",
     rating: 5,
     avatar: "L",
     color: "peach",
@@ -16,7 +16,7 @@ const reviews = [
   {
     name: "Rajesh Kumar",
     role: "Father of Kavya, 3 years",
-    review: "Kavya has developed so much confidence and her communication skills have improved tremendously. She is excited to learn every day.",
+    review: "Kavya has developed so much confidence and <strong>her communication skills have improved tremendously.</strong>",
     rating: 5,
     avatar: "R",
     color: "mint",
@@ -24,7 +24,7 @@ const reviews = [
   {
     name: "Divya Murugesan",
     role: "Mother of Arjun, 5 years",
-    review: "We’ve seen such a positive change in our child. He is more confident, expressive, and excited to learn. We couldn't be happier!",
+    review: "<strong>We’ve seen such a positive change in our child.</strong> He is more confident, expressive, and excited to learn. We couldn't be happier!",
     rating: 5,
     avatar: "D",
     color: "lavender",
@@ -32,7 +32,7 @@ const reviews = [
   {
     name: "Priya Senthil",
     role: "Mother of Ananya, 4 years",
-    review: "The playful environment makes learning an absolute joy. Ananya is becoming so independent and expressive!",
+    review: "<strong>The playful environment makes learning an absolute joy.</strong> Ananya is becoming so independent and expressive!",
     rating: 5,
     avatar: "P",
     color: "soft-yellow",
@@ -113,9 +113,10 @@ export function TestimonialsSection() {
                       ))}
                     </div>
 
-                    <p className="text-gray-600 leading-relaxed italic text-[1.05rem] font-medium mb-6">
-                      &ldquo;{review.review}&rdquo;
-                    </p>
+                    <p 
+                       className="text-gray-600 leading-relaxed italic text-[1.05rem] font-medium mb-6"
+                       dangerouslySetInnerHTML={{ __html: `&ldquo;${review.review}&rdquo;` }}
+                    />
                   </div>
                   
                   <div className="flex items-center gap-4 pt-4 border-t border-gray-100">

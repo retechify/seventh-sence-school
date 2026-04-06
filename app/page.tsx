@@ -4,13 +4,12 @@ import { FloatingDoodles } from "@/components/floating-doodles"
 import { HeroSection } from "@/components/home/hero-section"
 import { TrustSection } from "@/components/home/trust-section"
 import { ProblemSolutionSection } from "@/components/home/problem-solution-section"
-import { AboutSection } from "@/components/home/about-section"
 import { ProgramsSection } from "@/components/home/programs-section"
-import { PhilosophySection } from "@/components/home/philosophy-section"
 import { FounderSection } from "@/components/home/founder-section"
 import { GallerySection } from "@/components/home/gallery-section"
 import { TestimonialsSection } from "@/components/home/testimonials-section"
 import { CtaSection } from "@/components/home/cta-section"
+import { AnnouncementBar } from "@/components/home/announcement-bar"
 
 export default function HomePage() {
   return (
@@ -22,15 +21,22 @@ export default function HomePage() {
       <FloatingDoodles count={30} />
       
       {/* Main content */}
-      <div className="relative z-10">
+      <div className="relative z-10 text-primary">
         <Header />
         <main>
           <HeroSection />
+          
+          <AnnouncementBar 
+            text="🎉 Admissions Open for 2026–27 – Limited Seats Available!"
+            ctaText="Enquire Now"
+            ctaLink="/enquire"
+            isVisible={true}
+            iconType="sparkle"
+          />
+
           <ProblemSolutionSection />
           <TrustSection />
-          <AboutSection />
           <ProgramsSection />
-          <PhilosophySection />
           <FounderSection />
           <GallerySection />
           <TestimonialsSection />

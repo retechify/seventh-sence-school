@@ -52,10 +52,10 @@ export function CtaSection() {
                        Chat on WhatsApp
                     </Button>
                   </a>
-                  <a href="tel:+919994111303">
+                  <a href="/enquire">
                     <Button variant="outline" className="w-full sm:w-auto bg-transparent border-white/30 hover:bg-white/10 text-white rounded-full px-6 py-6 text-lg font-medium shadow-sm hover:-translate-y-1 transition-all flex items-center gap-2">
-                      <Phone className="w-5 h-5" />
-                      Call Us
+                      <Send className="w-5 h-5" />
+                      Book a Free School Visit
                     </Button>
                   </a>
                 </div>

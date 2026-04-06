@@ -61,8 +61,8 @@ export function ProgramsSection() {
             <span className="text-sm font-medium text-emerald-800 uppercase tracking-widest">Our Programs</span>
           </div>
           
-          <h2 className="font-semibold text-3xl md:text-4xl text-primary mb-6 leading-tight">
-            Premium Programs Tailored for Potential
+          <h2 className="font-semibold text-4xl md:text-5xl text-primary mb-6 leading-tight">
+            A Foundation for <span className="text-secondary">Lifelong Joy</span>
           </h2>
           
           <p className="text-muted-foreground text-lg leading-relaxed text-balance">
@@ -71,7 +71,7 @@ export function ProgramsSection() {
         </motion.div>
         
         {/* Programs grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
           {programs.map((program, i) => (
             <motion.div
               key={program.title}
@@ -124,6 +124,31 @@ export function ProgramsSection() {
             </motion.div>
           ))}
         </div>
+
+        {/* New Post-Programs CTA Block */}
+        <motion.div
+           initial={{ opacity: 0, y: 30 }}
+           whileInView={{ opacity: 1, y: 0 }}
+           viewport={{ once: true }}
+           transition={{ duration: 0.8, delay: 0.4 }}
+           className="mt-20 text-center space-y-8"
+        >
+           <p className="text-xl text-primary/80 font-medium italic">
+              "Ready to see our programs in action?"
+           </p>
+           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+              <Link href="/enquire">
+                 <Button className="btn-gradient-yellow text-foreground rounded-full px-10 py-8 text-xl font-bold shadow-xl hover:scale-105 transition-all">
+                    Book a Free School Visit
+                 </Button>
+              </Link>
+              <a href="https://wa.me/918610170313" target="_blank" rel="noreferrer">
+                 <Button variant="outline" className="rounded-full px-10 py-8 text-xl font-bold shadow-sm hover:bg-white/50 border-2 border-primary/20 transition-all">
+                    Chat on WhatsApp
+                 </Button>
+              </a>
+           </div>
+        </motion.div>
       </div>
     </section>
   )

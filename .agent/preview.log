@@ -176,3 +176,160 @@
  GET /about 200 in 155ms (next.js: 38ms, application-code: 117ms)
  GET / 200 in 161ms (next.js: 16ms, application-code: 144ms)
  GET / 200 in 101ms (next.js: 3ms, application-code: 97ms)
+ GET /about 200 in 16ms (next.js: 2ms, application-code: 14ms)
+ GET / 200 in 16ms (next.js: 2ms, application-code: 14ms)
+ GET /noise.png 404 in 33ms (next.js: 3ms, application-code: 30ms)
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+ GET / 200 in 163ms (next.js: 2ms, application-code: 161ms)
+ GET /noise.png 404 in 28ms (next.js: 3ms, application-code: 25ms)
+✓ Compiled in 244ms
+ GET /noise.png 404 in 41ms (next.js: 4ms, application-code: 37ms)
+✓ Compiled in 253ms
+ GET /noise.png 404 in 27ms (next.js: 4ms, application-code: 23ms)
+✓ Compiled in 65ms
+ GET / 200 in 236ms (next.js: 51ms, application-code: 184ms)
+ GET /noise.png 404 in 105ms (next.js: 76ms, application-code: 29ms)
+✓ Compiled in 88ms
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <SegmentViewNode type="page" pagePath="page.tsx">
+      <SegmentTrieNode>
+      <HomePage>
+        <div className="min-h-scre...">
+          <div>
+          <FloatingDoodles>
+          <div className="relative z-10">
+            <Header>
+            <main>
+              <HeroSection>
+              <ProblemSolutionSection>
+              <TrustSection>
+              <AboutSection>
+              <ProgramsSection>
+              <PhilosophySection>
+              <FounderSection>
+              <GallerySection>
+              <TestimonialsSection>
+                <section className="relative p..." id="testimonials">
+                  <div>
+                  <div className="container ...">
+                    <div>
+                    <div className="flex flex-...">
+                      <motion.div initial={{opacity:0,x:-50, ...}} whileInView={{opacity:1,x:0, ...}} ...>
+                        <div className="relative g..." style={{zIndex:10, ...}} ref={function useMotionRef.useCallback}>
+                          <div className="bg-white r...">
+                            <div>
+                            <div>
+                              <div>
+                              <p
+                                className="text-gray-600 leading-relaxed italic text-[1.05rem] font-medium mb-6"
+                                dangerouslySetInnerHTML={{
++                                 __html: "&ldquo;Aditya looks forward to school every single day. <strong>The teacher..."
+-                                 __html: "“<!-- -->Aditya looks forward to school every single day. &lt;strong&gt;The..."
+                                }}
+                              >
+                            ...
+                      <motion.div initial={{opacity:0,x:-50, ...}} whileInView={{opacity:1,x:0,rotate:3}} ...>
+                        <div className="relative g..." style={{zIndex:11, ...}} ref={function useMotionRef.useCallback}>
+                          <div className="bg-white r...">
+                            <div>
+                            <div>
+                              <div>
+                              <p
+                                className="text-gray-600 leading-relaxed italic text-[1.05rem] font-medium mb-6"
+                                dangerouslySetInnerHTML={{
++                                 __html: "&ldquo;Kavya has developed so much confidence and <strong>her communication..."
+-                                 __html: "“<!-- -->Kavya has developed so much confidence and &lt;strong&gt;her commu..."
+                                }}
+                              >
+                            ...
+                      <motion.div initial={{opacity:0,x:-50, ...}} whileInView={{opacity:1,x:0, ...}} ...>
+                        <div className="relative g..." style={{zIndex:12, ...}} ref={function useMotionRef.useCallback}>
+                          <div className="bg-white r...">
+                            <div>
+                            <div>
+                              <div>
+                              <p
+                                className="text-gray-600 leading-relaxed italic text-[1.05rem] font-medium mb-6"
+                                dangerouslySetInnerHTML={{
++                                 __html: "&ldquo;<strong>We’ve seen such a positive change in our child.</strong> He ..."
+-                                 __html: "“<!-- -->&lt;strong&gt;We’ve seen such a positive change in our child.&lt;/..."
+                                }}
+                              >
+                            ...
+                      <motion.div initial={{opacity:0,x:-50, ...}} whileInView={{opacity:1,x:0,rotate:3}} ...>
+                        <div className="relative g..." style={{zIndex:13, ...}} ref={function useMotionRef.useCallback}>
+                          <div className="bg-white r...">
+                            <div>
+                            <div>
+                              <div>
+                              <p
+                                className="text-gray-600 leading-relaxed italic text-[1.05rem] font-medium mb-6"
+                                dangerouslySetInnerHTML={{
++                                 __html: "&ldquo;<strong>The playful environment makes learning an absolute joy.</str..."
+-                                 __html: "“<!-- -->&lt;strong&gt;The playful environment makes learning an absolute j..."
+                                }}
+                              >
+                            ...
+              ...
+            ...
+    ...
+ 
+ GET /about 200 in 20ms (next.js: 2ms, application-code: 18ms)
+✓ Compiled in 170ms
+ GET /about 200 in 342ms (next.js: 116ms, application-code: 226ms)
+ GET / 200 in 710ms (next.js: 155ms, application-code: 555ms)
+ GET / 200 in 712ms (next.js: 104ms, application-code: 607ms)
+ GET / 200 in 378ms (next.js: 37ms, application-code: 341ms)
+ GET / 200 in 378ms (next.js: 87ms, application-code: 291ms)
+ GET / 200 in 260ms (next.js: 5ms, application-code: 255ms)
+ GET / 200 in 260ms (next.js: 51ms, application-code: 209ms)
+ GET / 200 in 259ms (next.js: 170ms, application-code: 89ms)
+ GET / 200 in 261ms (next.js: 27ms, application-code: 234ms)
+ GET / 200 in 261ms (next.js: 111ms, application-code: 150ms)
+ GET / 200 in 261ms (next.js: 128ms, application-code: 133ms)
+ GET / 200 in 261ms (next.js: 146ms, application-code: 116ms)
+ GET /about 200 in 68ms (next.js: 4ms, application-code: 65ms)
+ GET / 200 in 103ms (next.js: 3ms, application-code: 100ms)
+ GET /about 200 in 65ms (next.js: 2ms, application-code: 63ms)
+ GET /about 200 in 48ms (next.js: 3ms, application-code: 45ms)
+ GET /about 200 in 27ms (next.js: 3ms, application-code: 24ms)
+ GET /noise.png 404 in 66ms (next.js: 10ms, application-code: 56ms)
+✓ Compiled in 109ms
+ GET /about 200 in 298ms (next.js: 47ms, application-code: 251ms)
+ GET /about 200 in 76ms (next.js: 3ms, application-code: 73ms)
+ GET / 200 in 303ms (next.js: 202ms, application-code: 101ms)
+ GET / 200 in 303ms (next.js: 156ms, application-code: 147ms)
+ GET / 200 in 79ms (next.js: 21ms, application-code: 58ms)
+ GET / 200 in 79ms (next.js: 43ms, application-code: 36ms)
+ GET /enquire 200 in 91ms (next.js: 56ms, application-code: 35ms)
+ GET / 200 in 18ms (next.js: 1803µs, application-code: 16ms)
+ GET / 200 in 202ms (next.js: 3ms, application-code: 199ms)
+ GET /noise.png 404 in 62ms (next.js: 9ms, application-code: 53ms)
+ GET /enquire 200 in 23ms (next.js: 4ms, application-code: 20ms)
+ GET / 200 in 21ms (next.js: 2ms, application-code: 19ms)
+ GET /noise.png 404 in 26ms (next.js: 3ms, application-code: 23ms)
+ GET /programs 200 in 71ms (next.js: 12ms, application-code: 60ms)
+ GET / 200 in 259ms (next.js: 141ms, application-code: 118ms)
+ GET / 200 in 259ms (next.js: 189ms, application-code: 71ms)
+ GET / 200 in 51ms (next.js: 2ms, application-code: 49ms)
+ GET / 200 in 51ms (next.js: 28ms, application-code: 24ms)
+ GET /noise.png 404 in 38ms (next.js: 7ms, application-code: 31ms)
+ GET / 200 in 170ms (next.js: 57ms, application-code: 113ms)
+ GET / 200 in 170ms (next.js: 101ms, application-code: 69ms)
+ GET / 200 in 44ms (next.js: 2ms, application-code: 41ms)
+ GET / 200 in 25ms (next.js: 2ms, application-code: 23ms)
+ GET /contact 200 in 76ms (next.js: 43ms, application-code: 33ms)
