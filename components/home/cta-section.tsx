@@ -45,19 +45,28 @@ export function CtaSection() {
                   Experience a preschool that prioritizes your child's happiness and growth. Whether you'd like to schedule a tour, have a quick chat, or message us on WhatsApp, we're here to help you make the right choice.
                 </p>
 
-                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                  <a href="https://wa.me/918610170313" target="_blank" rel="noreferrer">
-                    <Button className="w-full sm:w-auto bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-full px-6 py-6 text-lg font-bold shadow-lg hover:-translate-y-1 transition-all flex items-center gap-2">
-                       <MessageCircle className="w-5 h-5" />
+                <div className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start">
+                  <a 
+                    href="https://wa.me/918610170313?text=Hi%2C%20I%E2%80%99m%20interested%20in%20admission%20for%20my%20child.%20Can%20you%20share%20details%3F" 
+                    target="_blank" 
+                    rel="noreferrer" 
+                    className="w-full sm:w-auto"
+                  >
+                    <Button className="w-full btn-gradient-yellow text-foreground rounded-full px-8 py-8 text-xl font-bold shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all flex items-center justify-center gap-3">
+                       <MessageCircle className="w-6 h-6" />
                        Chat on WhatsApp
                     </Button>
                   </a>
-                  <a href="/enquire">
-                    <Button variant="outline" className="w-full sm:w-auto bg-transparent border-white/30 hover:bg-white/10 text-white rounded-full px-6 py-6 text-lg font-medium shadow-sm hover:-translate-y-1 transition-all flex items-center gap-2">
+                  <a href="/enquire" className="w-full sm:w-auto">
+                    <Button variant="outline" className="w-full bg-white/10 border-white/40 hover:bg-white/20 text-white rounded-full px-8 py-8 text-xl font-medium shadow-sm hover:-translate-y-1 transition-all flex items-center justify-center gap-3">
                       <Send className="w-5 h-5" />
-                      Book a Free School Visit
+                      Book a Free Visit
                     </Button>
                   </a>
+                </div>
+                <div className="mt-6 flex items-center justify-center lg:justify-start gap-2 text-soft-yellow font-semibold tracking-wide animate-pulse">
+                   <div className="w-2 h-2 rounded-full bg-soft-yellow" />
+                   Quick responses. We’re happy to help!
                 </div>
               </motion.div>
             </div>

@@ -18,15 +18,27 @@ const pacifico = Pacifico({
 })
 
 export const metadata: Metadata = {
-  title: 'Seventh Sense School of Arts | Where Every Child Finds Their Unique Spark',
-  description: 'A magical preschool experience where children discover, learn, and grow through play, expression, and discovery. Premium early learning programs for your little ones.',
-  keywords: ['preschool', 'early learning', 'child development', 'kindergarten', 'playschool', 'School of arts', 'Kovaipudur', 'Coimbatore'],
+  title: {
+    default: 'Seventh Sense School of Arts | Where Every Child Finds Their Unique Spark',
+    template: '%s | Seventh Sense School of Arts',
+  },
+  description: 'A magical preschool experience where children discover, learn, and grow through play, expression, and discovery. Premium early learning programs for your little ones in Kovaipudur, Coimbatore.',
+  keywords: ['preschool', 'early learning', 'child development', 'kindergarten', 'playschool', 'School of arts', 'Kovaipudur', 'Coimbatore', 'Seventh Sense School'],
   authors: [{ name: 'Seventh Sense School of Arts' }],
+  metadataBase: new URL('https://seventhsenseschool.com'),
   openGraph: {
     title: 'Seventh Sense School of Arts',
-    description: 'Where Every Child Finds Their Unique Spark',
+    description: 'A magical preschool experience where children discovery, learn, and grow through play and expression.',
     url: 'https://seventhsenseschool.com',
     siteName: 'Seventh Sense School of Arts',
+    images: [
+      {
+        url: '/gallery/gallery-section/im1.png', // High-quality classroom moment
+        width: 1200,
+        height: 630,
+        alt: 'Children enjoying fun learning activities at Seventh Sense School of Arts',
+      },
+    ],
     locale: 'en_US',
     type: 'website',
   },
@@ -34,6 +46,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Seventh Sense School of Arts',
     description: 'Where Every Child Finds Their Unique Spark',
+    images: ['/gallery/gallery-section/im1.png'],
   },
   icons: {
     icon: '/icon.svg',
@@ -45,6 +58,8 @@ export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
 }
+
+import { WhatsAppFloating } from '@/components/whatsapp-floating'
 
 export default function RootLayout({
   children,
@@ -61,6 +76,7 @@ export default function RootLayout({
           Skip to main content
         </a>
         {children}
+        <WhatsAppFloating />
         <Analytics />
       </body>
     </html>

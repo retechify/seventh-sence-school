@@ -6,8 +6,8 @@ import { Button } from "@/components/ui/button"
 import { BookOpen, Puzzle, Palette, MessageCircle, Music, Users, Star } from "lucide-react"
 
 export const metadata = {
-  title: "Our Programs | Seventh Sense School of Arts",
-  description: "Explore our comprehensive early learning programs including activity-based learning, creative arts, and communication development.",
+  title: "Empowering Programs",
+  description: "Discover our warm, activity-based preschool programs designed to nurture your child's confidence, creativity, and love for learning.",
 }
 
 const programs = [
@@ -15,8 +15,8 @@ const programs = [
     icon: BookOpen,
     stickerType: "rainbow" as const,
     title: "Phonics-Based Language Learning",
-    description: "Helping children build strong reading and communication skills from an early age.",
-    features: ["Phonics & Reading Readiness", "Language Acquisition", "Storytelling & Listening", "Literacy Foundations"],
+    description: "Watch your child's confidence grow as they discover the magic of sounds. From their first 'Aa' to reading their favorite stories with pride, we make language an adventure.",
+    features: ["Joyful Phonics & Reading", "Confident Communication", "Magical Storytelling", "Early Literacy Journey"],
     color: "lavender",
     hue: 300,
   },
@@ -24,8 +24,8 @@ const programs = [
     icon: Puzzle,
     stickerType: "sun" as const,
     title: "Montessori Sensory Development",
-    description: "Encouraging hands-on exploration that strengthens focus, independence, and problem-solving.",
-    features: ["Practical Life Skills", "Sensory Play Stations", "Independent Problem-Solving", "Everyday Resilience"],
+    description: "Inspired by the belief that children learn best with their hands and hearts. Our sensory-rich environment nurtures independent thinkers who are curious about the world around them.",
+    features: ["Practical Life Skills", "Hands-on Exploration", "Independent Thinking", "Everyday Resilience"],
     color: "peach",
     hue: 50,
   },
@@ -33,8 +33,8 @@ const programs = [
     icon: MessageCircle,
     stickerType: "cloud" as const,
     title: "Activity-Based Exploration",
-    description: "Learning through play, creativity, and real-world experiences that make education enjoyable.",
-    features: ["Hands-On Movement", "Collaborative Play", "Motor Skills Development", "Social Interaction"],
+    description: "Learning isn't sitting still—it's moving, building, and exploring! We transform every lesson into a joyful activity that sparks creativity and builds strong motor skills.",
+    features: ["Learning Through Movement", "Collaborative Play", "Creative Motor Skills", "Active Social Growth"],
     color: "mint",
     hue: 160,
   },
@@ -42,8 +42,8 @@ const programs = [
     icon: Star,
     stickerType: "star" as const,
     title: "Life Skills & Confidence Training",
-    description: "Building independence, emotional strength, and self-confidence for everyday life.",
-    features: ["Emotional Intelligence", "Character Building", "Self-Expression", "Confidence Boosters"],
+    description: "Preparing little hearts for big futures. Beyond academics, we nurture emotional intelligence, kindness, and the 'I can do it' spirit that stays with them for life.",
+    features: ["Emotional Intelligence", "Kindness & Character", "Self-Expression", "Unstoppable Confidence"],
     color: "baby-blue",
     hue: 200,
   },

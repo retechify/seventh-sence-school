@@ -54,7 +54,7 @@ export default function GalleryPage() {
       <div className="fixed inset-0 grain-texture z-0 opacity-50" />
       
       {/* Floating doodles */}
-      <FloatingDoodles count={25} />
+      <FloatingDoodles count={30} />
       
       {/* Main content */}
       <div className="relative z-10 flex flex-col min-h-screen">
@@ -62,35 +62,42 @@ export default function GalleryPage() {
         
         <main className="flex-1">
           {/* Hero Section */}
-          <section className="relative pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-peach/20 via-cream to-lavender/30" />
+          <section className="relative pt-28 pb-20 md:pt-40 md:pb-32 overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-peach/30 via-cream to-lavender/30" />
             
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-white/40 rounded-full blur-[100px] -z-10" />
 
             {/* Extra doodles */}
-            <div className="absolute top-24 left-10 w-16 h-16 opacity-50 animate-float">
-              <StickerIcon type="sun" className="w-full h-full drop-shadow-sm" />
+            <div className="absolute top-24 left-10 w-20 h-20 opacity-40 animate-float hidden md:block">
+              <StickerIcon type="sparkle" className="w-full h-full drop-shadow-sm" />
             </div>
-            <div className="absolute top-32 right-16 w-14 h-14 opacity-40 animate-float-slow">
+            <div className="absolute top-32 right-16 w-16 h-16 opacity-30 animate-float-slow hidden md:block">
               <StickerIcon type="rainbow" className="w-full h-full drop-shadow-sm" />
             </div>
-            <div className="absolute bottom-20 left-1/4 w-12 h-12 opacity-60 animate-sparkle">
-              <StickerIcon type="sparkle" className="w-full h-full drop-shadow-sm" />
+            <div className="absolute bottom-20 left-1/4 w-14 h-14 opacity-50 animate-sparkle hidden md:block">
+               <StickerIcon type="star" className="w-full h-full shadow-sm" />
+            </div>
+            <div className="absolute top-1/3 right-1/4 w-12 h-12 opacity-20 animate-pulse hidden md:block">
+               <StickerIcon type="cloud" className="w-full h-full" />
             </div>
             
             <div className="container mx-auto px-4 relative">
-              <div className="text-center max-w-3xl mx-auto">
-                <div className="inline-flex items-center gap-2 bg-white/60 rounded-full px-5 py-2.5 mb-8 shadow-sm border border-lavender/30">
+              <div className="text-center max-w-4xl mx-auto space-y-6">
+                <motion.div 
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="inline-flex items-center gap-2 bg-white/70 backdrop-blur-sm rounded-full px-5 py-2.5 mb-2 shadow-sm border border-white/50"
+                >
                   <Camera className="w-5 h-5 text-primary" />
-                  <span className="text-sm font-semibold tracking-wide text-primary uppercase">Moments</span>
-                </div>
+                  <span className="text-sm font-bold tracking-widest text-primary uppercase">Moments Of Joy</span>
+                </motion.div>
                 
-                <h1 className="font-semibold text-5xl lg:text-7xl text-primary mb-6 text-balance leading-tight">
-                  Our Happy Moments
+                <h1 className="font-semibold text-6xl lg:text-8xl text-primary text-balance leading-tight tracking-tight">
+                  Our Happy <span className="font-serif italic text-peach-700 drop-shadow-sm">World</span>
                 </h1>
                 
-                <p className="text-xl text-muted-foreground leading-relaxed text-pretty">
-                  Real smiles. Real growth. Take a peek into the joyful learning happening every day at Seventh Sense.
+                <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed text-pretty max-w-2xl mx-auto">
+                  Step inside and witness the magic of childhood. Real growth, real friendships, and endless discovery.
                 </p>
               </div>
             </div>
@@ -145,29 +152,32 @@ export default function GalleryPage() {
                          </div>
                          
                          <div 
-                           className={`relative rounded-[2rem] overflow-hidden border-[6px] border-white shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 cursor-pointer ${
-                             isLarge ? 'aspect-[3/4]' : 'aspect-square'
+                           className={`relative rounded-[2.5rem] overflow-hidden border-[8px] border-white shadow-xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.15)] transition-all duration-700 hover:-translate-y-3 cursor-pointer ${
+                             isLarge ? 'aspect-[3/4.5]' : 'aspect-square'
                            }`}
                            style={{
                               background: `linear-gradient(135deg, oklch(0.95 0.08 ${colorMap[item.color].hue}), oklch(0.98 0.03 ${colorMap[item.color].hue}))`
                            }}
                          >
-                           {/* Image */}
-                           <div className="absolute inset-0">
-                             <img src={item.image} alt={item.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                             {/* Gradient Overlay for Text */}
-                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                           {/* Image with subtle zoom on hover */}
+                           <div className="absolute inset-0 overflow-hidden">
+                             <img 
+                               src={item.image} 
+                               alt={item.title} 
+                               className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" 
+                             />
+                             {/* Better Gradient Overlay */}
+                             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                            </div>
                            
-                           {/* Content bottom overlay */}
-                           <div className="absolute bottom-0 left-0 right-0 p-6 text-left transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300 z-10">
-                              <h3 className="font-semibold text-2xl text-white mb-2">{item.title}</h3>
-                              <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md rounded-full px-3 py-1">
+                           {/* Content bottom overlay - smoother transition */}
+                           <div className="absolute bottom-0 left-0 right-0 p-8 text-left transform translate-y-6 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10">
+                              <h3 className="font-bold text-2xl text-white mb-2 tracking-tight">{item.title}</h3>
+                              <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md rounded-full px-4 py-1.5 border border-white/30">
                                  <item.icon className="w-4 h-4 text-white" />
-                                 <span className="text-white text-sm font-medium capitalize">{item.category}</span>
+                                 <span className="text-white text-xs font-bold uppercase tracking-widest">{item.category}</span>
                               </div>
                            </div>
-
                          </div>
                        </motion.div>
                      )

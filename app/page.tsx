@@ -1,3 +1,4 @@
+import type { Metadata } from "next"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { FloatingDoodles } from "@/components/floating-doodles"
@@ -10,6 +11,11 @@ import { GallerySection } from "@/components/home/gallery-section"
 import { TestimonialsSection } from "@/components/home/testimonials-section"
 import { CtaSection } from "@/components/home/cta-section"
 import { AnnouncementBar } from "@/components/home/announcement-bar"
+
+export const metadata: Metadata = {
+  title: "Seventh Sense School of Arts | Premium Preschool in Coimbatore",
+  description: "Discover a magical preschool experience at Seventh Sense School of Arts. We provide top-tier activity-based learning and creative programs for children in Kovaipudur, Coimbatore.",
+}
 
 export default function HomePage() {
   return (

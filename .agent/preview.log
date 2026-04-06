@@ -2150,3 +2150,2665 @@ Import trace:
  GET / 200 in 162ms (next.js: 46ms, application-code: 115ms)
 ✓ Compiled in 84ms
  GET /about 200 in 74ms (next.js: 46ms, application-code: 29ms)
+ GET /contact 200 in 396ms (next.js: 94ms, application-code: 302ms)
+ GET /about 200 in 396ms (next.js: 186ms, application-code: 210ms)
+ GET /contact 200 in 181ms (next.js: 3ms, application-code: 178ms)
+ GET /about 200 in 197ms (next.js: 7ms, application-code: 190ms)
+ GET /contact 200 in 174ms (next.js: 43ms, application-code: 131ms)
+ GET /contact 200 in 176ms (next.js: 3ms, application-code: 172ms)
+ GET /contact 200 in 175ms (next.js: 31ms, application-code: 144ms)
+ GET /contact 200 in 176ms (next.js: 18ms, application-code: 158ms)
+ GET /about 200 in 175ms (next.js: 60ms, application-code: 115ms)
+ GET /about 200 in 175ms (next.js: 77ms, application-code: 99ms)
+ GET /about 200 in 119ms (next.js: 38ms, application-code: 81ms)
+ GET /about 200 in 119ms (next.js: 54ms, application-code: 65ms)
+ GET /about 200 in 40ms (next.js: 20ms, application-code: 19ms)
+ GET /contact 200 in 40ms (next.js: 4ms, application-code: 37ms)
+ GET /contact 200 in 29ms (next.js: 1819µs, application-code: 27ms)
+ GET /about 200 in 29ms (next.js: 13ms, application-code: 16ms)
+✓ Compiled in 63ms
+ GET /about 200 in 29ms (next.js: 1733µs, application-code: 27ms)
+ GET /contact 200 in 29ms (next.js: 14ms, application-code: 15ms)
+✓ Compiled in 55ms
+ GET /contact 200 in 40ms (next.js: 18ms, application-code: 22ms)
+ GET /about 200 in 41ms (next.js: 2ms, application-code: 39ms)
+✓ Compiled in 84ms
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+ GET /contact 500 in 15ms (next.js: 7ms, application-code: 8ms)
+[browser] Uncaught Error: ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+
+    at <unknown> (Error: ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14)
+    at <unknown> (Error: (./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14)
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+✓ Compiled in 320ms
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:301:13
+Expression expected
+  299 |   )
+  300 | }
+> 301 |             </div>
+      |             ^
+  302 |           </div>
+  303 |         </main>
+  304 |
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:301:14
+Unterminated regexp literal
+  299 |   )
+  300 | }
+> 301 |             </div>
+      |              ^^^^^
+  302 |           </div>
+  303 |         </main>
+  304 |
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+ GET /about 500 in 15ms (next.js: 6ms, application-code: 9ms)
+ GET /contact 500 in 14ms (next.js: 4ms, application-code: 9ms)
+ GET /about 500 in 63ms (next.js: 5ms, application-code: 58ms)
+ GET /about 500 in 17ms (next.js: 5ms, application-code: 12ms)
+[browser] Uncaught Error: ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+
+    at <unknown> (Error: ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14)
+    at <unknown> (Error: (./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14)
+[browser] Uncaught Error: ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+
+    at <unknown> (Error: ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14)
+    at <unknown> (Error: (./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14)
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx:44:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  42 | }
+  43 |
+> 44 | export const metadata = {
+     |              ^^^^^^^^
+  45 |   title: "A Glimpse Into Our World",
+  46 |   description: "Take a peek into the joyful learning, creative play, and beautiful smiles ...
+  47 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx:44:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  42 | }
+  43 |
+> 44 | export const metadata = {
+     |              ^^^^^^^^
+  45 |   title: "A Glimpse Into Our World",
+  46 |   description: "Take a peek into the joyful learning, creative play, and beautiful smiles ...
+  47 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx:44:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  42 | }
+  43 |
+> 44 | export const metadata = {
+     |              ^^^^^^^^
+  45 |   title: "A Glimpse Into Our World",
+  46 |   description: "Take a peek into the joyful learning, creative play, and beautiful smiles ...
+  47 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx:44:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  42 | }
+  43 |
+> 44 | export const metadata = {
+     |              ^^^^^^^^
+  45 |   title: "A Glimpse Into Our World",
+  46 |   description: "Take a peek into the joyful learning, creative play, and beautiful smiles ...
+  47 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx:44:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  42 | }
+  43 |
+> 44 | export const metadata = {
+     |              ^^^^^^^^
+  45 |   title: "A Glimpse Into Our World",
+  46 |   description: "Take a peek into the joyful learning, creative play, and beautiful smiles ...
+  47 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx:44:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  42 | }
+  43 |
+> 44 | export const metadata = {
+     |              ^^^^^^^^
+  45 |   title: "A Glimpse Into Our World",
+  46 |   description: "Take a peek into the joyful learning, creative play, and beautiful smiles ...
+  47 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx:44:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  42 | }
+  43 |
+> 44 | export const metadata = {
+     |              ^^^^^^^^
+  45 |   title: "A Glimpse Into Our World",
+  46 |   description: "Take a peek into the joyful learning, creative play, and beautiful smiles ...
+  47 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+ GET /about 500 in 47ms (next.js: 32ms, application-code: 15ms)
+[browser] Uncaught Error: ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx:44:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  42 | }
+  43 |
+> 44 | export const metadata = {
+     |              ^^^^^^^^
+  45 |   title: "A Glimpse Into Our World",
+  46 |   description: "Take a peek into the joyful learning, creative play, and beautiful smiles ...
+  47 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component]
+
+
+    at <unknown> (Error: ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx:44:14)
+    at <unknown> (Error: (./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx:44:14)
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx:44:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  42 | }
+  43 |
+> 44 | export const metadata = {
+     |              ^^^^^^^^
+  45 |   title: "A Glimpse Into Our World",
+  46 |   description: "Take a peek into the joyful learning, creative play, and beautiful smiles ...
+  47 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+ GET /contact 500 in 421ms
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx:44:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  42 | }
+  43 |
+> 44 | export const metadata = {
+     |              ^^^^^^^^
+  45 |   title: "A Glimpse Into Our World",
+  46 |   description: "Take a peek into the joyful learning, creative play, and beautiful smiles ...
+  47 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+ GET /about 500 in 28ms (next.js: 13ms, application-code: 15ms)
+ GET /contact 500 in 28ms (next.js: 20ms, application-code: 8ms)
+[browser] Uncaught Error: ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx:44:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  42 | }
+  43 |
+> 44 | export const metadata = {
+     |              ^^^^^^^^
+  45 |   title: "A Glimpse Into Our World",
+  46 |   description: "Take a peek into the joyful learning, creative play, and beautiful smiles ...
+  47 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component]
+
+
+    at <unknown> (Error: ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx:44:14)
+    at <unknown> (Error: (./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx:44:14)
+[browser] Uncaught Error: ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx:44:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  42 | }
+  43 |
+> 44 | export const metadata = {
+     |              ^^^^^^^^
+  45 |   title: "A Glimpse Into Our World",
+  46 |   description: "Take a peek into the joyful learning, creative play, and beautiful smiles ...
+  47 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component]
+
+
+    at <unknown> (Error: ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx:44:14)
+    at <unknown> (Error: (./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx:44:14)
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx:44:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  42 | }
+  43 |
+> 44 | export const metadata = {
+     |              ^^^^^^^^
+  45 |   title: "A Glimpse Into Our World",
+  46 |   description: "Take a peek into the joyful learning, creative play, and beautiful smiles ...
+  47 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx:44:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  42 | }
+  43 |
+> 44 | export const metadata = {
+     |              ^^^^^^^^
+  45 |   title: "A Glimpse Into Our World",
+  46 |   description: "Take a peek into the joyful learning, creative play, and beautiful smiles ...
+  47 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx:44:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  42 | }
+  43 |
+> 44 | export const metadata = {
+     |              ^^^^^^^^
+  45 |   title: "A Glimpse Into Our World",
+  46 |   description: "Take a peek into the joyful learning, creative play, and beautiful smiles ...
+  47 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx:44:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  42 | }
+  43 |
+> 44 | export const metadata = {
+     |              ^^^^^^^^
+  45 |   title: "A Glimpse Into Our World",
+  46 |   description: "Take a peek into the joyful learning, creative play, and beautiful smiles ...
+  47 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx:44:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  42 | }
+  43 |
+> 44 | export const metadata = {
+     |              ^^^^^^^^
+  45 |   title: "A Glimpse Into Our World",
+  46 |   description: "Take a peek into the joyful learning, creative play, and beautiful smiles ...
+  47 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx:44:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  42 | }
+  43 |
+> 44 | export const metadata = {
+     |              ^^^^^^^^
+  45 |   title: "A Glimpse Into Our World",
+  46 |   description: "Take a peek into the joyful learning, creative play, and beautiful smiles ...
+  47 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx:44:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  42 | }
+  43 |
+> 44 | export const metadata = {
+     |              ^^^^^^^^
+  45 |   title: "A Glimpse Into Our World",
+  46 |   description: "Take a peek into the joyful learning, creative play, and beautiful smiles ...
+  47 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+ GET /contact 500 in 43ms
+ GET /about 500 in 43ms
+ GET /about 500 in 18ms (next.js: 5ms, application-code: 14ms)
+ GET /contact 500 in 18ms (next.js: 11ms, application-code: 7ms)
+[browser] Uncaught Error: ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx:44:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  42 | }
+  43 |
+> 44 | export const metadata = {
+     |              ^^^^^^^^
+  45 |   title: "A Glimpse Into Our World",
+  46 |   description: "Take a peek into the joyful learning, creative play, and beautiful smiles ...
+  47 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component]
+
+
+    at <unknown> (Error: ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx:44:14)
+    at <unknown> (Error: (./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx:44:14)
+[browser] Uncaught Error: ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx:44:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  42 | }
+  43 |
+> 44 | export const metadata = {
+     |              ^^^^^^^^
+  45 |   title: "A Glimpse Into Our World",
+  46 |   description: "Take a peek into the joyful learning, creative play, and beautiful smiles ...
+  47 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component]
+
+
+    at <unknown> (Error: ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx:44:14)
+    at <unknown> (Error: (./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx:44:14)
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx:44:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  42 | }
+  43 |
+> 44 | export const metadata = {
+     |              ^^^^^^^^
+  45 |   title: "A Glimpse Into Our World",
+  46 |   description: "Take a peek into the joyful learning, creative play, and beautiful smiles ...
+  47 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx:44:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  42 | }
+  43 |
+> 44 | export const metadata = {
+     |              ^^^^^^^^
+  45 |   title: "A Glimpse Into Our World",
+  46 |   description: "Take a peek into the joyful learning, creative play, and beautiful smiles ...
+  47 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+✓ Compiled in 61ms
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx:44:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  42 | }
+  43 |
+> 44 | export const metadata = {
+     |              ^^^^^^^^
+  45 |   title: "A Glimpse Into Our World",
+  46 |   description: "Take a peek into the joyful learning, creative play, and beautiful smiles ...
+  47 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx:44:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  42 | }
+  43 |
+> 44 | export const metadata = {
+     |              ^^^^^^^^
+  45 |   title: "A Glimpse Into Our World",
+  46 |   description: "Take a peek into the joyful learning, creative play, and beautiful smiles ...
+  47 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/gallery/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+ GET /contact 500 in 9ms (next.js: 3ms, application-code: 6ms)
+[browser] Uncaught Error: ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+
+    at <unknown> (Error: ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14)
+    at <unknown> (Error: (./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14)
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+ GET /about 500 in 4ms
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+ GET /about 500 in 30ms (next.js: 13ms, application-code: 16ms)
+ GET /contact 500 in 29ms (next.js: 21ms, application-code: 8ms)
+[browser] Uncaught Error: ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+
+    at <unknown> (Error: ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14)
+    at <unknown> (Error: (./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14)
+[browser] Uncaught Error: ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+
+    at <unknown> (Error: ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14)
+    at <unknown> (Error: (./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14)
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx:15:14
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. "metadata" must be resolved on the server before the page component is rendered. Keep your page as a Server Component and move Client Component logic to a separate file. Read more: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#why-generatemetadata-is-server-component-only
+  13 | import { motion, AnimatePresence } from "framer-motion"
+  14 |
+> 15 | export const metadata = {
+     |              ^^^^^^^^
+  16 |   title: "Book a Visit",
+  17 |   description: "Schedule a free school visit at Seventh Sense School of Arts. Experience o...
+  18 | }
+
+Ecmascript file had an error
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component Browser]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Client Component SSR]
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/enquire/page.tsx [Server Component] 
+✓ Compiled in 60ms
+ GET /about 200 in 352ms (next.js: 52ms, application-code: 299ms)
+ GET /contact 200 in 352ms (next.js: 283ms, application-code: 69ms)
+ GET /contact 200 in 39ms (next.js: 3ms, application-code: 36ms)
+ GET / 200 in 115ms (next.js: 66ms, application-code: 49ms)
+ GET /noise.png 404 in 141ms (next.js: 59ms, application-code: 83ms)
+✓ Compiled in 350ms
+ GET / 200 in 2.2s (next.js: 1108ms, application-code: 1097ms)
+ GET / 200 in 213ms (next.js: 161ms, application-code: 52ms)
+ GET / 200 in 213ms (next.js: 188ms, application-code: 25ms)
+ GET / 200 in 214ms (next.js: 137ms, application-code: 76ms)
+ GET / 200 in 668ms (next.js: 117ms, application-code: 551ms)
+ GET /about 200 in 2.2s (next.js: 438ms, application-code: 1781ms)
+ GET /about 200 in 685ms (next.js: 62ms, application-code: 623ms)
+ GET /about 200 in 27ms (next.js: 4ms, application-code: 23ms)
+ GET /about 200 in 262ms (next.js: 41ms, application-code: 221ms)
+ GET /about 200 in 262ms (next.js: 63ms, application-code: 199ms)
+ GET /about 200 in 263ms (next.js: 24ms, application-code: 239ms)
+ GET /about 200 in 270ms (next.js: 10ms, application-code: 260ms)
+ GET / 200 in 625ms (next.js: 60ms, application-code: 565ms)
+ GET /noise.png 404 in 194ms (next.js: 86ms, application-code: 108ms)
+✓ Compiled in 267ms
+✓ Compiled in 275ms
+ GET /noise.png 404 in 24ms (next.js: 3ms, application-code: 21ms)
+ GET / 200 in 108ms (next.js: 85ms, application-code: 23ms)
+ GET / 200 in 35ms (next.js: 2ms, application-code: 33ms)
+ GET /contact 200 in 89ms (next.js: 53ms, application-code: 36ms)
+ GET /enquire 200 in 100ms (next.js: 72ms, application-code: 28ms)
+ GET / 200 in 180ms (next.js: 5ms, application-code: 175ms)
+ GET /noise.png 404 in 27ms (next.js: 3ms, application-code: 24ms)
+ GET /contact 200 in 18ms (next.js: 3ms, application-code: 15ms)
+✓ Compiled in 248ms
+ GET /about 200 in 261ms (next.js: 191ms, application-code: 70ms)
+ GET /contact 200 in 262ms (next.js: 65ms, application-code: 197ms)
+ GET /enquire 200 in 263ms (next.js: 159ms, application-code: 104ms)
+ GET /contact 200 in 56ms (next.js: 2ms, application-code: 53ms)
+ GET /enquire 200 in 56ms (next.js: 17ms, application-code: 38ms)
+ GET /about 200 in 41ms (next.js: 18ms, application-code: 23ms)
+✓ Compiled in 239ms
+ GET /about 200 in 346ms (next.js: 50ms, application-code: 297ms)
+ GET /enquire 200 in 348ms (next.js: 230ms, application-code: 118ms)
+ GET /contact 200 in 348ms (next.js: 192ms, application-code: 156ms)
+ GET /about 200 in 79ms (next.js: 14ms, application-code: 65ms)
+ GET /contact 200 in 79ms (next.js: 35ms, application-code: 44ms)
+ GET /enquire 200 in 79ms (next.js: 51ms, application-code: 28ms)
+ GET /contact 200 in 122ms (next.js: 3ms, application-code: 119ms)
+ GET /enquire 200 in 14ms (next.js: 2ms, application-code: 12ms)
+ GET / 200 in 38ms (next.js: 12ms, application-code: 26ms)
+ GET /noise.png 404 in 35ms (next.js: 11ms, application-code: 23ms)
+ GET /contact 200 in 14ms (next.js: 2ms, application-code: 12ms)
+ GET /enquire 200 in 13ms (next.js: 1965µs, application-code: 11ms)
+ GET /contact 200 in 17ms (next.js: 1913µs, application-code: 15ms)
+ GET /enquire 200 in 19ms (next.js: 2ms, application-code: 17ms)
+ GET /contact 200 in 15ms (next.js: 2ms, application-code: 13ms)
+✓ Compiled in 229ms
+ GET /contact 200 in 409ms (next.js: 226ms, application-code: 183ms)
+ GET /about 200 in 409ms (next.js: 298ms, application-code: 111ms)
+ GET /enquire 200 in 409ms (next.js: 88ms, application-code: 321ms)
+ GET /enquire 200 in 95ms (next.js: 9ms, application-code: 86ms)
+ GET /contact 200 in 96ms (next.js: 29ms, application-code: 67ms)
+ GET /about 200 in 88ms (next.js: 22ms, application-code: 66ms)
+ GET /enquire 200 in 72ms (next.js: 4ms, application-code: 68ms)
+ GET /contact 200 in 45ms (next.js: 4ms, application-code: 41ms)
+ GET /about 200 in 27ms (next.js: 4ms, application-code: 23ms)
+[browser] Uncaught ReferenceError: Link is not defined
+    at ContactPage (../6_school seventh sense/app/contact/page.tsx:145:28)
+  143 |                        </p>
+  144 |                        <div className="pt-4">
+> 145 |                           <Link href="/enquire">
+      |                            ^
+  146 |                              <Button className="btn-gradient-yellow text-foreground round...
+  147 |                                 Book a School Visit
+  148 |                              </Button>
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+✓ Compiled in 59ms
+ GET /contact 200 in 251ms (next.js: 74ms, application-code: 177ms)
