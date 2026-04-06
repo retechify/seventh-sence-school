@@ -333,3 +333,1818 @@ https://react.dev/link/hydration-mismatch
  GET / 200 in 44ms (next.js: 2ms, application-code: 41ms)
  GET / 200 in 25ms (next.js: 2ms, application-code: 23ms)
  GET /contact 200 in 76ms (next.js: 43ms, application-code: 33ms)
+ GET /noise.png 404 in 71ms (next.js: 9ms, application-code: 62ms)
+ GET /contact 200 in 14ms (next.js: 1868µs, application-code: 12ms)
+ GET / 200 in 23ms (next.js: 3ms, application-code: 20ms)
+ GET /gallery 200 in 90ms (next.js: 52ms, application-code: 38ms)
+ GET / 200 in 21ms (next.js: 1768µs, application-code: 20ms)
+✓ Compiled in 198ms
+ GET /noise.png 404 in 25ms (next.js: 4ms, application-code: 21ms)
+⨯ ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  [90m91 |[0m              </div>
+  [90m92 |[0m           </figure>
+[31m[1m>[0m [90m93 |[0m  or you can use the iframe version inside [36mthis[0m figure tag */}
+  [90m   |[0m                                                             [31m[1m^[0m
+  [90m94 |[0m         </motion.div>
+  [90m95 |[0m       </div>
+  [90m96 |[0m     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx
+
+
+ GET / 500 in 612ms (next.js: 512ms, application-code: 100ms)
+ GET /contact 500 in 613ms (next.js: 605ms, application-code: 8ms)
+⨯ ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  [90m91 |[0m              </div>
+  [90m92 |[0m           </figure>
+[31m[1m>[0m [90m93 |[0m  or you can use the iframe version inside [36mthis[0m figure tag */}
+  [90m   |[0m                                                             [31m[1m^[0m
+  [90m94 |[0m         </motion.div>
+  [90m95 |[0m       </div>
+  [90m96 |[0m     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx
+
+
+ GET /contact 500 in 21ms (next.js: 8ms, application-code: 13ms)
+ GET / 500 in 21ms (next.js: 15ms, application-code: 6ms)
+⨯ ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  [90m91 |[0m              </div>
+  [90m92 |[0m           </figure>
+[31m[1m>[0m [90m93 |[0m  or you can use the iframe version inside [36mthis[0m figure tag */}
+  [90m   |[0m                                                             [31m[1m^[0m
+  [90m94 |[0m         </motion.div>
+  [90m95 |[0m       </div>
+  [90m96 |[0m     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx
+
+
+ GET / 500 in 17ms (next.js: 6ms, application-code: 11ms)
+ GET /contact 500 in 20ms (next.js: 14ms, application-code: 6ms)
+[browser] Uncaught Error: ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx
+
+
+    at <unknown> (Error: ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61)
+    at <unknown> (Error: (./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61)
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] Uncaught Error: ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx
+
+
+    at <unknown> (Error: ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61)
+    at <unknown> (Error: (./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61)
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+ GET /contact 500 in 12ms (next.js: 5ms, application-code: 8ms)
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] Uncaught Error: ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx
+
+
+    at <unknown> (Error: ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61)
+    at <unknown> (Error: (./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61)
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+[browser] ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx:93:61
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  91 |              </div>
+  92 |           </figure>
+> 93 |  or you can use the iframe version inside this figure tag */}
+     |                                                             ^
+  94 |         </motion.div>
+  95 |       </div>
+  96 |     </section>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/components/home/instagram-feed.tsx
+    ./Desktop/Retechify/1_Bluemoon/6_school seventh sense/app/page.tsx 
+ GET /contact 200 in 526ms (next.js: 56ms, application-code: 469ms)
+ GET / 200 in 526ms (next.js: 287ms, application-code: 239ms)
+ GET /contact 200 in 220ms (next.js: 113ms, application-code: 107ms)
+ GET / 200 in 223ms (next.js: 38ms, application-code: 185ms)
+ GET /noise.png 404 in 40ms (next.js: 9ms, application-code: 31ms)
+ GET /gallery 200 in 31ms (next.js: 9ms, application-code: 23ms)
+ GET / 200 in 23ms (next.js: 2ms, application-code: 21ms)
+ GET /gallery 200 in 21ms (next.js: 3ms, application-code: 18ms)
+ GET /contact 200 in 17ms (next.js: 2ms, application-code: 15ms)
+ GET / 200 in 19ms (next.js: 1715µs, application-code: 18ms)
+✓ Compiled in 105ms
+ GET /contact 200 in 336ms (next.js: 111ms, application-code: 225ms)
+ GET /contact 200 in 205ms (next.js: 31ms, application-code: 174ms)
+ GET /contact 200 in 155ms (next.js: 89ms, application-code: 66ms)
+ GET /contact 200 in 155ms (next.js: 101ms, application-code: 53ms)
+ GET /contact 200 in 155ms (next.js: 114ms, application-code: 40ms)
+ GET /contact 200 in 154ms (next.js: 128ms, application-code: 27ms)
+ GET / 200 in 345ms (next.js: 63ms, application-code: 283ms)
+ GET / 200 in 211ms (next.js: 3ms, application-code: 208ms)
+ GET / 200 in 161ms (next.js: 6ms, application-code: 155ms)
+ GET / 200 in 161ms (next.js: 30ms, application-code: 131ms)
+ GET / 200 in 161ms (next.js: 66ms, application-code: 96ms)
+ GET / 200 in 162ms (next.js: 46ms, application-code: 115ms)
