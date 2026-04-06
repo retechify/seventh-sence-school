@@ -21,7 +21,7 @@ export function FounderSection() {
               <div className="absolute inset-0 bg-lavender/40 rounded-[3rem] rotate-6 scale-105 -z-10" />
               <div className="absolute inset-0 bg-peach/30 rounded-[3rem] -rotate-3 scale-105 -z-10" />
               
-              <div className="relative rounded-[3rem] overflow-hidden aspect-[4/5] border-8 border-white shadow-xl bg-gray-100 flex items-center justify-center">
+              <div className="relative rounded-[3rem] overflow-hidden aspect-[4/5] border-8 border-white shadow-xl bg-gray-100 flex items-center justify-center z-10">
                 {/* Fallback pattern if image is missing */}
                 <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, black 1px, transparent 0)', backgroundSize: '24px 24px' }}></div>
                 <img 
@@ -40,7 +40,7 @@ export function FounderSection() {
                 whileInView={{ scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.4, type: "spring" }}
-                className="absolute -bottom-6 -right-6 md:-right-10 bg-white rounded-full p-2 shadow-2xl"
+                className="absolute -bottom-6 -right-6 md:-right-10 bg-white rounded-full p-2 shadow-2xl z-20"
               >
                 <div className="bg-gradient-to-br from-soft-yellow to-peach rounded-full w-32 h-32 flex flex-col items-center justify-center p-2 text-center border-4 border-dotted border-white/50 relative overflow-hidden">
                   <div className="absolute inset-0 opacity-20 grain-texture mix-blend-overlay"></div>
