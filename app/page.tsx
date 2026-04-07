@@ -15,7 +15,27 @@ import { AnnouncementBar } from "@/components/home/announcement-bar"
 
 export const metadata: Metadata = {
   title: "Seventh Sense School of Arts | Premium Preschool in Coimbatore",
-  description: "Discover a magical preschool experience at Seventh Sense School of Arts. We provide top-tier activity-based learning and creative programs for children in Kovaipudur, Coimbatore.",
+  description: "Experience Coimbatore's premier activity-based preschool in Kovaipudur. Seventh Sense School of Arts nurtures young minds through creative programs, emotional growth, and joyful discovery.",
+  openGraph: {
+    title: "Seventh Sense School of Arts | Premium Preschool in Coimbatore",
+    description: "Coimbatore's most advanced activity-based preschool. We nurture confidence, creativity, and character in every child.",
+    images: [
+      {
+        url: "/gallery/hero_main.png",
+        width: 1200,
+        height: 630,
+        alt: "Seventh Sense School of Arts Classroom",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Seventh Sense School of Arts | Premium Preschool",
+    description: "Nurturing young minds through creative, activity-led discovery in Coimbatore.",
+    images: ["/gallery/hero_main.png"],
+  },
 }
 
 export default function HomePage() {
