@@ -50,7 +50,7 @@ export default function HomePage() {
       {/* Main content */}
       <div className="relative z-10 text-primary">
         <Header />
-        <main>
+        <main className="pt-20">
           <HeroSection />
           
           <AnnouncementBar 

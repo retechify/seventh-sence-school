@@ -81,7 +81,7 @@ export default function GalleryClient() {
       <div className="relative z-10 flex flex-col min-h-screen">
         <Header />
         
-        <main className="flex-1">
+        <main className="flex-1 pt-20">
           {/* Hero Section */}
           <section className="relative pt-28 pb-20 md:pt-40 md:pb-32 overflow-hidden bg-transparent">
             <div className="absolute inset-0 bg-gradient-to-br from-peach/30 via-cream/80 to-lavender/30 -z-10" />

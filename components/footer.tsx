@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { RainbowLogo, RainbowDivider } from "./rainbow-logo"
-import { Heart, Phone, Mail, MapPin } from "lucide-react"
+import { Heart, Phone, Mail, MapPin, Facebook, Youtube } from "lucide-react"
 
 export function Footer() {
   return (
@@ -58,41 +58,54 @@ export function Footer() {
                 <div className="w-8 h-8 rounded-full bg-lavender/50 flex items-center justify-center">
                   <Phone className="w-4 h-4 text-primary" />
                 </div>
-                <span>+91 8610170313</span>
+                <span>+91 8610170313 / 9944865404</span>
               </li>
               <li className="flex items-center gap-3 text-muted-foreground">
                 <div className="w-8 h-8 rounded-full bg-peach/50 flex items-center justify-center">
                   <Mail className="w-4 h-4 text-primary" />
                 </div>
-                <span>info@seventhsenseschool.com</span>
+                <span>seventhsenseschool@gmail.com</span>
               </li>
               <li className="flex items-center gap-3 text-muted-foreground">
                 <div className="w-8 h-8 rounded-full bg-mint/50 flex items-center justify-center">
                   <MapPin className="w-4 h-4 text-primary" />
                 </div>
-                <span>R130, Block R, Kovaipudur, Coimbatore, Tamil Nadu - 641042</span>
+                <span>129, R-Block, Kovaipudur, Coimbatore 641042.</span>
               </li>
-              <li className="flex items-center gap-3 text-muted-foreground">
-                <a 
-                  href="https://www.instagram.com/seventhsense_cbe/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="w-8 h-8 rounded-full bg-peach/50 flex items-center justify-center hover:bg-peach/80 transition-colors"
-                >
-                  <svg viewBox="0 0 24 24" className="w-4 h-4 text-primary" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                  </svg>
-                </a>
-                <a 
-                  href="https://www.instagram.com/seventhsense_cbe/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="hover:text-primary transition-colors"
-                >
-                  Instagram
-                </a>
+              <li className="flex items-center gap-3 pt-2">
+                <div className="flex gap-4 items-center">
+                  <a 
+                    href="https://www.instagram.com/seventhsense_cbe/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-8 h-8 rounded-full bg-peach/50 flex items-center justify-center hover:bg-peach/80 transition-colors"
+                    aria-label="Instagram"
+                  >
+                    <svg viewBox="0 0 24 24" className="w-4 h-4 text-primary" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                  </a>
+                  <a 
+                    href="https://www.facebook.com/seventh.sense.school.2025/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-8 h-8 rounded-full bg-lavender/50 flex items-center justify-center hover:bg-lavender/80 transition-colors"
+                    aria-label="Facebook"
+                  >
+                    <Facebook className="w-4 h-4 text-primary" />
+                  </a>
+                  <a 
+                    href="http://www.youtube.com/@SeventhSenseschoolofarts" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-8 h-8 rounded-full bg-mint/50 flex items-center justify-center hover:bg-mint/80 transition-colors"
+                    aria-label="YouTube"
+                  >
+                    <Youtube className="w-4 h-4 text-primary" />
+                  </a>
+                </div>
               </li>
             </ul>
           </div>

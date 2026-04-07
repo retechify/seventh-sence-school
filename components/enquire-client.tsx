@@ -76,7 +76,7 @@ export default function EnquireClient() {
       <div className="relative z-10 flex flex-col min-h-screen">
         <Header />
         
-        <main className="flex-1 flex items-center justify-center py-12 md:py-20 lg:py-24 relative overflow-hidden px-4 bg-transparent">
+        <main className="flex-1 pt-20 flex items-center justify-center py-12 md:py-20 lg:py-24 relative overflow-hidden px-4 bg-transparent">
           {/* Background gradients / SectionDoodles for richer UX */}
           <div className="absolute inset-0 bg-gradient-to-br from-mint/10 via-white/80 to-soft-yellow/20 -z-10" />
           <SectionDoodles className="opacity-30" />

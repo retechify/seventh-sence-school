@@ -4,7 +4,7 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { FloatingDoodles, StickerIcon, SectionDoodles } from "@/components/floating-doodles"
 import { Button } from "@/components/ui/button"
-import { MessageCircle, Phone, Mail, MapPin, ArrowRight, Instagram } from "lucide-react"
+import { MessageCircle, Phone, Mail, MapPin, ArrowRight, Instagram, Facebook, Youtube, ExternalLink } from "lucide-react"
 
 import Link from 'next/link';
 
@@ -17,7 +17,7 @@ export default function ContactClient() {
       <div className="relative z-10 flex flex-col min-h-screen">
         <Header />
         
-        <main className="flex-1">
+        <main className="flex-1 pt-20">
           {/* Header Banner */}
           <section className="relative pt-24 pb-12 md:pt-32 md:pb-16 overflow-hidden bg-transparent">
             <div className="absolute inset-0 bg-gradient-to-br from-lavender/30 via-cream/80 to-peach/20 -z-10" />
@@ -58,6 +58,7 @@ export default function ContactClient() {
                         <h3 className="font-semibold text-2xl text-primary mb-2">Give Us a Call</h3>
                         <p className="text-muted-foreground mb-6 text-sm">We&apos;re here Monday through Friday, 8am to 6pm.</p>
                         <a href="tel:+918610170313" className="text-xl font-medium hover:text-peach transition-colors block border-t border-peach/20 pt-4">+91 8610170313</a>
+                        <a href="tel:+919944865404" className="text-xl font-medium hover:text-peach transition-colors block border-t border-peach/20 pt-2">+91 9944865404</a>
                       </div>
                    </div>
 
@@ -68,7 +69,7 @@ export default function ContactClient() {
                          <Mail className="w-7 h-7 text-primary" />
                       </div>
                       <h3 className="font-semibold text-xl text-primary mb-2">Email Us</h3>
-                      <a href="mailto:info@seventhsenseschool.com" className="text-primary hover:text-mint transition-colors text-sm font-medium">info@seventhsenseschool.com</a>
+                      <a href="mailto:seventhsenseschool@gmail.com" className="text-primary hover:text-mint transition-colors text-sm font-medium">seventhsenseschool@gmail.com</a>
                    </div>
 
                     {/* WhatsApp Card */}
@@ -89,9 +90,33 @@ export default function ContactClient() {
                        <div className="w-14 h-14 rounded-2xl bg-peach/30 flex items-center justify-center mb-6 shadow-sm">
                           <Instagram className="w-7 h-7 text-primary" />
                        </div>
-                       <h3 className="font-semibold text-xl text-primary mb-2">Follow Us</h3>
+                       <h3 className="font-semibold text-xl text-primary mb-2">Instagram</h3>
                        <a href="https://www.instagram.com/seventhsense_cbe/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-peach transition-colors flex items-center gap-2 mt-4 text-sm font-bold uppercase tracking-wider">
-                          Instagram <ArrowRight className="w-4 h-4" />
+                          Follow Us <ArrowRight className="w-4 h-4" />
+                       </a>
+                    </div>
+
+                    {/* Facebook Card */}
+                    <div className="bg-lavender/10 backdrop-blur-xl rounded-[2.5rem] p-8 border border-white shadow-xl group hover:-translate-y-2 transition-transform duration-300 relative overflow-hidden">
+                       <div className="absolute bottom-0 right-0 w-24 h-24 bg-white/40 rounded-tl-full -z-10" />
+                       <div className="w-14 h-14 rounded-2xl bg-lavender/30 flex items-center justify-center mb-6 shadow-sm">
+                          <Facebook className="w-7 h-7 text-primary" />
+                       </div>
+                       <h3 className="font-semibold text-xl text-primary mb-2">Facebook</h3>
+                       <a href="https://www.facebook.com/seventh.sense.school.2025/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-lavender transition-colors flex items-center gap-2 mt-4 text-sm font-bold uppercase tracking-wider">
+                          Join Us <ArrowRight className="w-4 h-4" />
+                       </a>
+                    </div>
+
+                    {/* YouTube Card */}
+                    <div className="bg-mint/10 backdrop-blur-xl rounded-[2.5rem] p-8 border border-white shadow-xl group hover:-translate-y-2 transition-transform duration-300 relative overflow-hidden">
+                       <div className="absolute top-0 left-0 w-24 h-24 bg-white/40 rounded-br-full -z-10" />
+                       <div className="w-14 h-14 rounded-2xl bg-mint/30 flex items-center justify-center mb-6 shadow-sm">
+                          <Youtube className="w-7 h-7 text-primary" />
+                       </div>
+                       <h3 className="font-semibold text-xl text-primary mb-2">YouTube</h3>
+                       <a href="http://www.youtube.com/@SeventhSenseschoolofarts" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-mint transition-colors flex items-center gap-2 mt-4 text-sm font-bold uppercase tracking-wider">
+                          Watch Us <ArrowRight className="w-4 h-4" />
                        </a>
                     </div>
                    
@@ -103,8 +128,16 @@ export default function ContactClient() {
                          <MapPin className="w-8 h-8 text-primary" />
                       </div>
                       <div className="flex-1 text-center md:text-left">
-                         <h3 className="font-semibold text-2xl text-primary mb-2">Visit the School</h3>
-                         <p className="text-muted-foreground text-sm">R130, Block R, Kovaipudur, Coimbatore, Tamil Nadu - 641042</p>
+                          <h3 className="font-semibold text-2xl text-primary mb-2">Visit the School</h3>
+                          <p className="text-muted-foreground text-sm mb-4">129, R-Block, Kovaipudur, Coimbatore 641042.</p>
+                          <a 
+                             href="https://share.google/5AYEIZ4LwK0KOkrt9" 
+                             target="_blank" 
+                             rel="noopener noreferrer"
+                             className="inline-flex items-center gap-2 text-primary font-bold text-xs uppercase tracking-widest hover:text-peach transition-colors"
+                          >
+                             View on Google Maps <ExternalLink className="w-3 h-3" />
+                          </a>
                       </div>
                    </div>
                 </div>
@@ -139,7 +172,7 @@ export default function ContactClient() {
           {/* Map Area */}
           <section className="h-[50vh] min-h-[400px] w-full relative">
             <iframe 
-               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d832.022611727412!2d76.93035792774732!3d10.94820605224041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85bed7088354f%3A0x11a9d4fa08dd223b!2sR130%2C%20Block%20R%2C%20R%20-%20Block%2C%20Coimbatore%2C%20Kovaipudur%2C%20Tamil%20Nadu%20641042!5e1!3m2!1sen!2sin!4v1775483077848!5m2!1sen!2sin" 
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d416.0113503212339!2d76.93044966888775!3d10.948174399458635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85bed7a9d572b%3A0xcde8f38e438f4304!2sR129%2C%20Block%20R%2C%20R%20-%20Block%2C%20Coimbatore%2C%20Kovaipudur%2C%20Tamil%20Nadu%20641042!5e1!3m2!1sen!2sin!4v1775573759998!5m2!1sen!2sin" 
                className="absolute inset-0 w-full h-full grayscale-[20%] contrast-125 opacity-90"
                style={{ border: 0 }} 
                allowFullScreen 

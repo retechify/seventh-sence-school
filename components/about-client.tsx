@@ -51,7 +51,7 @@ export default function AboutClient() {
       <div className="relative z-10 flex flex-col min-h-screen">
         <Header />
         
-        <main className="flex-1">
+        <main className="flex-1 pt-20">
           {/* Hero Section */}
           <section className="relative py-20 lg:py-32 overflow-hidden bg-transparent">
             {/* Background gradient */}

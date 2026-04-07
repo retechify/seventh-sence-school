@@ -61,6 +61,7 @@ export const viewport: Viewport = {
 
 
 import { WhatsAppFloating } from '@/components/whatsapp-floating'
+import { SocialFloating } from '@/components/social-floating'
 
 export default function RootLayout({
   children,
@@ -78,6 +79,7 @@ export default function RootLayout({
         </a>
         {children}
         <WhatsAppFloating />
+        <SocialFloating />
         <Analytics />
       </body>
     </html>
