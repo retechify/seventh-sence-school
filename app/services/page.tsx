@@ -1,6 +1,6 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { FloatingDoodles, StickerIcon, HandDrawnDivider } from "@/components/floating-doodles"
+import { FloatingDoodles, StickerIcon, HandDrawnDivider, SectionDoodles } from "@/components/floating-doodles"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { BookOpen, Puzzle, Palette, MessageCircle, Music, Users, Star } from "lucide-react"
@@ -81,8 +81,10 @@ export default function ServicesPage() {
         
         <main>
           {/* Hero Section */}
-          <section className="relative py-16 md:py-24 overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-mint/30 via-cream to-soft-yellow/20" />
+          <section className="relative py-16 md:py-24 overflow-hidden bg-transparent">
+            <div className="absolute inset-0 bg-gradient-to-br from-mint/30 via-cream/80 to-soft-yellow/20 -z-10" />
+            
+            <SectionDoodles className="opacity-40" />
             
             {/* Extra doodles */}
             <div className="absolute top-16 left-10 w-12 h-12 opacity-50 animate-float">
@@ -130,7 +132,9 @@ export default function ServicesPage() {
           </section>
           
           {/* Main Services Grid */}
-          <section className="py-20 bg-cream relative overflow-hidden">
+          <section className="py-20 bg-transparent relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-b from-cream via-white to-cream -z-10" />
+            <SectionDoodles className="opacity-20" />
             {/* Background doodles */}
             <div className="absolute top-20 left-10 w-10 h-10 opacity-30 animate-float-slow">
               <StickerIcon type="cloud" className="w-full h-full" />
@@ -210,7 +214,9 @@ export default function ServicesPage() {
           </section>
           
           {/* Additional Programs */}
-          <section className="py-20 bg-background relative overflow-hidden">
+          <section className="py-20 bg-transparent relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-white via-lavender/5 to-white -z-10" />
+            <SectionDoodles className="opacity-20" />
             {/* Background doodles */}
             <div className="absolute top-10 left-16 w-10 h-10 opacity-40 animate-float">
               <StickerIcon type="rainbow" className="w-full h-full" />

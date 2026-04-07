@@ -1,6 +1,6 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { FloatingDoodles, StickerIcon, HandDrawnDivider } from "@/components/floating-doodles"
+import { FloatingDoodles, StickerIcon, HandDrawnDivider, SectionDoodles } from "@/components/floating-doodles"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { BookOpen, Puzzle, Palette, MessageCircle, Music, Users, Star } from "lucide-react"
@@ -81,9 +81,11 @@ export default function ProgramsPage() {
         
         <main>
           {/* Split Pane Sticky Scroll Layout */}
-          <section className="relative pt-16 pb-32 md:pt-24 lg:pt-32 overflow-visible bg-cream">
+          <section className="relative pt-16 pb-32 md:pt-24 lg:pt-32 overflow-visible bg-transparent">
             {/* Background specific to programs */}
-            <div className="absolute inset-0 bg-gradient-to-br from-mint/20 via-cream to-soft-yellow/10" />
+            <div className="absolute inset-0 bg-gradient-to-br from-mint/10 via-cream/80 to-soft-yellow/10 -z-10" />
+            
+            <SectionDoodles className="opacity-40" />
             
             {/* Soft blob */}
             <div className="absolute top-40 right-0 w-[600px] h-[600px] bg-soft-yellow/20 rounded-full blur-[100px] -z-10 mix-blend-multiply" />
@@ -195,6 +197,8 @@ export default function ProgramsPage() {
           
           {/* Additional Programs (Now resting on white background from the wave) */}
           <section className="py-32 bg-white relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-b from-white via-peach/5 to-white -z-10" />
+            <SectionDoodles className="opacity-20" />
             <div className="absolute top-20 right-16 w-12 h-12 opacity-30 animate-float">
               <StickerIcon type="cloud" className="w-full h-full" />
             </div>
@@ -241,7 +245,9 @@ export default function ProgramsPage() {
           </section>
 
           {/* Connected CTA section */}
-          <section className="py-24 bg-gradient-to-br from-mint/20 via-cream to-peach/20 relative overflow-hidden">
+          <section className="py-24 bg-transparent relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-mint/20 via-cream/80 to-peach/20 -z-10" />
+            <SectionDoodles className="opacity-30" />
             <div className="absolute top-0 left-0 right-0 -translate-y-1/2">
               <svg viewBox="0 0 1440 80" className="w-full h-auto" preserveAspectRatio="none">
                 <path

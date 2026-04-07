@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { StickerIcon } from "@/components/floating-doodles"
+import { StickerIcon, SectionDoodles } from "@/components/floating-doodles"
 import { MessageCircle, Send, CheckCircle2 } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { useForm, ValidationError } from '@formspree/react';
@@ -15,6 +15,9 @@ export function CtaSection() {
       <div className="absolute inset-0 opacity-10 bg-[url('/noise.png')] mix-blend-overlay"></div>
       <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-soft-yellow/10 rounded-full blur-3xl" />
+
+      {/* Section-specific doodles (white version for dark bg) */}
+      <SectionDoodles className="opacity-20 invert grayscale brightness-200" />
 
       {/* Decorative doodles */}
       <div className="absolute top-12 left-10 w-16 h-16 opacity-20 animate-float">

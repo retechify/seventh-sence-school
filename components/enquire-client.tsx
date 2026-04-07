@@ -2,7 +2,7 @@
 
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { StickerIcon } from "@/components/floating-doodles"
+import { StickerIcon, SectionDoodles, FloatingDoodles } from "@/components/floating-doodles"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -47,10 +47,13 @@ export default function EnquireClient() {
       <div className="relative z-10 flex flex-col min-h-screen">
         <Header />
         
-        <main className="flex-1 flex items-center justify-center py-12 md:py-20 lg:py-24 relative overflow-hidden px-4">
-          {/* Background blobs / Floating doodles for richer UX */}
-          <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-mint/10 rounded-full blur-[100px] -z-10 mix-blend-multiply opacity-70 translate-x-1/3 -translate-y-1/3" />
-          <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-soft-yellow/20 rounded-full blur-[100px] -z-10 mix-blend-multiply opacity-70 -translate-x-1/3 translate-y-1/3" />
+        <main className="flex-1 flex items-center justify-center py-12 md:py-20 lg:py-24 relative overflow-hidden px-4 bg-transparent">
+          {/* Background gradients / SectionDoodles for richer UX */}
+          <div className="absolute inset-0 bg-gradient-to-br from-mint/10 via-white/80 to-soft-yellow/20 -z-10" />
+          <SectionDoodles className="opacity-30" />
+          
+          <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-mint/5 rounded-full blur-[100px] -z-20 mix-blend-multiply opacity-70 translate-x-1/3 -translate-y-1/3" />
+          <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-soft-yellow/10 rounded-full blur-[100px] -z-20 mix-blend-multiply opacity-70 -translate-x-1/3 translate-y-1/3" />
           
           <div className="absolute top-24 left-10 w-16 h-16 opacity-30 animate-float hidden lg:block">
             <StickerIcon type="cloud" className="w-full h-full" />

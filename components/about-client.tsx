@@ -2,7 +2,7 @@
 
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { FloatingDoodles, StickerIcon, HandDrawnDivider } from "@/components/floating-doodles"
+import { FloatingDoodles, StickerIcon, HandDrawnDivider, SectionDoodles } from "@/components/floating-doodles"
 import { motion } from "framer-motion"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -50,8 +50,12 @@ export default function AboutClient() {
         
         <main className="flex-1">
           {/* Hero Section */}
-          <section className="relative py-20 lg:py-32 overflow-hidden bg-cream">
-            <div className="absolute inset-0 bg-gradient-to-br from-lavender/30 via-cream to-peach/20" />
+          <section className="relative py-20 lg:py-32 overflow-hidden bg-transparent">
+            {/* Background gradient */}
+            <div className="absolute inset-0 bg-gradient-to-br from-lavender/30 via-cream/80 to-peach/20 -z-10" />
+            
+            {/* Section-specific doodles */}
+            <SectionDoodles className="opacity-40" />
             
             {/* Top doodles */}
             <div className="absolute top-24 left-10 w-16 h-16 animate-float-slow opacity-60 z-20">
@@ -91,7 +95,9 @@ export default function AboutClient() {
           </section>
           
           {/* Scroll-Driven Timeline Story Layout */}
-          <section className="py-32 bg-white relative z-0">
+          <section className="relative py-32 bg-white z-0 overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-b from-white via-cream/30 to-white -z-10" />
+            <SectionDoodles className="opacity-20 translate-y-20" />
              <div className="container mx-auto px-4 max-w-4xl relative">
                 {/* Central connecting line */}
                 <div className="absolute top-0 bottom-0 left-[24px] md:left-1/2 w-1 bg-gradient-to-b from-lavender/30 via-peach/30 to-mint/30 rounded-full -translate-x-1/2" />
@@ -152,7 +158,10 @@ export default function AboutClient() {
           </section>
 
           {/* Founder Section */}
-          <section className="relative py-32 overflow-hidden bg-mint/5 border-y border-mint/20">
+          <section className="relative py-32 overflow-hidden bg-transparent border-y border-mint/20">
+            {/* Background gradient */}
+            <div className="absolute inset-0 bg-gradient-to-br from-mint/5 via-white/80 to-peach/5 -z-10" />
+            <SectionDoodles className="opacity-30" />
             <div className="container mx-auto px-4 relative">
               <div className="grid lg:grid-cols-2 gap-16 lg:gap-12 items-center">
                 {/* Image Side - Asymmetric Floating */}
@@ -235,10 +244,11 @@ export default function AboutClient() {
           </section>
           
           {/* Overlapping Values Section Layout */}
-          <section className="py-32 bg-cream relative overflow-hidden z-20">
+          <section className="py-32 relative overflow-hidden z-20 bg-transparent">
             {/* Background elements */}
-            <div className="absolute inset-0 bg-gradient-to-b from-white to-transparent opacity-80" />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[600px] bg-peach/10 rounded-full blur-[120px] mix-blend-multiply" />
+            <div className="absolute inset-0 bg-gradient-to-b from-cream via-white to-cream -z-10" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[600px] bg-peach/10 rounded-full blur-[120px] mix-blend-multiply -z-10" />
+            <SectionDoodles className="opacity-30" />
 
             <div className="container mx-auto px-4 relative z-10">
               <div className="text-center max-w-3xl mx-auto mb-16">

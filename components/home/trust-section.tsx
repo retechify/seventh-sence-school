@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { StickerIcon } from "@/components/floating-doodles"
+import { StickerIcon, SectionDoodles } from "@/components/floating-doodles"
 import { Shield, Sparkles, Heart, Users } from "lucide-react"
 
 const trustItems = [
@@ -49,8 +49,12 @@ const trustItems = [
 
 export function TrustSection() {
   return (
-    <section className="py-20 relative overflow-hidden bg-background">
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-lavender/5 to-transparent pointer-events-none" />
+    <section className="py-20 relative overflow-hidden bg-transparent">
+      {/* Background gradients for depth */}
+      <div className="absolute inset-0 bg-gradient-to-br from-cream/50 via-lavender/10 to-peach/10 -z-10" />
+      
+      {/* Section-specific doodles */}
+      <SectionDoodles className="opacity-30" />
       
       <div className="container mx-auto px-4 relative">
         <div className="text-center max-w-2xl mx-auto mb-16">

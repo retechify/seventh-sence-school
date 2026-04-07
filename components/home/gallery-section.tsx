@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { StickerIcon } from "@/components/floating-doodles"
+import { StickerIcon, SectionDoodles } from "@/components/floating-doodles"
 import { Camera, BookOpen, Play, Palette, Users, Sparkle } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { useState } from "react"
@@ -23,8 +23,14 @@ export function GallerySection() {
   const allImages = homeGalleryItems.map(item => item.image)
 
   return (
-    <section className="py-24 bg-background relative overflow-hidden">
-      {/* Background doodles */}
+    <section className="py-24 bg-transparent relative overflow-hidden">
+      {/* Background gradients for a playful look */}
+      <div className="absolute inset-0 bg-gradient-to-br from-cream/60 via-mint/5 to-lavender/10 -z-10" />
+      
+      {/* Section-specific doodles */}
+      <SectionDoodles className="opacity-30" />
+      
+      {/* Manual extra doodles for impact */}
       <div className="absolute top-20 left-10 w-12 h-12 opacity-30 animate-float">
         <StickerIcon type="cloud" className="w-full h-full" />
       </div>

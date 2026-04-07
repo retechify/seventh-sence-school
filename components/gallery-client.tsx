@@ -2,7 +2,7 @@
 
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { FloatingDoodles, StickerIcon } from "@/components/floating-doodles"
+import { FloatingDoodles, StickerIcon, SectionDoodles } from "@/components/floating-doodles"
 import { Button } from "@/components/ui/button"
 import { Camera, Play, Palette, BookOpen, Users } from "lucide-react"
 import { useState } from "react"
@@ -66,8 +66,10 @@ export default function GalleryClient() {
         
         <main className="flex-1">
           {/* Hero Section */}
-          <section className="relative pt-28 pb-20 md:pt-40 md:pb-32 overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-peach/30 via-cream to-lavender/30" />
+          <section className="relative pt-28 pb-20 md:pt-40 md:pb-32 overflow-hidden bg-transparent">
+            <div className="absolute inset-0 bg-gradient-to-br from-peach/30 via-cream/80 to-lavender/30 -z-10" />
+            
+            <SectionDoodles className="opacity-40" />
             
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-white/40 rounded-full blur-[100px] -z-10" />
 
@@ -116,6 +118,8 @@ export default function GalleryClient() {
           
           {/* Gallery Section */}
           <section className="py-24 bg-white relative overflow-hidden min-h-[60vh]">
+            <div className="absolute inset-0 bg-gradient-to-b from-white via-lavender/5 to-white -z-10" />
+            <SectionDoodles className="opacity-20" />
             <div className="container mx-auto px-4">
               {/* Category Filter */}
               <div className="flex flex-wrap justify-center gap-4 mb-16 relative z-20">
@@ -250,7 +254,9 @@ export default function GalleryClient() {
           </section>
           
           {/* Universal CTA Section */}
-          <section className="py-32 bg-background relative overflow-hidden">
+          <section className="py-32 bg-transparent relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-cream via-lavender/5 to-cream -z-10" />
+            <SectionDoodles className="opacity-30" />
             <div className="container mx-auto px-4 relative z-10">
               <div className="bg-gradient-to-br from-lavender/30 via-cream to-mint/20 rounded-[3rem] p-12 md:p-20 shadow-2xl max-w-5xl mx-auto text-center relative overflow-hidden">
                 <div className="absolute -top-24 -right-24 w-64 h-64 bg-soft-yellow/30 rounded-full blur-3xl mix-blend-multiply" />

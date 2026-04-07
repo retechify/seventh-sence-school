@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { StickerIcon, ServiceIllustration } from "@/components/floating-doodles"
+import { StickerIcon, ServiceIllustration, SectionDoodles } from "@/components/floating-doodles"
 import { motion } from "framer-motion"
 
 const programs = [
@@ -46,7 +46,12 @@ const programs = [
 
 export function ProgramsSection() {
   return (
-    <section className="relative py-24 bg-background overflow-hidden" id="programs">
+    <section className="relative py-24 bg-transparent overflow-hidden" id="programs">
+      {/* Background gradients */}
+      <div className="absolute inset-0 bg-gradient-to-br from-cream/40 via-mint/5 to-baby-blue/10 -z-10" />
+      
+      {/* Section-specific doodles */}
+      <SectionDoodles className="opacity-30" />
       <div className="container mx-auto px-4">
         {/* Section header */}
         <motion.div 
@@ -149,6 +154,16 @@ export function ProgramsSection() {
               </a>
            </div>
         </motion.div>
+      </div>
+
+      {/* Wavy bottom transition */}
+      <div className="absolute bottom-0 left-0 right-0 w-full overflow-hidden leading-[0]">
+        <svg viewBox="0 0 1440 120" className="relative block w-[calc(100%+1.3px)] h-[80px]" preserveAspectRatio="none">
+          <path 
+            d="M0,60 C240,120 480,0 720,60 C960,120 1200,0 1440,60 L1440,120 L0,120 Z" 
+            fill="oklch(0.97 0.015 85)" 
+          />
+        </svg>
       </div>
     </section>
   )

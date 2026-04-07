@@ -1,11 +1,16 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { StickerIcon } from "@/components/floating-doodles"
+import { StickerIcon, SectionDoodles } from "@/components/floating-doodles"
 
 export function FounderSection() {
   return (
-    <section className="py-24 relative overflow-hidden bg-background">
+    <section className="py-24 relative overflow-hidden bg-transparent">
+      {/* Background gradients for a playful look */}
+      <div className="absolute inset-0 bg-gradient-to-br from-cream/60 via-lavender/10 to-peach/10 -z-10" />
+      
+      {/* Section-specific doodles */}
+      <SectionDoodles className="opacity-30" />
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-20 relative">
           

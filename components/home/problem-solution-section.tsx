@@ -1,12 +1,18 @@
 "use client"
 
-import { StickerIcon } from "@/components/floating-doodles"
+import { StickerIcon, SectionDoodles } from "@/components/floating-doodles"
 import { motion } from "framer-motion"
 
 export function ProblemSolutionSection() {
   return (
-    <section className="relative py-24 md:py-32 bg-white overflow-hidden">
-      {/* Background doodles */}
+    <section className="relative py-24 md:py-32 overflow-hidden bg-transparent">
+      {/* Background gradient - soft and playful */}
+      <div className="absolute inset-0 bg-gradient-to-br from-cream/80 via-lavender/5 to-peach/10 -z-10" />
+      
+      {/* Section-specific doodles */}
+      <SectionDoodles className="opacity-40" />
+      
+      {/* Manual extra doodles for impact */}
       <div className="absolute top-10 right-[15%] w-10 h-10 opacity-30 animate-float">
         <StickerIcon type="cloud" className="w-full h-full" />
       </div>
@@ -100,6 +106,16 @@ export function ProblemSolutionSection() {
             </ul>
           </motion.div>
         </div>
+      </div>
+
+      {/* Wavy bottom transition */}
+      <div className="absolute bottom-0 left-0 right-0 w-full overflow-hidden leading-[0]">
+        <svg viewBox="0 0 1440 120" className="relative block w-[calc(100%+1.3px)] h-[80px]" preserveAspectRatio="none">
+          <path 
+            d="M0,60 C240,120 480,0 720,60 C960,120 1200,0 1440,60 L1440,120 L0,120 Z" 
+            fill="oklch(0.98 0.01 90)" 
+          />
+        </svg>
       </div>
     </section>
   )

@@ -1,6 +1,6 @@
 "use client"
 
-import { StickerIcon } from "@/components/floating-doodles"
+import { StickerIcon, SectionDoodles } from "@/components/floating-doodles"
 import { Star } from "lucide-react"
 import { motion } from "framer-motion"
 
@@ -41,8 +41,14 @@ const reviews = [
 
 export function TestimonialsSection() {
   return (
-    <section className="relative py-24 bg-gradient-to-br from-mint/10 via-cream to-lavender/20 overflow-hidden" id="testimonials">
-      {/* Background doodles */}
+    <section className="relative py-24 bg-transparent overflow-hidden" id="testimonials">
+      {/* Background gradients for a playful look */}
+      <div className="absolute inset-0 bg-gradient-to-br from-mint/10 via-cream to-lavender/20 -z-10" />
+      
+      {/* Section-specific doodles */}
+      <SectionDoodles className="opacity-30" />
+      
+      {/* Manual extra doodles for impact */}
       <div className="absolute top-10 right-20 w-12 h-12 opacity-30 animate-float-slow">
         <StickerIcon type="heart" className="w-full h-full text-peach" />
       </div>
