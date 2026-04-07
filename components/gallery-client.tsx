@@ -12,18 +12,35 @@ import Link from "next/link"
 
 // Gallery items with placeholder colors representing different activities
 const galleryItems = [
-  { id: 1, category: "learning", color: "peach", icon: BookOpen, title: "Reading Time", sticker: "star" as const, image: "/gallery/gallery-section/im1.png" },
-  { id: 2, category: "play", color: "mint", icon: Play, title: "Outdoor Play", sticker: "sun" as const, image: "/gallery/gallery-section/im2.jpeg" },
-  { id: 3, category: "art", color: "lavender", icon: Palette, title: "Art Class", sticker: "rainbow" as const, image: "/gallery/gallery-section/im3.png" },
-  { id: 4, category: "group", color: "soft-yellow", icon: Users, title: "Group Activity", sticker: "heart" as const, image: "/gallery/gallery-section/im4.png" },
-  { id: 5, category: "learning", color: "baby-blue", icon: BookOpen, title: "Story Time", sticker: "cloud" as const, image: "/gallery/gallery-section/im5.png" },
-  { id: 6, category: "art", color: "peach", icon: Palette, title: "Crafts", sticker: "sparkle" as const, image: "/gallery/gallery-section/im6.jpg" },
-  { id: 7, category: "play", color: "mint", icon: Play, title: "Games", sticker: "balloon" as const, image: "/gallery/gallery-section/im7.jpg" },
-  { id: 8, category: "group", color: "lavender", icon: Users, title: "Group Play", sticker: "star" as const, image: "/gallery/gallery-section/im8.jpg" },
-  { id: 9, category: "learning", color: "soft-yellow", icon: BookOpen, title: "Circle Time", sticker: "sun" as const, image: "/gallery/gallery-section/im9.jpg" },
-  { id: 10, category: "play", color: "baby-blue", icon: Play, title: "Outdoor Fun", sticker: "rainbow" as const, image: "/gallery/gallery-section/im10.png" },
-  { id: 11, category: "art", color: "mint", icon: Palette, title: "Painting", sticker: "heart" as const, image: "/gallery/gallery-section/im11.png" },
-  { id: 12, category: "group", color: "peach", icon: Users, title: "Team Building", sticker: "cloud" as const, image: "/gallery/gallery-section/im12.png" },
+  { id: 1, category: "learning", color: "peach", icon: BookOpen, title: "Traditional Learning", sticker: "star" as const, image: "/gallery/gallery-section/Tradinal-learning.jpg" },
+  { id: 2, category: "learning", color: "mint", icon: BookOpen, title: "Warm Welcome", sticker: "star" as const, image: "/gallery/gallery-section/school-welcome.jpeg" },
+  { id: 3, category: "play", color: "lavender", icon: Play, title: "Healthy Eating", sticker: "balloon" as const, image: "/gallery/gallery-section/Eating.JPG.jpeg" },
+  { id: 4, category: "group", color: "soft-yellow", icon: Users, title: "Making Friends", sticker: "heart" as const, image: "/gallery/gallery-section/Make-friends.JPG.jpeg" },
+  { id: 5, category: "group", color: "baby-blue", icon: Users, title: "Parents Guidance", sticker: "cloud" as const, image: "/gallery/gallery-section/Parents-guidance.JPG.jpeg" },
+  { id: 6, category: "learning", color: "peach", icon: BookOpen, title: "Active Learning", sticker: "sun" as const, image: "/gallery/gallery-section/active-learning.png" },
+  { id: 7, category: "play", color: "mint", icon: Play, title: "Carefree Joy", sticker: "sparkle" as const, image: "/gallery/gallery-section/carefree-joy.JPG" },
+  { id: 8, category: "group", color: "lavender", icon: Users, title: "Celebration Time", sticker: "balloon" as const, image: "/gallery/gallery-section/celebration-time.JPG" },
+  { id: 9, category: "art", color: "soft-yellow", icon: Palette, title: "Color Magic", sticker: "rainbow" as const, image: "/gallery/gallery-section/color-magic.jpg" },
+  { id: 10, category: "group", color: "baby-blue", icon: Users, title: "Community Moments", sticker: "heart" as const, image: "/gallery/gallery-section/community-moment.jpg.jpeg" },
+  { id: 11, category: "group", color: "peach", icon: Users, title: "Festival Fun", sticker: "star" as const, image: "/gallery/gallery-section/festival-celebration.jpg.jpeg" },
+  { id: 12, category: "learning", color: "mint", icon: BookOpen, title: "Focused Minds", sticker: "star" as const, image: "/gallery/gallery-section/focused-learning.jpg" },
+  { id: 13, category: "play", color: "lavender", icon: Play, title: "Free Play", sticker: "sun" as const, image: "/gallery/gallery-section/free-play-zone.jpg" },
+  { id: 14, category: "group", color: "soft-yellow", icon: Users, title: "Group Activity", sticker: "balloon" as const, image: "/gallery/gallery-section/group-activity.JPG.jpeg" },
+  { id: 15, category: "group", color: "baby-blue", icon: Users, title: "Learning Together", sticker: "cloud" as const, image: "/gallery/gallery-section/group-learning.png" },
+  { id: 16, category: "learning", color: "peach", icon: BookOpen, title: "Guided Learning", sticker: "sun" as const, image: "/gallery/gallery-section/guided-learning.png" },
+  { id: 17, category: "play", color: "mint", icon: Play, title: "Nature Walk", sticker: "star" as const, image: "/gallery/gallery-section/guided-walk.jpg" },
+  { id: 18, category: "play", color: "lavender", icon: Play, title: "Happy Moments", sticker: "heart" as const, image: "/gallery/gallery-section/happy-moment.png" },
+  { id: 19, category: "play", color: "soft-yellow", icon: Play, title: "Interactive Play", sticker: "sparkle" as const, image: "/gallery/gallery-section/interactive-play.jpg" },
+  { id: 20, category: "play", color: "baby-blue", icon: Play, title: "Joyful Discovery", sticker: "rainbow" as const, image: "/gallery/gallery-section/joyful-play.png" },
+  { id: 21, category: "learning", color: "peach", icon: BookOpen, title: "Exploring Nature", sticker: "cloud" as const, image: "/gallery/gallery-section/nature-exploration.png" },
+  { id: 22, category: "group", color: "mint", icon: Users, title: "One Big Family", sticker: "heart" as const, image: "/gallery/gallery-section/one-family.JPG" },
+  { id: 23, category: "play", color: "lavender", icon: Play, title: "Outdoor Playground", sticker: "sun" as const, image: "/gallery/gallery-section/outdoor-play.png" },
+  { id: 24, category: "group", color: "soft-yellow", icon: Users, title: "Parent Connection", sticker: "cloud" as const, image: "/gallery/gallery-section/parent-interaction.jpg" },
+  { id: 25, category: "group", color: "baby-blue", icon: Users, title: "Workshop Session", sticker: "star" as const, image: "/gallery/gallery-section/parent-session.jpg" },
+  { id: 26, category: "play", color: "peach", icon: Play, title: "Playing Together", sticker: "balloon" as const, image: "/gallery/gallery-section/play-together.JPG.jpeg" },
+  { id: 27, category: "play", color: "mint", icon: Play, title: "Healthy Snacks", sticker: "balloon" as const, image: "/gallery/gallery-section/snack-time.jpg" },
+  { id: 28, category: "learning", color: "lavender", icon: BookOpen, title: "Story Hour", sticker: "cloud" as const, image: "/gallery/gallery-section/story-time.JPG.jpeg" },
+  { id: 29, category: "group", color: "soft-yellow", icon: Users, title: "Teamwork Skills", sticker: "star" as const, image: "/gallery/gallery-section/team-play.jpg" },
 ]
 
 const categories = [
@@ -139,24 +156,24 @@ export default function GalleryClient() {
               </div>
               
               {/* Bento Grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 pb-12 auto-rows-[250px]">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 pb-12 auto-rows-[320px]">
                 <AnimatePresence mode="popLayout">
                    {filteredItems.map((item, index) => {
                      // Define complex bento spans based on index patterns
-                     const spans = [
-                       "col-span-1 sm:col-span-2 lg:col-span-2 lg:row-span-2", // 0: Large square
-                       "col-span-1 sm:col-span-1 lg:col-span-1 lg:row-span-1", // 1: Small
-                       "col-span-1 sm:col-span-1 lg:col-span-1 lg:row-span-2", // 2: Tall
-                       "col-span-1 sm:col-span-2 lg:col-span-1 lg:row-span-1", // 3: Small (wide on mobile)
-                       "col-span-1 sm:col-span-2 lg:col-span-2 lg:row-span-1", // 4: Wide
-                       "col-span-1 sm:col-span-1 lg:col-span-1 lg:row-span-1", // 5: Small
-                       "col-span-1 sm:col-span-1 lg:col-span-1 lg:row-span-1", // 6: Small
-                       "col-span-1 sm:col-span-2 lg:col-span-2 lg:row-span-2", // 7: Large
-                       "col-span-1 sm:col-span-1 lg:col-span-1 lg:row-span-2", // 8: Tall
-                       "col-span-1 sm:col-span-1 lg:col-span-1 lg:row-span-1", // 9: Small
-                       "col-span-1 sm:col-span-1 lg:col-span-1 lg:row-span-1", // 10: Small
-                       "col-span-1 sm:col-span-1 lg:col-span-1 lg:row-span-1", // 11: Small
-                     ][index % 12] || "col-span-1 lg:col-span-1 lg:row-span-1"
+                      const spans = [
+                        "col-span-1 sm:col-span-2 lg:col-span-2 lg:row-span-2", // 0: Large square
+                        "col-span-1 sm:col-span-1 lg:col-span-1 lg:row-span-1", // 1: Standard
+                        "col-span-1 sm:col-span-1 lg:col-span-1 lg:row-span-2", // 2: Tall
+                        "col-span-1 sm:col-span-1 lg:col-span-1 lg:row-span-1", // 3: Standard
+                        "col-span-1 sm:col-span-1 lg:col-span-1 lg:row-span-1", // 4: Standard
+                        "col-span-1 sm:col-span-1 lg:col-span-1 lg:row-span-2", // 5: Tall
+                        "col-span-1 sm:col-span-1 lg:col-span-1 lg:row-span-1", // 6: Standard
+                        "col-span-1 sm:col-span-2 lg:col-span-2 lg:row-span-2", // 7: Large square
+                        "col-span-1 sm:col-span-1 lg:col-span-1 lg:row-span-1", // 8: Standard
+                        "col-span-1 sm:col-span-1 lg:col-span-1 lg:row-span-1", // 9: Standard
+                        "col-span-1 sm:col-span-1 lg:col-span-1 lg:row-span-1", // 10: Standard
+                        "col-span-1 sm:col-span-1 lg:col-span-1 lg:row-span-2", // 11: Tall
+                      ][index % 12] || "col-span-1 lg:col-span-1 lg:row-span-1"
                      
                      // Random rotation for the "fun" feel
                      const rotation = (index % 3 - 1) * 2; // -2, 0, or 2 degrees
@@ -210,7 +227,7 @@ export default function GalleryClient() {
                               <img 
                                 src={item.image} 
                                 alt={item.title} 
-                                className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-115" 
+                                className="w-full h-full object-cover object-top transition-transform duration-1000 group-hover:scale-110" 
                               />
                               {/* Gradient Overlay */}
                               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-500" />

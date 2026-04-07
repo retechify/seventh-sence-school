@@ -37,12 +37,15 @@ const values = [
 
 export default function AboutClient() {
   return (
-    <div className="min-h-screen bg-background relative overflow-hidden">
-      {/* Background grain texture */}
-      <div className="fixed inset-0 grain-texture z-0" />
+    <div className="min-h-screen relative overflow-hidden">
+      {/* Signature background effect - Global */}
+      <div className="fixed inset-0 bg-gradient-to-br from-cream/40 via-mint/5 to-lavender/10 -z-10" />
+      <div className="fixed inset-0 pointer-events-none -z-10 opacity-30">
+        <SectionDoodles />
+      </div>
       
-      {/* Floating doodles */}
-      <FloatingDoodles count={25} />
+      {/* Floating doodles - Particle effect */}
+      <FloatingDoodles count={15} />
       
       {/* Main content */}
       <div className="relative z-10 flex flex-col min-h-screen">
@@ -69,7 +72,7 @@ export default function AboutClient() {
             </div>
             
             <div className="container mx-auto px-4 relative">
-              <div className="max-w-4xl mx-auto text-center">
+              <div className="max-w-2xl mx-auto text-center">
                 <div className="inline-flex items-center gap-2 bg-white/60 rounded-full px-5 py-2.5 mb-8 shadow-sm border border-lavender/30">
                   <StickerIcon type="heart" className="w-5 h-5" />
                   <span className="text-sm font-semibold tracking-wide text-primary uppercase">Our Story</span>
@@ -79,7 +82,7 @@ export default function AboutClient() {
                   Meet the Heart Behind Seventh Sense
                 </h1>
                 
-                <p className="text-xl text-muted-foreground leading-relaxed text-pretty space-y-4">
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed text-pretty space-y-4">
                   <span className="block">A journey built on love, care, and a deep belief that every child deserves a joyful and meaningful start to learning.</span>
                   <span className="block mt-4">At Seventh Sense School of Arts, we don’t just teach — we nurture confidence, creativity, and character in every child.</span>
                 </p>
@@ -98,7 +101,7 @@ export default function AboutClient() {
           <section className="relative py-32 bg-white z-0 overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-b from-white via-cream/30 to-white -z-10" />
             <SectionDoodles className="opacity-20 translate-y-20" />
-             <div className="container mx-auto px-4 max-w-4xl relative">
+             <div className="container mx-auto px-4 max-w-2xl relative">
                 {/* Central connecting line */}
                 <div className="absolute top-0 bottom-0 left-[24px] md:left-1/2 w-1 bg-gradient-to-b from-lavender/30 via-peach/30 to-mint/30 rounded-full -translate-x-1/2" />
 
@@ -108,7 +111,7 @@ export default function AboutClient() {
                       <div className="absolute left-[24px] md:left-1/2 w-4 h-4 bg-primary rounded-full -translate-x-1/2 shadow-[0_0_0_8px_oklch(0.97_0.03_300)]" />
                       <div className="md:w-[45%] pl-16 md:pl-0 text-left md:text-right">
                          <h3 className="font-semibold text-3xl text-primary mb-4">The Spark</h3>
-                         <div className="text-lg text-muted-foreground leading-relaxed space-y-4">
+                         <div className="text-base md:text-lg text-muted-foreground leading-relaxed space-y-4">
                             <p>Seventh Sense was born from a simple yet powerful belief — every child is unique and deserves to feel seen, understood, and celebrated.</p>
                             <p>We wanted to create a space where learning feels natural, joyful, and full of curiosity — not pressure.</p>
                          </div>
@@ -130,7 +133,7 @@ export default function AboutClient() {
                       </div>
                       <div className="md:w-[45%] pl-16 md:pl-0 text-left">
                          <h3 className="font-semibold text-3xl text-primary mb-4">The Growth</h3>
-                         <div className="text-lg text-muted-foreground leading-relaxed space-y-4">
+                         <div className="text-base md:text-lg text-muted-foreground leading-relaxed space-y-4">
                             <p>What started as a small classroom has grown into a trusted learning environment for families who value holistic development.</p>
                             <p>With every child, we refined our approach — focusing not just on academics, but on confidence, communication, and creativity.</p>
                          </div>
@@ -142,7 +145,7 @@ export default function AboutClient() {
                       <div className="absolute left-[24px] md:left-1/2 w-4 h-4 bg-primary rounded-full -translate-x-1/2 shadow-[0_0_0_8px_oklch(0.97_0.08_160)]" />
                       <div className="md:w-[45%] pl-16 md:pl-0 text-left md:text-right">
                          <h3 className="font-semibold text-3xl text-primary mb-4">Our Reality</h3>
-                         <div className="text-lg text-muted-foreground leading-relaxed space-y-4">
+                         <div className="text-base md:text-lg text-muted-foreground leading-relaxed space-y-4">
                             <p>Today, Seventh Sense stands as a nurturing space where children grow into confident, expressive, and independent individuals.</p>
                             <p>Our focus remains the same — to support every child with care, intention, and a deep understanding of early childhood development.</p>
                          </div>
@@ -176,7 +179,7 @@ export default function AboutClient() {
                   >
                     <img 
                       src="/gallery/about.png" 
-                      alt="Dr. P. Vijayalakshmi - Founder & Academic Director" 
+                      alt="Dr. Vijayalakshmi Ponnusamy - Founder & Academic Director" 
                       className="w-full h-full object-cover"
                     />
                   </motion.div>
@@ -206,36 +209,39 @@ export default function AboutClient() {
                   </p>
 
                   <div className="bg-white/80 backdrop-blur-sm p-6 sm:p-8 rounded-[2rem] border border-lavender/30 mb-8 shadow-sm">
-                    <h3 className="font-bold text-xl text-primary mb-1">Dr. P. Vijayalakshmi</h3>
+                    <h3 className="font-bold text-xl text-primary mb-1">Dr. Vijayalakshmi Ponnusamy</h3>
                     <p className="text-primary/70 font-medium mb-4">Founder & Academic Director</p>
-                    <ul className="space-y-3 text-sm text-foreground/80 font-medium">
+                    <ul className="space-y-4 text-sm text-foreground/80 font-medium">
                       <li className="flex items-center gap-3">
                         <div className="bg-lavender/20 p-1.5 rounded-full">
                            <StickerIcon type="sparkle" className="w-4 h-4" />
                         </div>
-                        Ph.D in History & English
+                        M.A (History), M.A (English), B.Ed, M.Phil, PhD
                       </li>
                       <li className="flex items-center gap-3">
                         <div className="bg-peach/20 p-1.5 rounded-full">
                            <StickerIcon type="heart" className="w-4 h-4" />
                         </div>
-                        18+ Years in Education & Child Development
+                        Certified Life Coach
+                      </li>
+                      <li className="flex items-center gap-3">
+                        <div className="bg-mint/20 p-1.5 rounded-full">
+                           <StickerIcon type="star" className="w-4 h-4" />
+                        </div>
+                        20+ Years in Education & Child Development
                       </li>
                     </ul>
                   </div>
                   
-                  <div className="text-lg text-muted-foreground leading-relaxed text-pretty space-y-6">
+                  <div className="text-base md:text-lg text-muted-foreground leading-relaxed text-pretty space-y-6">
                     <p>
-                      With over 18 years of experience in academic leadership and early childhood development, Dr. Vijayalakshmi has dedicated her journey to creating a safe and nurturing environment where children truly flourish.
+                      With over 20+ years of experience in education, Dr. Vijayalakshmi Ponnusamy holds advanced qualifications including M.A (History), M.A (English), B.Ed, M.Phil, PhD, and is also a certified Life Coach.
                     </p>
                     <p>
-                      Her vision goes beyond textbooks. She believes that true education lies in developing the emotional, social, and creative well-being of a child — not just academic excellence.
+                      At Seventh Sense, her vision is built on holistic child development—focusing deeply on the emotional, social, and creative well-being of your child, so they step into the future with unwavering confidence. 
                     </p>
                     <p>
-                      At Seventh Sense, her approach focuses on helping children build confidence, express themselves freely, and grow into independent thinkers.
-                    </p>
-                    <p>
-                      Every child here is guided with care, encouraged with patience, and empowered to step into the future with confidence.
+                      She believes that true education lies in developing the whole child—not just academic excellence. Every child here is guided with care, encouraged with patience, and empowered to step into the future with confidence.
                     </p>
                   </div>
                 </div>

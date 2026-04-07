@@ -45,7 +45,7 @@ export function InstagramFeed() {
             viewport={{ once: true }}
             className="font-semibold text-3xl md:text-4xl text-primary mb-6 leading-tight"
           >
-            See Our Daily <span className="text-secondary">Celebrations</span>
+            See Our Daily <span className="text-brand-pink font-semibold">Celebrations</span>
           </motion.h2>
           
           <motion.p 

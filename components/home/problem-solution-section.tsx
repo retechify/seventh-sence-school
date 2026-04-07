@@ -21,7 +21,7 @@ export function ProblemSolutionSection() {
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto text-center mb-16">
+        <div className="max-w-2xl mx-auto text-center mb-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -32,14 +32,14 @@ export function ProblemSolutionSection() {
               <StickerIcon type="heart" className="w-5 h-5 text-peach-dark" />
               <span className="text-sm font-bold text-primary uppercase tracking-wider">The Foundation Matters</span>
             </div>
-            <h2 className="font-semibold text-4xl md:text-5xl text-primary mb-6 text-balance leading-tight">
+            <h2 className="font-bold text-4xl md:text-5xl text-primary mb-6 text-balance leading-tight tracking-tight">
               Is Your Child Getting the Right Start?
             </h2>
             <div className="space-y-4">
-              <p className="text-xl text-muted-foreground leading-relaxed text-pretty">
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                 Many early learning environments focus only on academics. But a child’s early years are about much more — confidence, communication, creativity, and emotional growth.
               </p>
-              <p className="text-xl text-muted-foreground leading-relaxed text-pretty">
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                 At Seventh Sense, we nurture the whole child, helping them grow into confident and capable individuals.
               </p>
             </div>

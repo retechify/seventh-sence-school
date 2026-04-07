@@ -41,7 +41,7 @@ const reviews = [
 
 export function TestimonialsSection() {
   return (
-    <section className="relative py-24 bg-transparent overflow-hidden" id="testimonials">
+    <section className="relative py-20 md:py-32 bg-transparent overflow-hidden" id="testimonials">
       {/* Background gradients for a playful look */}
       <div className="absolute inset-0 bg-gradient-to-br from-mint/10 via-cream to-lavender/20 -z-10" />
       
@@ -69,7 +69,7 @@ export function TestimonialsSection() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-semibold text-3xl md:text-4xl text-primary mb-6 leading-tight text-balance"
+            className="font-bold text-3xl md:text-4xl text-primary mb-6 leading-tight text-balance tracking-tight"
           >
             Loved by Parents, Adored by Children
           </motion.h2>
@@ -79,7 +79,7 @@ export function TestimonialsSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-muted-foreground text-lg leading-relaxed text-pretty"
+            className="text-base md:text-lg text-muted-foreground leading-relaxed text-pretty"
           >
             Don't just take our word for it. Hear from the parents who have seen their children flourish in our care.
           </motion.p>
@@ -104,7 +104,7 @@ export function TestimonialsSection() {
                 style={{ zIndex }}
               >
                 <div 
-                  className="bg-white rounded-[2rem] p-8 shadow-xl border border-gray-100 relative h-[320px] flex flex-col justify-between"
+                  className="bg-white rounded-[2.25rem] p-8 shadow-xl border border-gray-100 relative h-[320px] flex flex-col justify-between hover:shadow-2xl transition-all duration-300"
                 >
                   {/* Decorative Pin/Sticker */}
                   <div className="absolute -top-4 left-6 w-10 h-10 opacity-80">

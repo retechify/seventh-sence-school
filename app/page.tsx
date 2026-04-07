@@ -6,6 +6,7 @@ import { HeroSection } from "@/components/home/hero-section"
 import { TrustSection } from "@/components/home/trust-section"
 import { ProblemSolutionSection } from "@/components/home/problem-solution-section"
 import { ProgramsSection } from "@/components/home/programs-section"
+import { CulturalLearningSection } from "@/components/home/cultural-learning-section"
 import { FounderSection } from "@/components/home/founder-section"
 import { GallerySection } from "@/components/home/gallery-section"
 import { TestimonialsSection } from "@/components/home/testimonials-section"
@@ -43,6 +44,7 @@ export default function HomePage() {
           <ProblemSolutionSection />
           <TrustSection />
           <ProgramsSection />
+          <CulturalLearningSection />
           <FounderSection />
           <GallerySection />
           <TestimonialsSection />

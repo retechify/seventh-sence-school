@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { StickerIcon } from "@/components/floating-doodles"
+import { StickerIcon, SectionDoodles } from "@/components/floating-doodles"
 
 const features = [
   {
@@ -52,12 +52,13 @@ const features = [
 
 export function AboutSection() {
   return (
-    <section className="py-20 relative overflow-hidden bg-background">
-      <div className="absolute top-0 right-0 w-64 h-64 bg-lavender/20 rounded-full blur-3xl -z-10" />
-      <div className="absolute bottom-0 left-0 w-80 h-80 bg-soft-yellow/20 rounded-full blur-3xl -z-10" />
+    <section className="py-20 md:py-32 relative overflow-hidden">
+      {/* Signature background effect */}
+      <div className="absolute inset-0 bg-gradient-to-br from-cream/20 via-mint/5 to-lavender/10 -z-10" />
+      <SectionDoodles className="opacity-20" />
       
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-2xl mx-auto mb-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -72,16 +73,16 @@ export function AboutSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="font-semibold text-3xl md:text-4xl text-primary mb-6"
+            className="font-bold text-3xl md:text-4xl lg:text-5xl text-primary mb-6 tracking-tight"
           >
-            A Foundation for <span className="text-secondary font-semibold font-normal">Lifelong Joy</span>
+            A Foundation for <span className="text-brand-pink">Lifelong Joy</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-lg text-muted-foreground"
+            className="text-base md:text-lg text-muted-foreground leading-relaxed"
           >
             Experience a unique approach where play and discovery shape the leaders of tomorrow. We provide a safe, nurturing environment where every child&apos;s natural curiosity is guided into meaningful life skills.
           </motion.p>
@@ -96,9 +97,9 @@ export function AboutSection() {
               viewport={{ once: true, margin: "-100px" }}
               transition={{ delay: feature.delay, duration: 0.6, type: "spring" }}
               whileHover={{ y: -8, scale: 1.02 }}
-              className={`relative bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border-2 ${feature.borderColor} ${feature.offset} group`}
+              className={`relative bg-white rounded-[2.5rem] p-8 shadow-sm hover:shadow-xl transition-all duration-300 border-2 ${feature.borderColor} ${feature.offset} group`}
             >
-              <div className={`absolute inset-0 rounded-3xl opacity-50 transition-opacity group-hover:opacity-100 ${feature.color} -z-10`} />
+              <div className={`absolute inset-0 rounded-[2.5rem] opacity-50 transition-opacity group-hover:opacity-100 ${feature.color} -z-10`} />
               
               <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 bg-white shadow-md border border-gray-100`}>
                 <StickerIcon type={feature.icon as "sun" | "rainbow" | "sparkle" | "cloud"} className={`w-8 h-8 ${feature.textColor}`} />

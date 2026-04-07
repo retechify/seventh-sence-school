@@ -49,7 +49,7 @@ export function FounderSection() {
               >
                 <div className="bg-gradient-to-br from-soft-yellow to-peach rounded-full w-32 h-32 flex flex-col items-center justify-center p-2 text-center border-4 border-dotted border-white/50 relative overflow-hidden">
                   <div className="absolute inset-0 opacity-20 grain-texture mix-blend-overlay"></div>
-                  <span className="text-3xl font-semibold text-amber-800">18+</span>
+                  <span className="text-3xl font-semibold text-amber-800">20+</span>
                   <span className="text-xs font-medium uppercase text-amber-700 tracking-wider">Years of<br/>Experience</span>
                 </div>
               </motion.div>
@@ -78,12 +78,12 @@ export function FounderSection() {
                 &ldquo;Every child is a story waiting to be told.&rdquo;
               </h2>
 
-              <div className="space-y-4 text-muted-foreground text-lg leading-relaxed font-medium">
+              <div className="space-y-6 text-muted-foreground text-base md:text-lg leading-relaxed">
                 <p>
-                  With over 18 years of experience in academic leadership and early childhood development, my journey has been driven by a singular passion: creating a safe, nurturing environment where children truly flourish.
+                  With over 20+ years of experience in education, Dr. Vijayalakshmi Ponnusamy holds advanced qualifications including M.A (History), M.A (English), B.Ed, M.Phil, PhD, and is also a certified Life Coach.
                 </p>
                 <p>
-                  Holding a Ph.D. in History and English, I've seen firsthand that true education goes far beyond textbooks. At Seventh Sense, our vision is built on holistic child development—focusing deeply on the emotional, social, and creative well-being of your child, so they step into the future with unwavering confidence.
+                  At Seventh Sense, our vision is built on holistic child development—focusing deeply on the emotional, social, and creative well-being of your child, so they step into the future with unwavering confidence. We believe that true education goes far beyond textbooks, creating a safe, nurturing environment where children truly flourish.
                 </p>
               </div>
 
@@ -92,7 +92,7 @@ export function FounderSection() {
                   <StickerIcon type="heart" className="w-6 h-6 text-emerald-600" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-primary text-2xl">Dr. P. Vijayalakshmi</h4>
+                  <h4 className="font-semibold text-primary text-2xl">Dr. Vijayalakshmi Ponnusamy</h4>
                   <p className="text-sm text-muted-foreground uppercase tracking-wider font-medium">Founder & Academic Director</p>
                 </div>
               </div>

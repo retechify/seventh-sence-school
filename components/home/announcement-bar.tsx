@@ -47,7 +47,7 @@ export function AnnouncementBar({
             
             {ctaText && ctaLink && (
               <Link href={ctaLink}>
-                <Button variant="ghost" className="text-secondary font-bold hover:text-secondary/80 hover:bg-secondary/5 group flex items-center gap-2 transition-all">
+                <Button variant="ghost" className="text-brand-pink font-bold hover:text-brand-pink/80 hover:bg-brand-pink/5 group flex items-center gap-2 transition-all">
                   {ctaText}
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Button>

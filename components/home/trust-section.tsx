@@ -7,7 +7,7 @@ import { Shield, Sparkles, Heart, Users } from "lucide-react"
 const trustItems = [
   {
     id: 1,
-    title: "18+ Years",
+    title: "20+ Years",
     subtitle: "Experience in Early Education",
     icon: Sparkles,
     color: "bg-peach",
@@ -49,7 +49,7 @@ const trustItems = [
 
 export function TrustSection() {
   return (
-    <section className="py-20 relative overflow-hidden bg-transparent">
+    <section className="py-20 md:py-32 relative overflow-hidden bg-transparent">
       {/* Background gradients for depth */}
       <div className="absolute inset-0 bg-gradient-to-br from-cream/50 via-lavender/10 to-peach/10 -z-10" />
       
@@ -72,7 +72,7 @@ export function TrustSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="font-semibold text-3xl md:text-4xl text-primary leading-tight text-balance"
+            className="font-bold text-3xl md:text-4xl text-primary leading-tight text-balance tracking-tight"
           >
             A Place Built on Love and Trust
           </motion.h2>
@@ -86,8 +86,8 @@ export function TrustSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ delay: item.delay, duration: 0.6, type: "spring" }}
-              whileHover={{ scale: 1.05, y: -5 }}
-              className="relative bg-white rounded-3xl p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-primary/10 overflow-hidden group flex flex-col items-center text-center"
+              whileHover={{ scale: 1.02, y: -5 }}
+              className="relative bg-white rounded-[2.5rem] p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-primary/10 overflow-hidden group flex flex-col items-center text-center group-hover:shadow-xl"
             >
               <div className={`absolute inset-0 bg-gradient-to-br ${item.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
               

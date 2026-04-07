@@ -11,7 +11,6 @@ import { ArrowRight, CheckCircle2 } from "lucide-react"
 import { useState } from "react"
 import Link from "next/link"
 import { motion, AnimatePresence } from "framer-motion"
-import { useForm, ValidationError } from '@formspree/react';
 
 export default function EnquireClient() {
   const [formData, setFormData] = useState({
@@ -25,7 +24,37 @@ export default function EnquireClient() {
     message: "",
   })
 
-  const [state, handleSubmit] = useForm('mwvwarew');
+  const [state, setState] = useState({
+    submitting: false,
+    succeeded: false,
+    errors: [] as any[]
+  });
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setState(prev => ({ ...prev, submitting: true, errors: [] }));
+
+    const data = {
+      formType: "Enquiry",
+      ...formData,
+    };
+
+    try {
+      await fetch("https://script.google.com/macros/s/AKfycbzj_sM62oK5QoBQDFwVF9bQXQrWMpUvnCPsEc68XiIBQ3pzNZfr2ng-_qexgNZLu3ShfA/exec", {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "text/plain;charset=utf-8",
+        },
+        body: JSON.stringify(data),
+      });
+      
+      setState({ submitting: false, succeeded: true, errors: [] });
+    } catch (error) {
+      console.error("Submission error:", error);
+      setState({ submitting: false, succeeded: false, errors: [error] });
+    }
+  };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name || e.target.id]: e.target.value })
@@ -122,7 +151,7 @@ export default function EnquireClient() {
                         </div>
 
                         {/* Form portion */}
-                        <div className="p-10 md:p-14">
+                         <div className="p-10 md:p-14">
                            <form onSubmit={handleSubmit} className="space-y-10">
                               
                               {/* Step 1: Parent & Child */}
@@ -144,7 +173,6 @@ export default function EnquireClient() {
                                           className="rounded-2xl border-2 border-lavender/30 focus:border-peach focus:ring-peach/20 bg-cream/30 py-7 px-5 text-lg transition-all"
                                           required
                                        />
-                                       <ValidationError prefix="Parent Name" field="parentName" errors={state.errors} className="text-red-500 text-sm ml-2" />
                                     </div>
                                     
                                     <div className="grid grid-cols-3 gap-4">
@@ -199,7 +227,6 @@ export default function EnquireClient() {
                                           className="rounded-2xl border-2 border-lavender/30 focus:border-mint focus:ring-mint/20 bg-cream/30 py-7 px-5 text-lg transition-all"
                                           required
                                        />
-                                       <ValidationError prefix="Phone" field="phone" errors={state.errors} className="text-red-500 text-sm ml-2" />
                                     </div>
                                     <div className="space-y-3">
                                        <Label htmlFor="email" className="text-foreground/80 font-semibold ml-1">Email Address</Label>

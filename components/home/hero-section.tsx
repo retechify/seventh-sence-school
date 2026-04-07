@@ -7,7 +7,7 @@ import { motion } from "framer-motion"
 
 export function HeroSection() {
   return (
-    <section className="relative py-16 md:py-24 overflow-hidden">
+    <section className="relative py-20 md:py-32 overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-cream via-lavender/20 to-peach/30" />
       
@@ -74,7 +74,7 @@ export function HeroSection() {
               Learning isn&apos;t a lesson. It&apos;s a celebration.
             </h1>
             
-            <p className="text-lg text-muted-foreground leading-relaxed max-w-md mx-auto lg:mx-0 text-pretty font-normal">
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-md mx-auto lg:mx-0 text-pretty font-normal">
               At Seventh Sense, we create joyful learning experiences that build confidence, creativity, and lifelong skills in every child.
             </p>
             

@@ -5,30 +5,10 @@ import { Footer } from "@/components/footer"
 import { FloatingDoodles, StickerIcon, SectionDoodles } from "@/components/floating-doodles"
 import { Button } from "@/components/ui/button"
 import { MessageCircle, Phone, Mail, MapPin, ArrowRight, Instagram } from "lucide-react"
-import { useForm } from '@formspree/react';
+
 import Link from 'next/link';
 
 export default function ContactClient() {
-  const [state, handleSubmit] = useForm('mwvwarew');
-
-  if (state.succeeded) {
-     return (
-        <div className="min-h-screen bg-background relative overflow-hidden flex items-center justify-center">
-           <div className="fixed inset-0 grain-texture z-0 opacity-40" />
-           <div className="relative z-10 text-center p-12 bg-white rounded-[3rem] shadow-2xl border border-lavender/20 max-w-lg mx-4">
-              <div className="w-20 h-20 bg-green-50 rounded-full flex items-center justify-center mx-auto mb-6">
-                 <MessageCircle className="w-10 h-10 text-green-500" />
-              </div>
-              <h2 className="font-semibold text-3xl text-primary mb-4">Message Sent!</h2>
-              <p className="text-muted-foreground mb-8">Thanks for reaching out! We&apos;ll get back to you shortly.</p>
-              <Button onClick={() => window.location.reload()} className="btn-gradient-yellow text-foreground rounded-full px-10 py-6 font-bold shadow-lg hover:scale-105 transition-all">
-                 Send Another
-              </Button>
-           </div>
-        </div>
-     );
-  }
-
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
       <div className="fixed inset-0 grain-texture z-0 opacity-40" />

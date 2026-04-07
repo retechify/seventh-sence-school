@@ -4,13 +4,48 @@ import { Button } from "@/components/ui/button"
 import { StickerIcon, SectionDoodles } from "@/components/floating-doodles"
 import { MessageCircle, Send, CheckCircle2 } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
-import { useForm, ValidationError } from '@formspree/react';
+import { useState } from "react"
 
 export function CtaSection() {
-  const [state, handleSubmit] = useForm('mwvwarew');
+  const [state, setState] = useState({
+    submitting: false,
+    succeeded: false,
+    errors: [] as any[]
+  });
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setState(prev => ({ ...prev, submitting: true, errors: [] }));
+
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      formType: "Quick Inquiry",
+      name: formData.get("name"),
+      phone: formData.get("phone"),
+      email: formData.get("email"),
+    };
+
+    try {
+      const response = await fetch("https://script.google.com/macros/s/AKfycbzj_sM62oK5QoBQDFwVF9bQXQrWMpUvnCPsEc68XiIBQ3pzNZfr2ng-_qexgNZLu3ShfA/exec", {
+        method: "POST",
+        mode: "no-cors", // Use no-cors for Google Apps Script to avoid preflight issues
+        headers: {
+          "Content-Type": "text/plain;charset=utf-8",
+        },
+        body: JSON.stringify(data),
+      });
+      
+      // Since mode is 'no-cors', we can't check response.ok or JSON
+      // But for simple submissions, it almost always works if the URL is correct
+      setState({ submitting: false, succeeded: true, errors: [] });
+    } catch (error) {
+      console.error("Submission error:", error);
+      setState({ submitting: false, succeeded: false, errors: [error] });
+    }
+  };
 
   return (
-    <section className="py-24 relative overflow-hidden bg-primary text-white" id="book-visit">
+    <section className="py-20 md:py-32 relative overflow-hidden bg-primary text-white" id="book-visit">
       {/* Background shapes & texture */}
       <div className="absolute inset-0 opacity-10 bg-[url('/noise.png')] mix-blend-overlay"></div>
       <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl" />
@@ -28,7 +63,7 @@ export function CtaSection() {
       </div>
 
       <div className="container mx-auto px-4 max-w-5xl relative z-10">
-        <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-[3rem] p-8 md:p-16 shadow-2xl relative overflow-hidden">
+        <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-[2.5rem] p-8 md:p-16 shadow-2xl relative overflow-hidden">
           
           <div className="flex flex-col lg:flex-row gap-12 items-center">
             {/* Left Content */}
@@ -43,11 +78,11 @@ export function CtaSection() {
                   Secure Their Future
                 </div>
                 
-                <h2 className="font-semibold text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight text-balance">
+                <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight text-balance tracking-tight">
                   Give your child the best start in life
                 </h2>
                 
-                <p className="text-lg text-white/90 leading-relaxed mb-8 font-medium">
+                <p className="text-base md:text-lg text-white/90 leading-relaxed mb-8">
                   Experience a preschool that prioritizes your child's happiness and growth. Whether you'd like to schedule a tour, have a quick chat, or message us on WhatsApp, we're here to help you make the right choice.
                 </p>
 
@@ -84,7 +119,7 @@ export function CtaSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="bg-white rounded-[2rem] p-8 shadow-xl min-h-[400px] flex flex-col justify-center"
+                className="bg-white rounded-[2.5rem] p-8 shadow-xl min-h-[400px] flex flex-col justify-center"
               >
                 <AnimatePresence mode="wait">
                   {state.succeeded ? (
@@ -123,7 +158,6 @@ export function CtaSection() {
                             className="w-full px-5 py-4 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all text-gray-800 placeholder:text-gray-400"
                             required
                           />
-                          <ValidationError prefix="Name" field="name" errors={state.errors} className="text-red-500 text-xs ml-1" />
                         </div>
                         <div className="space-y-1">
                           <label htmlFor="phone" className="sr-only">Phone Number</label>
@@ -135,7 +169,6 @@ export function CtaSection() {
                             className="w-full px-5 py-4 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all text-gray-800 placeholder:text-gray-400"
                             required
                           />
-                          <ValidationError prefix="Phone" field="phone" errors={state.errors} className="text-red-500 text-xs ml-1" />
                         </div>
                         <div className="space-y-1">
                           <label htmlFor="email" className="sr-only">Email Address</label>
@@ -146,7 +179,6 @@ export function CtaSection() {
                             placeholder="Email Address (Optional)" 
                             className="w-full px-5 py-4 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all text-gray-800 placeholder:text-gray-400"
                           />
-                          <ValidationError prefix="Email" field="email" errors={state.errors} className="text-red-500 text-xs ml-1" />
                         </div>
                         
                         <Button 

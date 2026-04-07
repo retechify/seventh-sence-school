@@ -17,7 +17,7 @@ const programs = [
   },
   {
     title: "Montessori Sensory Development",
-    description: "Encouraging hands-on exploration that strengthens focus, independence, and problem-solving.",
+    description: "Encouraging hands-on exploration that strengthens focus, independence, and problem-solving skills.",
     ageGroup: "2-4 Years",
     illustration: "puzzle" as const,
     stickerType: "sun" as const,
@@ -46,7 +46,7 @@ const programs = [
 
 export function ProgramsSection() {
   return (
-    <section className="relative py-24 bg-transparent overflow-hidden" id="programs">
+    <section className="relative py-20 md:py-32 bg-transparent overflow-hidden" id="programs">
       {/* Background gradients */}
       <div className="absolute inset-0 bg-gradient-to-br from-cream/40 via-mint/5 to-baby-blue/10 -z-10" />
       
@@ -66,11 +66,11 @@ export function ProgramsSection() {
             <span className="text-sm font-medium text-emerald-800 uppercase tracking-widest">Our Programs</span>
           </div>
           
-          <h2 className="font-semibold text-4xl md:text-5xl text-primary mb-6 leading-tight">
-            A Foundation for <span className="text-secondary">Lifelong Joy</span>
+          <h2 className="font-bold text-4xl md:text-5xl text-primary mb-6 leading-tight tracking-tight">
+            A Foundation for <span className="text-brand-pink">Lifelong Joy</span>
           </h2>
           
-          <p className="text-muted-foreground text-lg leading-relaxed text-balance">
+          <p className="text-base md:text-lg text-muted-foreground leading-relaxed text-balance">
             Explore our specialized educational pathways designed to provide a rich, scientifically-backed learning environment for every stage of early childhood.
           </p>
         </motion.div>
@@ -88,7 +88,7 @@ export function ProgramsSection() {
             >
               {/* Card Container */}
               <div 
-                className="relative h-full rounded-[2.5rem] p-8 pt-12 shadow-md border border-white/50 transition-all duration-300 flex flex-col hover:shadow-xl hover:-translate-y-2 hover:scale-[1.02] bg-white"
+                className="relative h-full rounded-[2.5rem] p-8 pt-12 shadow-md border border-white/50 transition-all duration-300 flex flex-col hover:shadow-xl hover:-translate-y-1 hover:scale-[1.01] bg-white group-hover:shadow-xl"
                 style={{
                   borderTopColor: `oklch(0.92 0.08 ${program.hue})`,
                   borderTopWidth: "8px"
@@ -115,7 +115,7 @@ export function ProgramsSection() {
                     {program.title}
                   </h3>
                   
-                  <p className="text-muted-foreground leading-relaxed mb-8 flex-grow text-sm">
+                  <p className="text-base text-muted-foreground leading-relaxed mb-8 flex-grow">
                     {program.description}
                   </p>
                   
