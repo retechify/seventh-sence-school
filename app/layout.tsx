@@ -48,6 +48,18 @@ export const metadata: Metadata = {
     description: 'Where Every Child Finds Their Unique Spark',
     images: ['/gallery/hero_main.png'],
   },
+  icons: {
+    icon: [
+      { url: '/gallery/logo/logo.png?v=2', sizes: '32x32' },
+      { url: '/gallery/logo/logo.png?v=2', sizes: '16x16' },
+    ],
+    apple: [
+      { url: '/gallery/logo/logo.png?v=2', sizes: '180x180' },
+    ],
+    other: [
+      { rel: 'mask-icon', url: '/gallery/logo/logo.png?v=2', color: '#E91E63' },
+    ],
+  },
 }
 
 export const viewport: Viewport = {
