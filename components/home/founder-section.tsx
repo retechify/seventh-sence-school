@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import Image from "next/image"
 import { StickerIcon, SectionDoodles } from "@/components/floating-doodles"
 
 export function FounderSection() {
@@ -29,13 +30,12 @@ export function FounderSection() {
               <div className="relative rounded-[3rem] overflow-hidden aspect-[4/5] border-8 border-white shadow-xl bg-gray-100 flex items-center justify-center z-10">
                 {/* Fallback pattern if image is missing */}
                 <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, black 1px, transparent 0)', backgroundSize: '24px 24px' }}></div>
-                <img 
+                <Image 
                   src="/gallery/about.png" 
                   alt="Founder" 
-                  className="object-cover w-full h-full relative z-10 fallback-bg"
-                  onError={(e) => {
-                    (e.target as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNlMGUwZTAiLz48L3N2Zz4='; // placeholder grey rect
-                  }}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 40vw"
+                  className="object-cover relative z-10 fallback-bg"
                 />
               </div>
 
@@ -50,7 +50,7 @@ export function FounderSection() {
                 <div className="bg-gradient-to-br from-soft-yellow to-peach rounded-full w-32 h-32 flex flex-col items-center justify-center p-2 text-center border-4 border-dotted border-white/50 relative overflow-hidden">
                   <div className="absolute inset-0 opacity-20 grain-texture mix-blend-overlay"></div>
                   <span className="text-3xl font-semibold text-amber-800">20+</span>
-                  <span className="text-xs font-medium uppercase text-amber-700 tracking-wider">Years of<br/>Experience</span>
+                  <span className="text-sm font-medium uppercase text-amber-700 tracking-wider">Years of<br/>Experience</span>
                 </div>
               </motion.div>
             </motion.div>
@@ -93,7 +93,7 @@ export function FounderSection() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-primary text-2xl">Dr. Vijayalakshmi Ponnusamy</h4>
-                  <p className="text-sm text-muted-foreground uppercase tracking-wider font-medium">Founder & Academic Director</p>
+                  <p className="text-base text-muted-foreground uppercase tracking-wider font-medium">Founder & Academic Director</p>
                 </div>
               </div>
             </motion.div>

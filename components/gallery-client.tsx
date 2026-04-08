@@ -53,7 +53,7 @@ const categories = [
 
 const colorMap: Record<string, { bg: string; hue: number }> = {
   peach: { bg: "oklch(0.92 0.08 50)", hue: 50 },
-  mint: { bg: "oklch(0.9 loyal 0.1 160)", hue: 160 },
+  mint: { bg: "oklch(0.9 0.1 160)", hue: 160 },
   lavender: { bg: "oklch(0.9 0.08 300)", hue: 300 },
   "soft-yellow": { bg: "oklch(0.95 0.12 95)", hue: 95 },
   "baby-blue": { bg: "oklch(0.9 0.08 230)", hue: 230 },

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Gallery | Seventh Sense School of Arts",
     description: "Step inside and witness the magic of childhood. Real growth, real friendships, and endless discovery.",
-    images: ["/gallery/gallery-section/im3.png"],
+    images: ["/gallery/hero_main.png"],
   },
 }
 

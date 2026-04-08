@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { StickerIcon, SectionDoodles } from "@/components/floating-doodles"
 import { motion } from "framer-motion"
@@ -70,7 +71,7 @@ export function HeroSection() {
             </motion.div>
             
             {/* Main heading */}
-            <h1 className="font-serif text-5xl md:text-6xl text-primary leading-tight text-balance tracking-tight drop-shadow-sm">
+            <h1 className="font-serif text-4xl md:text-6xl text-primary leading-tight text-balance tracking-tight drop-shadow-sm">
               Learning isn&apos;t a lesson. It&apos;s a celebration.
             </h1>
             
@@ -164,10 +165,13 @@ export function HeroSection() {
             {/* Main image container */}
             <div className="relative blob-shape overflow-hidden bg-white/50 p-4">
               <div className="blob-shape overflow-hidden aspect-square flex items-center justify-center relative">
-                <img 
+                <Image 
                   src="/gallery/hero_main.png" 
                   alt="Children learning at Seventh Sense" 
-                  className="w-full h-full object-cover"
+                  fill
+                  priority
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
+                  className="object-cover"
                 />
                 
                 {/* Overlay gradient for depth & premium feel */}

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Book a School Visit | Seventh Sense",
     description: "Experience the magic of our preschool. Schedule your visit today and discover why parents love Seventh Sense.",
-    images: ["/gallery/gallery-section/im1.png"],
+    images: ["/gallery/hero_main.png"],
   },
 }
 

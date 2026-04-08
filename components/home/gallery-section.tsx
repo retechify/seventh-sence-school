@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { StickerIcon, SectionDoodles } from "@/components/floating-doodles"
+import Image from "next/image"
 import { Camera, BookOpen, Play, Palette, Users, Sparkle } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { useState } from "react"
@@ -66,7 +67,7 @@ export function GallerySection() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-[200px]"
+          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 auto-rows-[160px] md:auto-rows-[200px]"
         >
           {homeGalleryItems.map((item, index) => {
             const gridClasses = {
@@ -91,7 +92,13 @@ export function GallerySection() {
               >
                 {/* Image */}
                 <div className="absolute inset-0">
-                  <img src={item.image} alt={item.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                  <Image 
+                    src={item.image} 
+                    alt={item.title} 
+                    fill
+                    sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
+                    className="object-cover transition-transform duration-700 group-hover:scale-110" 
+                  />
                   <div className="absolute inset-0 bg-black/10 transition-colors duration-300 group-hover:bg-black/30" />
                 </div>
 

@@ -25,15 +25,15 @@ export const metadata: Metadata = {
   description: 'A magical preschool experience where children discover, learn, and grow through play, expression, and discovery. Premium early learning programs for your little ones in Kovaipudur, Coimbatore.',
   keywords: ['preschool', 'early learning', 'child development', 'kindergarten', 'playschool', 'School of arts', 'Kovaipudur', 'Coimbatore', 'Seventh Sense School'],
   authors: [{ name: 'Seventh Sense School of Arts' }],
-  metadataBase: new URL('https://seventhsenseschool.com'),
+  metadataBase: new URL('https://www.seventhsenseschool.com'),
   openGraph: {
     title: 'Seventh Sense School of Arts',
     description: 'A magical preschool experience where children discovery, learn, and grow through play and expression.',
-    url: 'https://seventhsenseschool.com',
+    url: 'https://www.seventhsenseschool.com',
     siteName: 'Seventh Sense School of Arts',
     images: [
       {
-        url: '/gallery/gallery-section/im1.png', // High-quality classroom moment
+        url: '/gallery/hero_main.png',
         width: 1200,
         height: 630,
         alt: 'Children enjoying fun learning activities at Seventh Sense School of Arts',
@@ -46,10 +46,14 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Seventh Sense School of Arts',
     description: 'Where Every Child Finds Their Unique Spark',
-    images: ['/gallery/gallery-section/im1.png'],
+    images: ['/gallery/hero_main.png'],
   },
   icons: {
-    icon: '/gallery/logo/logo.png',
+    icon: [
+      { url: '/gallery/logo/logo.png' },
+      { url: '/icon.svg', type: 'image/svg+xml' },
+    ],
+    apple: '/apple-icon.png',
   },
 }
 

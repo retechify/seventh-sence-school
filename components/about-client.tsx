@@ -2,6 +2,7 @@
 
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import Image from "next/image"
 import { FloatingDoodles, StickerIcon, HandDrawnDivider, SectionDoodles } from "@/components/floating-doodles"
 import { motion } from "framer-motion"
 import Link from "next/link"
@@ -75,10 +76,10 @@ export default function AboutClient() {
               <div className="max-w-2xl mx-auto text-center">
                 <div className="inline-flex items-center gap-2 bg-white/60 rounded-full px-5 py-2.5 mb-8 shadow-sm border border-lavender/30">
                   <StickerIcon type="heart" className="w-5 h-5" />
-                  <span className="text-sm font-semibold tracking-wide text-primary uppercase">Our Story</span>
+                  <span className="text-base font-semibold tracking-wide text-primary uppercase">Our Story</span>
                 </div>
                 
-                <h1 className="font-semibold text-5xl lg:text-7xl text-primary mb-8 text-balance leading-tight">
+                <h1 className="font-semibold text-4xl md:text-5xl lg:text-7xl text-primary mb-8 text-balance leading-tight">
                   Meet the Heart Behind Seventh Sense
                 </h1>
                 
@@ -177,10 +178,12 @@ export default function AboutClient() {
                     viewport={{ once: true }}
                     className="relative z-10 w-full max-w-sm aspect-[4/5] rounded-[3rem] overflow-hidden shadow-xl border-[10px] border-white/80"
                   >
-                    <img 
+                    <Image 
                       src="/gallery/about.png" 
                       alt="Dr. Vijayalakshmi Ponnusamy - Founder & Academic Director" 
-                      className="w-full h-full object-cover"
+                      fill
+                      sizes="(max-width: 768px) 100vw, 40vw"
+                      className="object-cover"
                     />
                   </motion.div>
 
@@ -210,8 +213,8 @@ export default function AboutClient() {
 
                   <div className="bg-white/80 backdrop-blur-sm p-6 sm:p-8 rounded-[2rem] border border-lavender/30 mb-8 shadow-sm">
                     <h3 className="font-bold text-xl text-primary mb-1">Dr. Vijayalakshmi Ponnusamy</h3>
-                    <p className="text-primary/70 font-medium mb-4">Founder & Academic Director</p>
-                    <ul className="space-y-4 text-sm text-foreground/80 font-medium">
+                    <p className="text-primary/70 font-medium mb-4 text-base">Founder & Academic Director</p>
+                    <ul className="space-y-4 text-sm sm:text-base text-foreground/80 font-medium">
                       <li className="flex items-center gap-3">
                         <div className="bg-lavender/20 p-1.5 rounded-full">
                            <StickerIcon type="sparkle" className="w-4 h-4" />

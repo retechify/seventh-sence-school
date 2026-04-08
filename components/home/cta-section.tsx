@@ -47,7 +47,7 @@ export function CtaSection() {
   return (
     <section className="py-20 md:py-32 relative overflow-hidden bg-primary text-white" id="book-visit">
       {/* Background shapes & texture */}
-      <div className="absolute inset-0 opacity-10 bg-[url('/noise.png')] mix-blend-overlay"></div>
+      <div className="absolute inset-0 grain-texture mix-blend-overlay opacity-20"></div>
       <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-soft-yellow/10 rounded-full blur-3xl" />
 
