@@ -59,6 +59,12 @@ export default function ReviewsPage() {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
 
+  const [activeModalReview, setActiveModalReview] = useState<Review | null>(null)
+
+  const isLongReview = (text: string) => {
+    return text.replace(/<[^>]*>/g, '').length > 130;
+  }
+
   // Form State
   const [parentName, setParentName] = useState("")
   const [childName, setChildName] = useState("")
@@ -206,7 +212,7 @@ export default function ReviewsPage() {
                       style={{ zIndex }}
                     >
                       <div 
-                        className="bg-white rounded-[2.25rem] p-8 shadow-xl border border-gray-100 relative h-[320px] flex flex-col justify-between hover:shadow-2xl transition-all duration-300"
+                        className="bg-white rounded-[2.25rem] p-8 shadow-xl border border-gray-100 relative h-[370px] md:h-[355px] flex flex-col justify-between hover:shadow-2xl transition-all duration-300"
                       >
                         {/* Decorative Pin/Sticker */}
                         <div className="absolute -top-4 left-6 w-10 h-10 opacity-80">
@@ -215,16 +221,30 @@ export default function ReviewsPage() {
 
                         <div>
                           {/* Stars */}
-                          <div className="flex gap-1 mb-6 justify-end">
+                          <div className="flex gap-1 mb-4 justify-end">
                             {Array.from({ length: review.rating }).map((_, i) => (
                               <Star key={i} className="w-4 h-4 text-amber-400 fill-amber-400" />
                             ))}
                           </div>
 
-                          <p 
-                             className="text-gray-600 leading-relaxed italic text-[1.05rem] font-medium mb-6 line-clamp-4 text-pretty"
-                             dangerouslySetInnerHTML={{ __html: `&ldquo;${review.review}&rdquo;` }}
-                          />
+                          <div className="relative">
+                            <p 
+                               className="text-gray-600 leading-relaxed italic text-[1rem] font-medium line-clamp-5 text-pretty"
+                               dangerouslySetInnerHTML={{ __html: `&ldquo;${review.review}&rdquo;` }}
+                            />
+                            {isLongReview(review.review) && (
+                              <button
+                                type="button"
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  setActiveModalReview(review);
+                                }}
+                                className="text-primary hover:text-brand-orange text-xs font-bold transition-colors inline-block mt-1 cursor-pointer outline-none focus:underline"
+                              >
+                                ... Read More
+                              </button>
+                            )}
+                          </div>
                         </div>
                         
                         <div className="flex items-center gap-4 pt-4 border-t border-gray-100">
@@ -390,6 +410,71 @@ export default function ReviewsPage() {
                   </button>
                 </form>
               )}
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
+
+      {/* Testimonial Detail Modal Overlay */}
+      <AnimatePresence>
+        {activeModalReview && (
+          <div className="fixed inset-0 bg-primary/20 backdrop-blur-md z-[100] flex items-center justify-center p-4">
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.95, y: 10 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: 10 }}
+              className="bg-white rounded-[2.5rem] p-8 max-w-lg w-full border border-lavender/30 shadow-2xl relative max-h-[90vh] overflow-y-auto"
+            >
+              {/* Modal Close Button */}
+              <button 
+                onClick={() => setActiveModalReview(null)}
+                className="absolute top-6 right-6 text-muted-foreground hover:text-primary transition-colors text-2xl font-bold cursor-pointer"
+              >
+                &times;
+              </button>
+
+              <div className="space-y-6 pt-4">
+                {/* Decorative Pin/Sticker */}
+                <div className="w-12 h-12 mx-auto opacity-95">
+                  <StickerIcon 
+                    type={["sun", "rainbow", "cloud", "sparkle"][reviewsList.indexOf(activeModalReview) !== -1 ? reviewsList.indexOf(activeModalReview) % 4 : 0] as any} 
+                    className="w-full h-full drop-shadow-md" 
+                  />
+                </div>
+
+                <div className="text-center">
+                  {/* Stars */}
+                  <div className="flex gap-1.5 justify-center mb-4">
+                    {Array.from({ length: activeModalReview.rating }).map((_, i) => (
+                      <Star key={i} className="w-6 h-6 text-amber-400 fill-amber-400" />
+                    ))}
+                  </div>
+
+                  {/* Review Text */}
+                  <div 
+                    className="text-gray-700 leading-relaxed italic text-[1.12rem] font-medium text-pretty bg-cream/15 p-6 rounded-[1.75rem] border border-gray-100 max-h-[45vh] overflow-y-auto"
+                    dangerouslySetInnerHTML={{ __html: `&ldquo;${activeModalReview.review}&rdquo;` }}
+                  />
+                </div>
+
+                {/* Parent Info Section */}
+                <div className="flex items-center gap-4 p-4 rounded-[2rem]" style={{
+                  background: `linear-gradient(135deg, oklch(0.97 0.01 90), oklch(0.95 0.015 85))`
+                }}>
+                  <div 
+                    className="w-14 h-14 rounded-full flex items-center justify-center font-bold text-xl text-white shadow-sm shrink-0"
+                    style={{
+                      background: `linear-gradient(135deg, oklch(0.8 0.15 ${[50, 160, 300, 80][reviewsList.indexOf(activeModalReview) !== -1 ? reviewsList.indexOf(activeModalReview) % 4 : 0]}), oklch(0.7 0.18 ${[50, 160, 300, 80][reviewsList.indexOf(activeModalReview) !== -1 ? reviewsList.indexOf(activeModalReview) % 4 : 0]}))`
+                    }}
+                  >
+                    {activeModalReview.avatar}
+                  </div>
+                  <div className="text-left">
+                    <h4 className="font-bold text-lg text-gray-900 leading-none mb-1">{activeModalReview.name}</h4>
+                    <p className="text-sm text-gray-500 font-medium leading-none">{activeModalReview.role}</p>
+                  </div>
+                </div>
+              </div>
             </motion.div>
           </div>
         )}
