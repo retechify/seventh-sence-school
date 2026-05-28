@@ -1,8 +1,10 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { StickerIcon, SectionDoodles } from "@/components/floating-doodles"
-import { Star } from "lucide-react"
+import { Header } from "@/components/header"
+import { Footer } from "@/components/footer"
+import { FloatingDoodles, StickerIcon, SectionDoodles } from "@/components/floating-doodles"
+import { Star, ArrowLeft } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import Link from "next/link"
 
@@ -52,10 +54,11 @@ const defaultReviews: Review[] = [
   },
 ]
 
-export function TestimonialsSection() {
+export default function ReviewsPage() {
   const [reviewsList, setReviewsList] = useState<Review[]>(defaultReviews)
   const [isModalOpen, setIsModalOpen] = useState(false)
-  
+  const [isLoading, setIsLoading] = useState(true)
+
   // Form State
   const [parentName, setParentName] = useState("")
   const [childName, setChildName] = useState("")
@@ -80,11 +83,12 @@ export function TestimonialsSection() {
             avatar: r.name.charAt(0).toUpperCase(),
             color: ["peach", "mint", "lavender", "soft-yellow"][idx % 4],
           }));
-          // Merge dynamic reviews at the beginning
           setReviewsList([...dynamicReviews, ...defaultReviews]);
         }
       } catch (err) {
         console.error("Error loading approved reviews:", err);
+      } finally {
+        setIsLoading(false);
       }
     }
     fetchReviews();
@@ -126,137 +130,128 @@ export function TestimonialsSection() {
     }
   };
 
-  // Calculate average rating dynamically
+  // Calculate dynamic rating details
   const totalCount = reviewsList.length
   const avgRating = totalCount > 0 
     ? (reviewsList.reduce((sum, r) => sum + r.rating, 0) / totalCount).toFixed(1) 
     : "5.0"
 
-  // Only display the latest 6 approved reviews on the homepage marquee
-  const homepageReviews = reviewsList.slice(0, 6)
-
   return (
-    <section className="relative py-20 md:py-32 bg-transparent overflow-hidden" id="testimonials">
-      {/* Background gradients for a playful look */}
-      <div className="absolute inset-0 bg-gradient-to-br from-mint/10 via-cream to-lavender/20 -z-10" />
-      
-      {/* Section-specific doodles */}
-      <SectionDoodles className="opacity-30" />
-      
-      {/* Manual extra doodles for impact */}
-      <div className="absolute top-10 right-20 w-12 h-12 opacity-30 animate-float-slow">
-        <StickerIcon type="heart" className="w-full h-full text-peach" />
-      </div>
-      
-      <div className="container mx-auto px-4 max-w-7xl">
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            className="inline-flex items-center gap-2 bg-peach/40 rounded-full px-4 py-2 mb-6"
-          >
-            <StickerIcon type="star" className="w-4 h-4 text-orange-600" />
-            <span className="text-sm font-medium text-orange-900 uppercase tracking-widest">
-              Happy Families • {avgRating}/5 ★ ({totalCount > 100 ? "100+" : totalCount} reviews)
-            </span>
-          </motion.div>
+    <div className="min-h-screen bg-background relative overflow-hidden flex flex-col">
+      <div className="fixed inset-0 grain-texture z-0 opacity-40" />
+      <FloatingDoodles count={15} />
+
+      <Header />
+
+      <main className="flex-1 pt-20 relative z-10">
+        {/* Banner Section */}
+        <section className="relative pt-24 pb-12 md:pt-32 md:pb-16 overflow-hidden bg-transparent">
+          <div className="absolute inset-0 bg-gradient-to-br from-lavender/30 via-cream/80 to-peach/20 -z-10" />
+          <SectionDoodles className="opacity-40" />
           
-          <motion.h2 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="font-bold text-3xl md:text-4xl text-primary mb-6 leading-tight text-balance tracking-tight"
-          >
-            Loved by Parents, Adored by Children
-          </motion.h2>
-          
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
-            className="text-base md:text-lg text-muted-foreground leading-relaxed text-pretty"
-          >
-            Don't just take our word for it. Hear from the parents who have seen their children flourish in our care.
-          </motion.p>
-        </div>
-        
-        {/* Infinite Testimonial Marquee Slider */}
-        <div className="relative w-full overflow-hidden py-10 z-10">
-          {/* Left and Right Fade Gradients */}
-          <div className="absolute inset-y-0 left-0 w-16 md:w-32 bg-gradient-to-r from-background to-transparent z-20 pointer-events-none" />
-          <div className="absolute inset-y-0 right-0 w-16 md:w-32 bg-gradient-to-l from-background to-transparent z-20 pointer-events-none" />
+          <div className="container mx-auto px-4 relative">
+            <Link href="/" className="inline-flex items-center gap-2 text-primary font-semibold hover:text-peach transition-colors mb-6 cursor-pointer text-sm font-sans">
+              <ArrowLeft className="w-4 h-4" /> Back to Homepage
+            </Link>
 
-          <div className="animate-marquee flex gap-8">
-            {[...homepageReviews, ...homepageReviews].map((review, index) => {
-              // Subtle polaroid rotation
-              const rotation = index % 2 === 0 ? "rotate-[-1.5deg]" : "rotate-[1.5deg]";
-              
-              return (
-                <div 
-                  key={`${review.name}-${index}`}
-                  className={`relative group w-[300px] md:w-[350px] flex-shrink-0 origin-center transition-all duration-300 hover:scale-105 ${rotation}`}
-                >
-                  <div 
-                    className="bg-white rounded-[2.25rem] p-8 shadow-xl border border-gray-100 relative h-[320px] flex flex-col justify-between hover:shadow-2xl transition-all duration-300"
-                  >
-                    {/* Decorative Pin/Sticker */}
-                    <div className="absolute -top-4 left-6 w-10 h-10 opacity-80">
-                      <StickerIcon type={["sun", "rainbow", "cloud", "sparkle"][index % 4] as any} className="w-full h-full drop-shadow-md" />
-                    </div>
+            <div className="max-w-3xl mx-auto text-center">
+              <div className="inline-flex items-center gap-2 bg-peach/40 rounded-full px-4 py-2 mb-6">
+                <StickerIcon type="star" className="w-4 h-4 text-orange-600" />
+                <span className="text-sm font-medium text-orange-900 uppercase tracking-widest">
+                  Parent Reviews • {avgRating}/5 ★ ({totalCount} reviews)
+                </span>
+              </div>
+              <h1 className="font-semibold text-5xl md:text-6xl text-primary mb-6 text-balance leading-tight">
+                Heartfelt Stories from Our Families
+              </h1>
+              <p className="text-xl text-muted-foreground leading-relaxed text-pretty mb-8">
+                Read all testimonials from our wonderful community of parents who share their child's magical journey at Seventh Sense.
+              </p>
 
-                    <div>
-                      {/* Stars */}
-                      <div className="flex gap-1 mb-6 justify-end">
-                        {Array.from({ length: review.rating }).map((_, i) => (
-                          <Star key={i} className="w-4 h-4 text-amber-400 fill-amber-400" />
-                        ))}
-                      </div>
-
-                      <p 
-                         className="text-gray-600 leading-relaxed italic text-[1.05rem] font-medium mb-6 line-clamp-4"
-                         dangerouslySetInnerHTML={{ __html: `&ldquo;${review.review}&rdquo;` }}
-                      />
-                    </div>
-                    
-                    <div className="flex items-center gap-4 pt-4 border-t border-gray-100">
-                      <div 
-                        className="w-12 h-12 rounded-full flex items-center justify-center font-medium text-lg text-white shadow-sm shrink-0"
-                        style={{
-                          background: `linear-gradient(135deg, oklch(0.8 0.15 ${[50, 160, 300, 80][index % 4]}), oklch(0.7 0.18 ${[50, 160, 300, 80][index % 4]}))`
-                        }}
-                      >
-                        {review.avatar}
-                      </div>
-                      <div>
-                        <h4 className="font-semibold text-lg text-gray-900">{review.name}</h4>
-                        <p className="text-sm text-gray-500">{review.role}</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              )
-            })}
+              <button 
+                onClick={() => setIsModalOpen(true)}
+                className="btn-gradient-purple text-white rounded-full px-10 py-5 font-bold shadow-lg hover:scale-105 active:scale-95 transition-all cursor-pointer text-lg"
+              >
+                Share Your Review
+              </button>
+            </div>
           </div>
-        </div>
+        </section>
 
-        {/* Navigation Buttons for Reviews page and Review Modal */}
-        <div className="flex flex-col sm:flex-row gap-4 items-center justify-center mt-12 relative z-10">
-          <Link href="/reviews">
-            <button className="btn-gradient-yellow text-foreground rounded-full px-8 py-4 font-bold shadow-lg hover:scale-105 active:scale-95 transition-all cursor-pointer">
-              View More Reviews
-            </button>
-          </Link>
+        {/* Polaroid Masonry Grid Section */}
+        <section className="py-12 pb-24 relative overflow-hidden bg-transparent">
+          <div className="absolute inset-0 bg-gradient-to-b from-white via-lavender/5 to-white -z-10" />
+          <SectionDoodles className="opacity-20" />
 
-          <button 
-            onClick={() => setIsModalOpen(true)}
-            className="btn-gradient-purple text-white rounded-full px-8 py-4 font-bold shadow-lg hover:scale-105 active:scale-95 transition-all cursor-pointer"
-          >
-            Share Your Experience
-          </button>
-        </div>
-      </div>
+          <div className="container mx-auto px-4 max-w-7xl">
+            {isLoading ? (
+              <div className="flex flex-col items-center justify-center min-h-[300px] gap-4">
+                <div className="w-12 h-12 rounded-full border-4 border-primary border-t-transparent animate-spin" />
+                <p className="text-muted-foreground font-medium">Loading happy stories...</p>
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 justify-items-center">
+                {reviewsList.map((review, index) => {
+                  const rotation = index % 2 === 0 ? "rotate-[-2deg]" : "rotate-[2deg]";
+                  const zIndex = 10 + index;
+                  
+                  return (
+                    <motion.div 
+                      key={`${review.name}-${index}`}
+                      initial={{ opacity: 0, y: 30 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: Math.min(index * 0.1, 1) }}
+                      whileHover={{ scale: 1.05, zIndex: 50, rotate: 0 }}
+                      className={`relative group w-full max-w-[350px] origin-center transition-all duration-300 ${rotation}`}
+                      style={{ zIndex }}
+                    >
+                      <div 
+                        className="bg-white rounded-[2.25rem] p-8 shadow-xl border border-gray-100 relative h-[320px] flex flex-col justify-between hover:shadow-2xl transition-all duration-300"
+                      >
+                        {/* Decorative Pin/Sticker */}
+                        <div className="absolute -top-4 left-6 w-10 h-10 opacity-80">
+                          <StickerIcon type={["sun", "rainbow", "cloud", "sparkle"][index % 4] as any} className="w-full h-full drop-shadow-md" />
+                        </div>
+
+                        <div>
+                          {/* Stars */}
+                          <div className="flex gap-1 mb-6 justify-end">
+                            {Array.from({ length: review.rating }).map((_, i) => (
+                              <Star key={i} className="w-4 h-4 text-amber-400 fill-amber-400" />
+                            ))}
+                          </div>
+
+                          <p 
+                             className="text-gray-600 leading-relaxed italic text-[1.05rem] font-medium mb-6 line-clamp-4 text-pretty"
+                             dangerouslySetInnerHTML={{ __html: `&ldquo;${review.review}&rdquo;` }}
+                          />
+                        </div>
+                        
+                        <div className="flex items-center gap-4 pt-4 border-t border-gray-100">
+                          <div 
+                            className="w-12 h-12 rounded-full flex items-center justify-center font-medium text-lg text-white shadow-sm shrink-0"
+                            style={{
+                              background: `linear-gradient(135deg, oklch(0.8 0.15 ${[50, 160, 300, 80][index % 4]}), oklch(0.7 0.18 ${[50, 160, 300, 80][index % 4]}))`
+                            }}
+                          >
+                            {review.avatar}
+                          </div>
+                          <div>
+                            <h4 className="font-semibold text-lg text-gray-900">{review.name}</h4>
+                            <p className="text-sm text-gray-500">{review.role}</p>
+                          </div>
+                        </div>
+                      </div>
+                    </motion.div>
+                  )
+                })}
+              </div>
+            )}
+          </div>
+        </section>
+      </main>
+
+      <Footer />
 
       {/* Testimonial Form Modal Overlay */}
       <AnimatePresence>
@@ -399,6 +394,6 @@ export function TestimonialsSection() {
           </div>
         )}
       </AnimatePresence>
-    </section>
+    </div>
   )
 }

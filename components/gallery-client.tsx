@@ -10,45 +10,123 @@ import { motion, AnimatePresence } from "framer-motion"
 import { ImageLightbox } from "@/components/image-lightbox"
 import Link from "next/link"
 
-// Gallery items with placeholder colors representing different activities
+// Gallery items containing all N=110 images grouped cleanly by their folders
 const galleryItems = [
-  { id: 1, category: "learning", color: "peach", icon: BookOpen, title: "Traditional Learning", sticker: "star" as const, image: "/gallery/gallery-section/Tradinal-learning.jpg" },
-  { id: 2, category: "learning", color: "mint", icon: BookOpen, title: "Warm Welcome", sticker: "star" as const, image: "/gallery/gallery-section/school-welcome.jpeg" },
-  { id: 3, category: "play", color: "lavender", icon: Play, title: "Healthy Eating", sticker: "balloon" as const, image: "/gallery/gallery-section/Eating.JPG.jpeg" },
-  { id: 4, category: "group", color: "soft-yellow", icon: Users, title: "Making Friends", sticker: "heart" as const, image: "/gallery/gallery-section/Make-friends.JPG.jpeg" },
-  { id: 5, category: "group", color: "baby-blue", icon: Users, title: "Parents Guidance", sticker: "cloud" as const, image: "/gallery/gallery-section/Parents-guidance.JPG.jpeg" },
-  { id: 6, category: "learning", color: "peach", icon: BookOpen, title: "Active Learning", sticker: "sun" as const, image: "/gallery/gallery-section/active-learning.png" },
-  { id: 7, category: "play", color: "mint", icon: Play, title: "Carefree Joy", sticker: "sparkle" as const, image: "/gallery/gallery-section/carefree-joy.JPG" },
-  { id: 8, category: "group", color: "lavender", icon: Users, title: "Celebration Time", sticker: "balloon" as const, image: "/gallery/gallery-section/celebration-time.JPG" },
-  { id: 9, category: "art", color: "soft-yellow", icon: Palette, title: "Color Magic", sticker: "rainbow" as const, image: "/gallery/gallery-section/color-magic.jpg" },
-  { id: 10, category: "group", color: "baby-blue", icon: Users, title: "Community Moments", sticker: "heart" as const, image: "/gallery/gallery-section/community-moment.jpg.jpeg" },
-  { id: 11, category: "group", color: "peach", icon: Users, title: "Festival Fun", sticker: "star" as const, image: "/gallery/gallery-section/festival-celebration.jpg.jpeg" },
-  { id: 12, category: "learning", color: "mint", icon: BookOpen, title: "Focused Minds", sticker: "star" as const, image: "/gallery/gallery-section/focused-learning.jpg" },
-  { id: 13, category: "play", color: "lavender", icon: Play, title: "Free Play", sticker: "sun" as const, image: "/gallery/gallery-section/free-play-zone.jpg" },
-  { id: 14, category: "group", color: "soft-yellow", icon: Users, title: "Group Activity", sticker: "balloon" as const, image: "/gallery/gallery-section/group-activity.JPG.jpeg" },
-  { id: 15, category: "group", color: "baby-blue", icon: Users, title: "Learning Together", sticker: "cloud" as const, image: "/gallery/gallery-section/group-learning.png" },
-  { id: 16, category: "learning", color: "peach", icon: BookOpen, title: "Guided Learning", sticker: "sun" as const, image: "/gallery/gallery-section/guided-learning.png" },
-  { id: 17, category: "play", color: "mint", icon: Play, title: "Nature Walk", sticker: "star" as const, image: "/gallery/gallery-section/guided-walk.jpg" },
-  { id: 18, category: "play", color: "lavender", icon: Play, title: "Happy Moments", sticker: "heart" as const, image: "/gallery/gallery-section/happy-moment.png" },
-  { id: 19, category: "play", color: "soft-yellow", icon: Play, title: "Interactive Play", sticker: "sparkle" as const, image: "/gallery/gallery-section/interactive-play.jpg" },
-  { id: 20, category: "play", color: "baby-blue", icon: Play, title: "Joyful Discovery", sticker: "rainbow" as const, image: "/gallery/gallery-section/joyful-play.png" },
-  { id: 21, category: "learning", color: "peach", icon: BookOpen, title: "Exploring Nature", sticker: "cloud" as const, image: "/gallery/gallery-section/nature-exploration.png" },
-  { id: 22, category: "group", color: "mint", icon: Users, title: "One Big Family", sticker: "heart" as const, image: "/gallery/gallery-section/one-family.JPG" },
-  { id: 23, category: "play", color: "lavender", icon: Play, title: "Outdoor Playground", sticker: "sun" as const, image: "/gallery/gallery-section/outdoor-play.png" },
-  { id: 24, category: "group", color: "soft-yellow", icon: Users, title: "Parent Connection", sticker: "cloud" as const, image: "/gallery/gallery-section/parent-interaction.jpg" },
-  { id: 25, category: "group", color: "baby-blue", icon: Users, title: "Workshop Session", sticker: "star" as const, image: "/gallery/gallery-section/parent-session.jpg" },
-  { id: 26, category: "play", color: "peach", icon: Play, title: "Playing Together", sticker: "balloon" as const, image: "/gallery/gallery-section/play-together.JPG.jpeg" },
-  { id: 27, category: "play", color: "mint", icon: Play, title: "Healthy Snacks", sticker: "balloon" as const, image: "/gallery/gallery-section/snack-time.jpg" },
-  { id: 28, category: "learning", color: "lavender", icon: BookOpen, title: "Story Hour", sticker: "cloud" as const, image: "/gallery/gallery-section/story-time.JPG.jpeg" },
-  { id: 29, category: "group", color: "soft-yellow", icon: Users, title: "Teamwork Skills", sticker: "star" as const, image: "/gallery/gallery-section/team-play.jpg" },
+  { id: 1, category: "joyful-journeys", color: "peach", icon: BookOpen, sticker: "star" as const, image: "/gallery/gallery-section/Joyful%20Journeys/traditional-classroom-learning.jpg" },
+  { id: 2, category: "little-moments", color: "lavender", icon: BookOpen, sticker: "heart" as const, image: "/gallery/gallery-section/Little%20Big%20Moments/healthy-snack-eating.jpeg" },
+  { id: 3, category: "creative-activities", color: "peach", icon: BookOpen, sticker: "star" as const, image: "/gallery/gallery-section/Creative%20Activities/creative-color-painting.jpg" },
+  { id: 4, category: "moments-school", color: "peach", icon: Palette, sticker: "star" as const, image: "/gallery/gallery-section/Moments%20at%20Seventh%20Sense/creative-arts-crafts.jpg" },
+  { id: 5, category: "special-events", color: "peach", icon: Users, sticker: "sparkle" as const, image: "/gallery/gallery-section/SPECIAL%20EVENTS%20%26%20CELEBRATIONS/parent-guidance-workshop.jpeg" },
+  { id: 6, category: "joyful-journeys", color: "mint", icon: Play, sticker: "balloon" as const, image: "/gallery/gallery-section/Joyful%20Journeys/school-entrance-welcome.jpeg" },
+  { id: 7, category: "little-moments", color: "soft-yellow", icon: Play, sticker: "cloud" as const, image: "/gallery/gallery-section/Little%20Big%20Moments/carefree-laughter-moments.jpg" },
+  { id: 8, category: "creative-activities", color: "mint", icon: Play, sticker: "balloon" as const, image: "/gallery/gallery-section/Creative%20Activities/active-creative-learning.png" },
+  { id: 9, category: "moments-school", color: "mint", icon: Users, sticker: "balloon" as const, image: "/gallery/gallery-section/Moments%20at%20Seventh%20Sense/happy-days-seventh-sense.jpg" },
+  { id: 10, category: "special-events", color: "mint", icon: Users, sticker: "rainbow" as const, image: "/gallery/gallery-section/SPECIAL%20EVENTS%20%26%20CELEBRATIONS/interactive-group-activity.jpeg" },
+  { id: 11, category: "joyful-journeys", color: "lavender", icon: Palette, sticker: "heart" as const, image: "/gallery/gallery-section/Joyful%20Journeys/nature-guided-walk.jpg" },
+  { id: 12, category: "little-moments", color: "baby-blue", icon: Palette, sticker: "sparkle" as const, image: "/gallery/gallery-section/Little%20Big%20Moments/happy-preschool-moments.png" },
+  { id: 13, category: "creative-activities", color: "lavender", icon: Palette, sticker: "heart" as const, image: "/gallery/gallery-section/Creative%20Activities/focused-reading-learning.jpg" },
+  { id: 14, category: "moments-school", color: "lavender", icon: Users, sticker: "heart" as const, image: "/gallery/gallery-section/Moments%20at%20Seventh%20Sense/fun-classroom-moments.png" },
+  { id: 15, category: "special-events", color: "lavender", icon: Users, sticker: "star" as const, image: "/gallery/gallery-section/SPECIAL%20EVENTS%20%26%20CELEBRATIONS/school-cultural-gathering.jpg" },
+  { id: 16, category: "joyful-journeys", color: "soft-yellow", icon: Users, sticker: "cloud" as const, image: "/gallery/gallery-section/Joyful%20Journeys/joyful-indoor-play.png" },
+  { id: 17, category: "little-moments", color: "peach", icon: Users, sticker: "rainbow" as const, image: "/gallery/gallery-section/Little%20Big%20Moments/preschooler-snack-time.jpg" },
+  { id: 18, category: "creative-activities", color: "soft-yellow", icon: Users, sticker: "cloud" as const, image: "/gallery/gallery-section/Creative%20Activities/creative-free-play-zone.jpg" },
+  { id: 19, category: "moments-school", color: "soft-yellow", icon: Play, sticker: "cloud" as const, image: "/gallery/gallery-section/Moments%20at%20Seventh%20Sense/playful-learning-environment.jpg" },
+  { id: 20, category: "special-events", color: "soft-yellow", icon: Users, sticker: "balloon" as const, image: "/gallery/gallery-section/SPECIAL%20EVENTS%20%26%20CELEBRATIONS/parent-teacher-interaction.jpg" },
+  { id: 21, category: "joyful-journeys", color: "baby-blue", icon: BookOpen, sticker: "sparkle" as const, image: "/gallery/gallery-section/Joyful%20Journeys/outdoor-nature-exploration.png" },
+  { id: 22, category: "little-moments", color: "mint", icon: BookOpen, sticker: "star" as const, image: "/gallery/gallery-section/Little%20Big%20Moments/playing-together-outdoors.jpeg" },
+  { id: 23, category: "creative-activities", color: "baby-blue", icon: BookOpen, sticker: "sparkle" as const, image: "/gallery/gallery-section/Creative%20Activities/interactive-storytelling-hour.jpeg" },
+  { id: 24, category: "moments-school", color: "baby-blue", icon: BookOpen, sticker: "sparkle" as const, image: "/gallery/gallery-section/Moments%20at%20Seventh%20Sense/IMG_1286_Original.jpg" },
+  { id: 25, category: "special-events", color: "baby-blue", icon: Users, sticker: "heart" as const, image: "/gallery/gallery-section/SPECIAL%20EVENTS%20%26%20CELEBRATIONS/parent-engagement-workshop.jpg" },
+  { id: 26, category: "joyful-journeys", color: "peach", icon: Play, sticker: "rainbow" as const, image: "/gallery/gallery-section/Joyful%20Journeys/outdoor-playground-play.png" },
+  { id: 27, category: "little-moments", color: "lavender", icon: Play, sticker: "balloon" as const, image: "/gallery/gallery-section/Little%20Big%20Moments/little-explorers.jpg" },
+  { id: 28, category: "creative-activities", color: "peach", icon: Play, sticker: "rainbow" as const, image: "/gallery/gallery-section/Creative%20Activities/teacher-guided-learning.png" },
+  { id: 29, category: "moments-school", color: "mint", icon: Palette, sticker: "star" as const, image: "/gallery/gallery-section/Moments%20at%20Seventh%20Sense/IMG_1577.png" },
+  { id: 30, category: "special-events", color: "peach", icon: Play, sticker: "cloud" as const, image: "/gallery/gallery-section/SPECIAL%20EVENTS%20%26%20CELEBRATIONS/IMG_4947.jpg" },
+  { id: 31, category: "joyful-journeys", color: "mint", icon: Palette, sticker: "star" as const, image: "/gallery/gallery-section/Joyful%20Journeys/making-friends-classroom.jpeg" },
+  { id: 32, category: "little-moments", color: "soft-yellow", icon: Palette, sticker: "heart" as const, image: "/gallery/gallery-section/Little%20Big%20Moments/independent-learning-moments.jpg" },
+  { id: 33, category: "creative-activities", color: "mint", icon: Palette, sticker: "star" as const, image: "/gallery/gallery-section/Creative%20Activities/collaborative-group-learning.png" },
+  { id: 34, category: "moments-school", color: "lavender", icon: Users, sticker: "balloon" as const, image: "/gallery/gallery-section/Moments%20at%20Seventh%20Sense/IMG_2115_Original.jpg" },
+  { id: 35, category: "special-events", color: "mint", icon: Palette, sticker: "sparkle" as const, image: "/gallery/gallery-section/SPECIAL%20EVENTS%20%26%20CELEBRATIONS/IMG_5399.jpg" },
+  { id: 36, category: "joyful-journeys", color: "lavender", icon: Users, sticker: "balloon" as const, image: "/gallery/gallery-section/Joyful%20Journeys/happy-kids-learning.jpg" },
+  { id: 37, category: "little-moments", color: "baby-blue", icon: Users, sticker: "cloud" as const, image: "/gallery/gallery-section/Little%20Big%20Moments/celebration-time-moments.jpg" },
+  { id: 38, category: "creative-activities", color: "lavender", icon: Users, sticker: "balloon" as const, image: "/gallery/gallery-section/Creative%20Activities/festival-cultural-celebration.jpeg" },
+  { id: 39, category: "moments-school", color: "soft-yellow", icon: BookOpen, sticker: "heart" as const, image: "/gallery/gallery-section/Moments%20at%20Seventh%20Sense/IMG_4763.jpg" },
+  { id: 40, category: "special-events", color: "lavender", icon: Users, sticker: "rainbow" as const, image: "/gallery/gallery-section/SPECIAL%20EVENTS%20%26%20CELEBRATIONS/IMG_5428.jpg" },
+  { id: 41, category: "joyful-journeys", color: "soft-yellow", icon: BookOpen, sticker: "heart" as const, image: "/gallery/gallery-section/Joyful%20Journeys/preschooler-smiles.jpg" },
+  { id: 42, category: "little-moments", color: "peach", icon: BookOpen, sticker: "sparkle" as const, image: "/gallery/gallery-section/Little%20Big%20Moments/IMG_0325.jpg" },
+  { id: 43, category: "creative-activities", color: "soft-yellow", icon: BookOpen, sticker: "heart" as const, image: "/gallery/gallery-section/Creative%20Activities/IMG_0373_Original.jpg" },
+  { id: 44, category: "moments-school", color: "baby-blue", icon: Play, sticker: "cloud" as const, image: "/gallery/gallery-section/Moments%20at%20Seventh%20Sense/IMG_5334_Original.jpg" },
+  { id: 45, category: "special-events", color: "soft-yellow", icon: BookOpen, sticker: "star" as const, image: "/gallery/gallery-section/SPECIAL%20EVENTS%20%26%20CELEBRATIONS/IMG_5446.jpg" },
+  { id: 46, category: "joyful-journeys", color: "baby-blue", icon: Play, sticker: "cloud" as const, image: "/gallery/gallery-section/Joyful%20Journeys/creative-diy-crafts.jpg" },
+  { id: 47, category: "little-moments", color: "mint", icon: Play, sticker: "rainbow" as const, image: "/gallery/gallery-section/Little%20Big%20Moments/IMG_0331.jpg" },
+  { id: 48, category: "creative-activities", color: "baby-blue", icon: Play, sticker: "cloud" as const, image: "/gallery/gallery-section/Creative%20Activities/IMG_1203_Original.jpg" },
+  { id: 49, category: "special-events", color: "baby-blue", icon: Play, sticker: "balloon" as const, image: "/gallery/gallery-section/SPECIAL%20EVENTS%20%26%20CELEBRATIONS/IMG_5532.jpg" },
+  { id: 50, category: "joyful-journeys", color: "peach", icon: Palette, sticker: "sparkle" as const, image: "/gallery/gallery-section/Joyful%20Journeys/community-learning-moments.jpeg" },
+  { id: 51, category: "little-moments", color: "lavender", icon: Palette, sticker: "star" as const, image: "/gallery/gallery-section/Little%20Big%20Moments/IMG_1140_Original.jpg" },
+  { id: 52, category: "creative-activities", color: "peach", icon: Palette, sticker: "sparkle" as const, image: "/gallery/gallery-section/Creative%20Activities/IMG_1225_Original.jpg" },
+  { id: 53, category: "joyful-journeys", color: "mint", icon: Users, sticker: "rainbow" as const, image: "/gallery/gallery-section/Joyful%20Journeys/interactive-sandbox-play.jpg" },
+  { id: 54, category: "little-moments", color: "soft-yellow", icon: Users, sticker: "balloon" as const, image: "/gallery/gallery-section/Little%20Big%20Moments/IMG_1265_Original.jpg" },
+  { id: 55, category: "creative-activities", color: "mint", icon: Users, sticker: "rainbow" as const, image: "/gallery/gallery-section/Creative%20Activities/IMG_1239_Original.jpg" },
+  { id: 56, category: "joyful-journeys", color: "lavender", icon: BookOpen, sticker: "star" as const, image: "/gallery/gallery-section/Joyful%20Journeys/teamwork-play-skills.jpg" },
+  { id: 57, category: "little-moments", color: "baby-blue", icon: BookOpen, sticker: "heart" as const, image: "/gallery/gallery-section/Little%20Big%20Moments/IMG_1581.png" },
+  { id: 58, category: "creative-activities", color: "lavender", icon: BookOpen, sticker: "star" as const, image: "/gallery/gallery-section/Creative%20Activities/IMG_1262_Original.jpg" },
+  { id: 59, category: "joyful-journeys", color: "soft-yellow", icon: Play, sticker: "balloon" as const, image: "/gallery/gallery-section/Joyful%20Journeys/IMG_0776_Original.jpg" },
+  { id: 60, category: "little-moments", color: "peach", icon: Play, sticker: "cloud" as const, image: "/gallery/gallery-section/Little%20Big%20Moments/IMG_1583.png" },
+  { id: 61, category: "creative-activities", color: "soft-yellow", icon: Play, sticker: "balloon" as const, image: "/gallery/gallery-section/Creative%20Activities/IMG_1273_Original.jpg" },
+  { id: 62, category: "joyful-journeys", color: "baby-blue", icon: Palette, sticker: "heart" as const, image: "/gallery/gallery-section/Joyful%20Journeys/IMG_0786_Original.jpg" },
+  { id: 63, category: "little-moments", color: "mint", icon: Palette, sticker: "sparkle" as const, image: "/gallery/gallery-section/Little%20Big%20Moments/IMG_1911.jpg" },
+  { id: 64, category: "creative-activities", color: "baby-blue", icon: Palette, sticker: "heart" as const, image: "/gallery/gallery-section/Creative%20Activities/IMG_1280_Original.jpg" },
+  { id: 65, category: "joyful-journeys", color: "peach", icon: Users, sticker: "cloud" as const, image: "/gallery/gallery-section/Joyful%20Journeys/IMG_0812_Original.jpg" },
+  { id: 66, category: "little-moments", color: "lavender", icon: Users, sticker: "rainbow" as const, image: "/gallery/gallery-section/Little%20Big%20Moments/IMG_2234.jpg" },
+  { id: 67, category: "creative-activities", color: "peach", icon: Users, sticker: "cloud" as const, image: "/gallery/gallery-section/Creative%20Activities/IMG_1517.png" },
+  { id: 68, category: "joyful-journeys", color: "mint", icon: BookOpen, sticker: "sparkle" as const, image: "/gallery/gallery-section/Joyful%20Journeys/IMG_0820_Original.jpg" },
+  { id: 69, category: "little-moments", color: "soft-yellow", icon: BookOpen, sticker: "star" as const, image: "/gallery/gallery-section/Little%20Big%20Moments/IMG_2292_Original.jpg" },
+  { id: 70, category: "creative-activities", color: "mint", icon: BookOpen, sticker: "sparkle" as const, image: "/gallery/gallery-section/Creative%20Activities/IMG_1584.png" },
+  { id: 71, category: "joyful-journeys", color: "lavender", icon: Play, sticker: "rainbow" as const, image: "/gallery/gallery-section/Joyful%20Journeys/IMG_1506_Original.jpg" },
+  { id: 72, category: "little-moments", color: "baby-blue", icon: Play, sticker: "balloon" as const, image: "/gallery/gallery-section/Little%20Big%20Moments/IMG_4742.jpg" },
+  { id: 73, category: "creative-activities", color: "lavender", icon: Play, sticker: "rainbow" as const, image: "/gallery/gallery-section/Creative%20Activities/IMG_1585.png" },
+  { id: 74, category: "joyful-journeys", color: "soft-yellow", icon: Palette, sticker: "star" as const, image: "/gallery/gallery-section/Joyful%20Journeys/IMG_1526_Original.jpg" },
+  { id: 75, category: "little-moments", color: "peach", icon: Palette, sticker: "heart" as const, image: "/gallery/gallery-section/Little%20Big%20Moments/IMG_4761.jpg" },
+  { id: 76, category: "creative-activities", color: "soft-yellow", icon: Palette, sticker: "star" as const, image: "/gallery/gallery-section/Creative%20Activities/IMG_1618_Original.jpg" },
+  { id: 77, category: "joyful-journeys", color: "baby-blue", icon: Users, sticker: "balloon" as const, image: "/gallery/gallery-section/Joyful%20Journeys/IMG_1986.jpg" },
+  { id: 78, category: "little-moments", color: "mint", icon: Users, sticker: "cloud" as const, image: "/gallery/gallery-section/Little%20Big%20Moments/IMG_4940.jpg" },
+  { id: 79, category: "creative-activities", color: "baby-blue", icon: Users, sticker: "balloon" as const, image: "/gallery/gallery-section/Creative%20Activities/IMG_1794.jpg" },
+  { id: 80, category: "joyful-journeys", color: "peach", icon: BookOpen, sticker: "heart" as const, image: "/gallery/gallery-section/Joyful%20Journeys/IMG_1990.jpg" },
+  { id: 81, category: "little-moments", color: "lavender", icon: BookOpen, sticker: "sparkle" as const, image: "/gallery/gallery-section/Little%20Big%20Moments/IMG_4950.jpg" },
+  { id: 82, category: "creative-activities", color: "peach", icon: BookOpen, sticker: "heart" as const, image: "/gallery/gallery-section/Creative%20Activities/IMG_2143_Original.jpg" },
+  { id: 83, category: "joyful-journeys", color: "mint", icon: Play, sticker: "cloud" as const, image: "/gallery/gallery-section/Joyful%20Journeys/IMG_1996.jpg" },
+  { id: 84, category: "little-moments", color: "soft-yellow", icon: Play, sticker: "rainbow" as const, image: "/gallery/gallery-section/Little%20Big%20Moments/IMG_4994.jpg" },
+  { id: 85, category: "creative-activities", color: "mint", icon: Play, sticker: "cloud" as const, image: "/gallery/gallery-section/Creative%20Activities/IMG_2151_Original.jpg" },
+  { id: 86, category: "joyful-journeys", color: "lavender", icon: Palette, sticker: "sparkle" as const, image: "/gallery/gallery-section/Joyful%20Journeys/IMG_4934.jpg" },
+  { id: 87, category: "little-moments", color: "baby-blue", icon: Palette, sticker: "star" as const, image: "/gallery/gallery-section/Little%20Big%20Moments/IMG_5394.jpg" },
+  { id: 88, category: "creative-activities", color: "lavender", icon: Palette, sticker: "sparkle" as const, image: "/gallery/gallery-section/Creative%20Activities/IMG_2185_Original.jpg" },
+  { id: 89, category: "joyful-journeys", color: "soft-yellow", icon: Users, sticker: "rainbow" as const, image: "/gallery/gallery-section/Joyful%20Journeys/IMG_5419.jpg" },
+  { id: 90, category: "little-moments", color: "peach", icon: Users, sticker: "balloon" as const, image: "/gallery/gallery-section/Little%20Big%20Moments/IMG_5411.jpg" },
+  { id: 91, category: "creative-activities", color: "soft-yellow", icon: Users, sticker: "rainbow" as const, image: "/gallery/gallery-section/Creative%20Activities/IMG_4875.jpg" },
+  { id: 92, category: "joyful-journeys", color: "baby-blue", icon: BookOpen, sticker: "star" as const, image: "/gallery/gallery-section/Joyful%20Journeys/IMG_5423.jpg" },
+  { id: 93, category: "little-moments", color: "mint", icon: BookOpen, sticker: "heart" as const, image: "/gallery/gallery-section/Little%20Big%20Moments/IMG_5554.jpg" },
+  { id: 94, category: "creative-activities", color: "baby-blue", icon: BookOpen, sticker: "star" as const, image: "/gallery/gallery-section/Creative%20Activities/IMG_4962.jpg" },
+  { id: 95, category: "joyful-journeys", color: "peach", icon: Play, sticker: "balloon" as const, image: "/gallery/gallery-section/Joyful%20Journeys/IMG_5435.jpg" },
+  { id: 96, category: "little-moments", color: "lavender", icon: Play, sticker: "cloud" as const, image: "/gallery/gallery-section/Little%20Big%20Moments/IMG_5590.jpg" },
+  { id: 97, category: "creative-activities", color: "peach", icon: Play, sticker: "balloon" as const, image: "/gallery/gallery-section/Creative%20Activities/IMG_5384.jpg" },
+  { id: 98, category: "joyful-journeys", color: "mint", icon: Palette, sticker: "heart" as const, image: "/gallery/gallery-section/Joyful%20Journeys/IMG_5481.jpg" },
+  { id: 99, category: "creative-activities", color: "mint", icon: Palette, sticker: "heart" as const, image: "/gallery/gallery-section/Creative%20Activities/IMG_5651.jpg" },
+  { id: 100, category: "joyful-journeys", color: "lavender", icon: Users, sticker: "cloud" as const, image: "/gallery/gallery-section/Joyful%20Journeys/IMG_5484.jpg" },
+  { id: 101, category: "creative-activities", color: "lavender", icon: Users, sticker: "cloud" as const, image: "/gallery/gallery-section/Creative%20Activities/IMG_5662.jpg" },
+  { id: 102, category: "joyful-journeys", color: "soft-yellow", icon: BookOpen, sticker: "sparkle" as const, image: "/gallery/gallery-section/Joyful%20Journeys/IMG_5534.jpg" },
+  { id: 103, category: "creative-activities", color: "soft-yellow", icon: BookOpen, sticker: "sparkle" as const, image: "/gallery/gallery-section/Creative%20Activities/IMG_5762.jpg" },
+  { id: 104, category: "joyful-journeys", color: "baby-blue", icon: Play, sticker: "rainbow" as const, image: "/gallery/gallery-section/Joyful%20Journeys/IMG_5598.jpg" },
+  { id: 105, category: "creative-activities", color: "baby-blue", icon: Play, sticker: "rainbow" as const, image: "/gallery/gallery-section/Creative%20Activities/IMG_5789.jpg" },
+  { id: 106, category: "joyful-journeys", color: "peach", icon: Palette, sticker: "star" as const, image: "/gallery/gallery-section/Joyful%20Journeys/IMG_5608.jpg" },
 ]
 
 const categories = [
   { id: "all", label: "All Photos" },
-  { id: "learning", label: "Learning" },
-  { id: "play", label: "Play Time" },
-  { id: "art", label: "Creative Arts" },
-  { id: "group", label: "Group Activities" },
+  { id: "joyful-journeys", label: "Joyful Journeys" },
+  { id: "little-moments", label: "Little Big Moments" },
+  { id: "creative-activities", label: "Creative Activities" },
+  { id: "moments-school", label: "Moments at Seventh Sense" },
+  { id: "special-events", label: "Special Events" },
 ]
 
 const colorMap: Record<string, { bg: string; hue: number }> = {
@@ -226,20 +304,21 @@ export default function GalleryClient() {
                             <div className="absolute inset-1.5 sm:inset-2 overflow-hidden rounded-[2rem] sm:rounded-[2.8rem]">
                               <img 
                                 src={item.image} 
-                                alt={item.title} 
+                                alt={categories.find(c => c.id === item.category)?.label || "Gallery Image"} 
                                 className="w-full h-full object-cover object-top transition-transform duration-1000 group-hover:scale-110" 
                               />
                               {/* Gradient Overlay */}
                               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-500" />
                             </div>
                             
-                            {/* Title overlay always visible but enhanced on hover */}
-                            <div className="absolute bottom-4 left-6 right-6 sm:bottom-6 sm:left-8 sm:right-8 z-10 transition-all duration-500 transform translate-y-2 group-hover:translate-y-0">
-                               <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md rounded-full px-3 py-1 sm:px-4 sm:py-1.5 border border-white/30 mb-2 sm:mb-3">
-                                  <item.icon className="w-3 h-3 sm:w-4 sm:w-4 text-white" />
-                                  <span className="text-white text-[8px] sm:text-[10px] font-bold uppercase tracking-[0.2em]">{item.category}</span>
+                            {/* Grouping overlay based on folder categories, permanently visible (fixed) for clean grouping */}
+                            <div className="absolute bottom-4 left-6 right-6 sm:bottom-6 sm:left-8 sm:right-8 z-10 transition-all duration-300">
+                               <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md rounded-full px-3 py-1 sm:px-4 sm:py-1.5 border border-white/30 shadow-md">
+                                  <item.icon className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white" />
+                                  <span className="text-white text-[8px] sm:text-[10px] font-bold uppercase tracking-[0.2em]">
+                                     {categories.find(c => c.id === item.category)?.label}
+                                  </span>
                                </div>
-                               <h3 className="font-bold text-lg sm:text-2xl text-white tracking-tight drop-shadow-md leading-tight">{item.title}</h3>
                             </div>
 
                             {/* View detail indicator */}

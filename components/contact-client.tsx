@@ -4,9 +4,11 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { FloatingDoodles, StickerIcon, SectionDoodles } from "@/components/floating-doodles"
 import { Button } from "@/components/ui/button"
-import { MessageCircle, Phone, Mail, MapPin, ArrowRight, Instagram, Facebook, Youtube, ExternalLink } from "lucide-react"
+import { MessageCircle, Phone, Mail, MapPin, ArrowRight, Instagram, Facebook, Youtube, ExternalLink, Star } from "lucide-react"
 
 import Link from 'next/link';
+
+const GOOGLE_REVIEW_URL = "https://www.google.com/search?client=mobilesearchapp&sca_esv=4521476c5740f22a&bih=797&biw=390&channel=iss&cs=1&hl=en-IN&rlz=1MDAPLA_en-GBIN1208IN1208&v=420.4.909430193&sxsrf=ANbL-n4h5vlVjHYY84yHSCzMizRmfjXP_Q:1779900865242&q=seventhsense+pre+school+reviews&uds=ALYpb_mad45b1OM25KSbsFB9RfLylxpELSqQ987octcU-_PP-j91Fh-EMm97gZWg-W_353iFyavKLFeMJltuAcEBoE77uWChwKU4aVOHQio-8FTVdZRPbB-hJh3qUMIlHkuqwsHuUfrcaKY2LhQdhQLs1PopS7mQ8g5Vz2ZQCmab-NV-Uy20rb71U6bnnBSAtG8R5IzLr5KN5UdXxEVI8EkZdyN0z-3u0a_FdrEptReJbUa2YfR9otj_J7JNKmKcDvaqDmHrdrYRjCi9YRBcj7o4pQj_POKDR74JPabzIykzNnBu33sUiiOH5IWgPueXms2cfi64mfnYi1AClSELQ74eVw0mVVeEizl7QNOCGJcAELXk3vubCQI&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOSVD2a_rzOzkcZciVKgoaRQrt7tAtpjLoPRy97K4KewNHHqc1Rh226lZ_KSlZy6JAXakzhTlQYwuznCKmOIs6lS_kEzOqUcm8KmQVSfTP1HU18436g%3D%3D&sa=X&ved=2ahUKEwjCnLu299mUAxXMdvUHHXaGDOEQk8gLegQIGRAB&ictx=1#";
 
 export default function ContactClient() {
   return (
@@ -117,6 +119,24 @@ export default function ContactClient() {
                        <h3 className="font-semibold text-xl text-primary mb-2">YouTube</h3>
                        <a href="http://www.youtube.com/@SeventhSenseschoolofarts" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-mint transition-colors flex items-center gap-2 mt-4 text-sm font-bold uppercase tracking-wider">
                           Watch Us <ArrowRight className="w-4 h-4" />
+                       </a>
+                    </div>
+
+                    {/* Google Review Card */}
+                    <div className="bg-soft-yellow/10 backdrop-blur-xl rounded-[2.5rem] p-8 border border-white shadow-xl group hover:-translate-y-2 transition-transform duration-300 relative overflow-hidden">
+                       <div className="absolute bottom-0 right-0 w-24 h-24 bg-white/40 rounded-tl-full -z-10" />
+                       <div className="w-14 h-14 rounded-2xl bg-brand-orange/20 flex items-center justify-center mb-6 shadow-sm">
+                          <Star className="w-7 h-7 text-brand-orange fill-brand-orange animate-sparkle" />
+                       </div>
+                       <h3 className="font-semibold text-xl text-primary mb-2">Google Review</h3>
+                       <p className="text-muted-foreground text-sm mb-4">Share your experience with our school community!</p>
+                       <a 
+                          href={GOOGLE_REVIEW_URL} 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="text-primary hover:text-brand-orange transition-colors flex items-center gap-2 mt-auto text-sm font-bold uppercase tracking-wider"
+                       >
+                          Write a Review <ArrowRight className="w-4 h-4" />
                        </a>
                     </div>
                    

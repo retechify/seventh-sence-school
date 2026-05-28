@@ -10,12 +10,12 @@ import { useState } from "react"
 import { ImageLightbox } from "@/components/image-lightbox"
 
 const homeGalleryItems = [
-  { id: 1, category: "learning", color: "peach", icon: BookOpen, title: "Traditional Learning", sticker: "star" as const, hue: 50, size: "large", image: "/gallery/gallery-section/Tradinal-learning.jpg" },
-  { id: 2, category: "play", color: "mint", icon: Play, title: "Outdoor Playground", sticker: "sun" as const, hue: 160, size: "small", image: "/gallery/gallery-section/outdoor-play.png" },
-  { id: 3, category: "art", color: "lavender", icon: Palette, title: "Color Magic", sticker: "rainbow" as const, hue: 300, size: "small", image: "/gallery/gallery-section/color-magic.jpg" },
-  { id: 4, category: "group", color: "soft-yellow", icon: Users, title: "Healthy Eating", sticker: "heart" as const, hue: 95, size: "tall", image: "/gallery/gallery-section/Eating.JPG.jpeg" },
-  { id: 5, category: "learning", color: "baby-blue", icon: BookOpen, title: "Story Hour", sticker: "cloud" as const, hue: 230, size: "small", image: "/gallery/gallery-section/story-time.JPG.jpeg" },
-  { id: 6, category: "play", color: "peach", icon: Play, title: "Joyful Discovery", sticker: "balloon" as const, hue: 50, size: "small", image: "/gallery/gallery-section/joyful-play.png" },
+  { id: 1, category: "learning", color: "peach", icon: BookOpen, title: "Traditional Learning", sticker: "star" as const, hue: 50, size: "large", image: "/gallery/gallery-section/Joyful%20Journeys/traditional-classroom-learning.jpg" },
+  { id: 2, category: "play", color: "mint", icon: Play, title: "Outdoor Playground", sticker: "sun" as const, hue: 160, size: "small", image: "/gallery/gallery-section/Joyful%20Journeys/outdoor-playground-play.png" },
+  { id: 3, category: "art", color: "lavender", icon: Palette, title: "Color Magic", sticker: "rainbow" as const, hue: 300, size: "small", image: "/gallery/gallery-section/Creative%20Activities/creative-color-painting.jpg" },
+  { id: 4, category: "group", color: "soft-yellow", icon: Users, title: "Healthy Eating", sticker: "heart" as const, hue: 95, size: "tall", image: "/gallery/gallery-section/Little%20Big%20Moments/healthy-snack-eating.jpeg" },
+  { id: 5, category: "learning", color: "baby-blue", icon: BookOpen, title: "Story Hour", sticker: "cloud" as const, hue: 230, size: "small", image: "/gallery/gallery-section/Creative%20Activities/interactive-storytelling-hour.jpeg" },
+  { id: 6, category: "play", color: "peach", icon: Play, title: "Joyful Discovery", sticker: "balloon" as const, hue: 50, size: "small", image: "/gallery/gallery-section/Joyful%20Journeys/joyful-indoor-play.png" },
 ]
 
 export function GallerySection() {

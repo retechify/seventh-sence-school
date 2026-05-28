@@ -259,3 +259,24 @@
 .btn-gradient-peach {
   background: linear-gradient(135deg, oklch(0.92 0.1 50), oklch(0.88 0.12 35));
 }
+
+/* Infinite Testimonial Marquee */
+@keyframes marquee-scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 45s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
